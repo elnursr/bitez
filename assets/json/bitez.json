@@ -1,0 +1,185 @@
+{
+    "burgers": [
+        {
+            "title": "smash_burger",
+            "smash_burgers": [
+                {
+                    "name": "smash_cheese",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 8.99
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 2.7
+                        }
+                    ],
+                    "contents": "Smashed beef patty, cheddar, pickles, home smash sauce, fresh onion cubes"
+                },
+                {
+                    "name": "smash_bbq",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 9.49
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 2.7
+                        }
+                    ],
+                    "contents": "Smashed Beef Patty, Cheddar, Bacon (Halal), BBQ Sauce, House Sauce, Roasting Onions, Cucumbers, Fresh Onion Cubes"
+                },
+                {
+                    "name": "7th_street_burger",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 9.49
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 2.7
+                        }
+                    ],
+                    "contents": "Smashed beef patty, cheddar, pickles, house sauce, home smash sauce, fried onion cubes"
+                },
+                {
+                    "name": "smash_chili_cheese",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 9.49
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 2.7
+                        }
+                    ],
+                    "contents": "Smashed Beef Patty, Cheddar, Chili Cheese Sauce, Cucumbers, Home Smash Sauce, Fresh Onion Cubes"
+                }
+            ]
+        },
+        {
+            "title": "classic_burger",
+            "classic_burgers": [
+                {
+                    "name": "hamburger",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 8.99
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 3.5
+                        }
+                    ],
+                    "contents": "Lettuce, tomatoes, cucumbers, red onions and house sauce."
+                },
+                {
+                    "name": "cheeseburger",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 10.49
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 3.5
+                        }
+                    ],
+                    "contents": "Salad, tomatoes, cucumbers, red onions, house sauce and cheddar slice."
+                },
+                {
+                    "name": "chili_cheese",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 10.79
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 3.5
+                        }
+                    ],
+                    "contents": "Salad, tomatoes, cucumbers, red onions, house sauce, cheddar sauce, cheddar slice and jalapenos."
+                },
+                {
+                    "name": "cheese_bacon",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 10.79
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 3.5
+                        }
+                    ],
+                    "contents": "Lettuce, tomatoes, cucumbers, red onions, house sauce, cheddar slice and beef bacon (Helal)."
+                },
+                {
+                    "name": "bbq_bacon",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 10.79
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 3.5
+                        }
+                    ],
+                    "contents": "Lettuce, tomatoes, cucumbers, roasted onions, house sauce, BBQ sauce, cheddar slice and beef bacon (halal)."
+                },
+                {
+                    "name": "the_beast",
+                    "patties": [
+                        {
+                            "title": "tripple",
+                            "size": "xxl",
+                            "price": 15.99
+                        }
+                    ],
+                    "contents": "3 x beef patty, salad, tomatoes, cucumbers, beef bacon (halal), glazed onions, roasted onions, house sauce, cheddar sauce and cheddar slice."
+                },
+                {
+                    "name": "hollandaise_burger",
+                    "patties": [
+                        {
+                            "title": "single",
+                            "size": "m",
+                            "price": 10.99
+                        },
+                        {
+                            "title": "double",
+                            "size": "xl",
+                            "price": 3.5
+                        }
+                    ],
+                    "contents": "Lettuce, tomatoes, cucumbers, red onions, Hollandaise sauce and glazed onions."
+                }
+            ]
+        }
+    ]
+}

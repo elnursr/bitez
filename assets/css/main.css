@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Luckiest Guy";
+}
+
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.bitez-logo__link {
+  display: block;
+  width: 8em;
+  height: 3.1em;
+}
+.bitez-logo__link img {
+  width: 100%;
+  height: 100%;
+}
+
+.bitez-burger-patty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+.bitez-burger-patty__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bitez-burger-patty__title {
+  font-size: 1em;
+}
+.bitez-burger-patty__add {
+  font-size: 1.8em;
+}
+.bitez-burger-patty__size, .bitez-burger-patty__price {
+  font-size: 1.7em;
+}
+.bitez-burger-patty__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3em;
+}
+
+.bitez-slider__link {
+  display: block;
+  height: 85vh;
+}
+.bitez-slider__link img {
+  width: 100%;
+  height: 100%;
+}
+
+.bitez-burger {
+  padding: 7em 0;
+}
+.bitez-burger__heading {
+  text-align: center;
+  font-size: 3.7em;
+}
+.bitez-burger__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 3em 0;
+}
+.bitez-burger__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+  width: 32%;
+  border-radius: 0.35em;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border: 0.1em solid rgb(0, 0, 0);
+  background-image: url("../media/png/shape/shape.png");
+}
+.bitez-burger__item:hover::before {
+  height: 100%;
+}
+.bitez-burger__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  z-index: -1;
+  background-color: rgba(255, 207, 1, 0.9);
+}
+.bitez-burger__link {
+  display: block;
+  width: 13em;
+  height: 12em;
+}
+.bitez-burger__link img {
+  width: 100%;
+  height: 100%;
+}
+.bitez-burger__content {
+  text-align: center;
+  font-weight: 115;
+  font-size: 1em;
+}
+
+.bitez-container {
+  margin: 0 auto;
+  width: 71.31em;
+}
+
+.bitez-desktop-navigation {
+  background-color: rgb(0, 0, 0);
+}
+.bitez-desktop-navigation__wrapper {
+  height: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bitez-desktop-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.bitez-desktop-navigation__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  color: rgb(255, 207, 1);
+}
+
+.bitez-filter-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+.bitez-filter-tab__item {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5em 0.7em;
+  font-size: 1.3em;
+  border-radius: 0.3em;
+  border: 0.09em solid rgb(0, 0, 0);
+}
+.bitez-filter-tab__item:hover::before {
+  height: 100%;
+}
+.bitez-filter-tab__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  background-color: rgba(255, 207, 1, 0.9);
+}

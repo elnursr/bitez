@@ -48,6 +48,9 @@
             background-color: rgba(v.$mainColor, .9);
         }
     }
+    &__name{
+        text-align: center;
+    }
 
     &__link {
         display: block;

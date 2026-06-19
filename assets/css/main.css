@@ -11,13 +11,13 @@
 }
 
 ::-moz-selection {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  color: white;
+  background-color: black;
 }
 
 ::selection {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  color: white;
+  background-color: black;
 }
 
 .bitez-logo__link {
@@ -28,53 +28,6 @@
 .bitez-logo__link img {
   width: 100%;
   height: 100%;
-}
-
-.bitez-burger-patty {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1em;
-  margin: 1em 0;
-}
-.bitez-burger-patty__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.bitez-burger-patty__title {
-  font-size: 1em;
-}
-.bitez-burger-patty__add {
-  font-size: 1.8em;
-}
-.bitez-burger-patty__size, .bitez-burger-patty__price {
-  font-size: 1.7em;
-}
-.bitez-burger-patty__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.3em;
 }
 
 .bitez-slider__link {
@@ -125,7 +78,7 @@
   border-radius: 0.35em;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  border: 0.1em solid rgb(0, 0, 0);
+  border: 0.1em solid black;
   background-image: url("../media/png/shape/shape.png");
 }
 .bitez-burger__item:hover::before {
@@ -142,6 +95,9 @@
   transition: height 0.3s;
   z-index: -1;
   background-color: rgba(255, 207, 1, 0.9);
+}
+.bitez-burger__name {
+  text-align: center;
 }
 .bitez-burger__link {
   display: block;
@@ -164,7 +120,7 @@
 }
 
 .bitez-desktop-navigation {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
 .bitez-desktop-navigation__wrapper {
   height: 7em;
@@ -194,7 +150,7 @@
   gap: 0.5em;
   text-transform: capitalize;
   font-size: 1.3em;
-  color: rgb(255, 207, 1);
+  color: #ffcf01;
 }
 
 .bitez-filter-tab {
@@ -216,7 +172,7 @@
   padding: 0.5em 0.7em;
   font-size: 1.3em;
   border-radius: 0.3em;
-  border: 0.09em solid rgb(0, 0, 0);
+  border: 0.09em solid black;
 }
 .bitez-filter-tab__item:hover::before {
   height: 100%;
@@ -232,4 +188,51 @@
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
   background-color: rgba(255, 207, 1, 0.9);
+}
+
+.bitez-burger-size-upgrades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+.bitez-burger-size-upgrades__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bitez-burger-size-upgrades__title {
+  font-size: 1em;
+}
+.bitez-burger-size-upgrades__add {
+  font-size: 1.8em;
+}
+.bitez-burger-size-upgrades__size, .bitez-burger-size-upgrades__price {
+  font-size: 1.7em;
+}
+.bitez-burger-size-upgrades__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3em;
 }

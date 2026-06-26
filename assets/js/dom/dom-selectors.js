@@ -1,3 +1,4 @@
-export const bitezBurgerList = document.querySelector('.bitez-burger__list'),
-bitezBurgerSizeUpgrades=document.querySelector('.bitez-burger-size-upgrades'),
-    bitezFilterTabItem = document.querySelectorAll('.bitez-filter-tab__item');
+export const burgerCardElement = document.querySelector('.burger-card'),
+    coffeeCardElement = document.querySelector('.coffee-card'),
+    burgerFilterTabItemElement = document.querySelectorAll('.burger-filter-tab .filter-tab__item'),
+    coffeeFilterTabItemElement = document.querySelectorAll('.coffee-filter-tab .filter-tab__item');

@@ -1,0 +1,28 @@
+@use '../../abstracts' as v;
+
+.footer-contact {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3em;
+    }
+
+    &__link {
+        display: flex;
+        gap: .3em;
+        letter-spacing: .09em;
+        font-size: v.$footeLinkFontSize;
+        color: v.$white;
+
+        &:hover {
+            svg {
+                animation: jello .9s;
+            }
+        }
+
+        svg {
+            width: 1em;
+            height: 1em;
+        }
+    }
+}

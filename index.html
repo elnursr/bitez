@@ -18,7 +18,7 @@
     <!-- external css end here -->
 
     <!-- external js start here -->
-    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
     <!-- external js end here -->
 
 </head>
@@ -26,44 +26,29 @@
 <body>
 
     <!-- desktop navigation start here -->
-    <nav class="bitez-desktop-navigation">
-        <div class="bitez-container">
-            <div class="bitez-desktop-navigation__wrapper">
-                <div class="bitez-logo">
-                    <a href="" class="bitez-logo__link">
+    <nav class="desktop-navigation">
+        <div class="container">
+            <div class="desktop-navigation__wrapper">
+                <div class="logo">
+                    <a href="" class="logo__link">
                         <img src="assets/media/png/logo/bitez_main.png" alt="bitez">
                     </a>
                 </div>
-                <ul class="bitez-desktop-navigation__list">
-                    <li class="bitez-desktop-navigation__item">
-                        <a href="" class="bitez-desktop-navigation__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                <title xmlns="">burger</title>
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2">
-                                    <path
-                                        d="M5 12a2 2 0 0 1-2-2a9 7 0 0 1 18 0a2 2 0 0 1-2 2l-3.5 4.1c-.8 1-2.4 1.1-3.4.3L7 12" />
-                                    <path
-                                        d="M11.7 16H4a2 2 0 0 1 0-4h16a2 2 0 0 1 0 4h-4.3M5 16a2 2 0 0 0-2 2c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3a2 2 0 0 0-2-2" />
-                                </g>
-                            </svg>
-                            smash burgers
-                        </a>
+                <ul class="desktop-navigation__list">
+                    <li class="desktop-navigation__item">
+                        <a href="" class="desktop-navigation__link">Home</a>
                     </li>
-                    <li class="bitez-desktop-navigation__item">
-                        <a href="" class="bitez-desktop-navigation__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                <title xmlns="">burger-line</title>
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2">
-                                    <path
-                                        d="m15 15l3.379-3.379a2.12 2.12 0 0 1 1.5-.621H20a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h4.515a6 6 0 0 1 4.242 1.757zM3 15h18v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z" />
-                                    <path
-                                        d="M12 4c-4.623 0-8.432 1.756-8.942 6c-.066.55.39 1 .942 1h16c.552 0 1.008-.45.942-1c-.51-4.244-4.319-6-8.942-6M7.001 8H7m5.002 0" />
-                                </g>
-                            </svg>
-                            classic burgers
-                        </a>
+                    <li class="desktop-navigation__item">
+                        <a href="#burger" class="desktop-navigation__link">Burgers</a>
+                    </li>
+                    <li class="desktop-navigation__item">
+                        <a href="#drink" class="desktop-navigation__link">Drinks</a>
+                    </li>
+                    <li class="desktop-navigation__item">
+                        <a href="" class="desktop-navigation__link">Faq</a>
+                    </li>
+                    <li class="desktop-navigation__item">
+                        <a href="" class="desktop-navigation__link">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -72,11 +57,11 @@
     <!-- desktop navigation end here -->
 
     <!-- header start here -->
-    <header class="bitez-slider">
-        <ul class="bitez-slider__list">
-            <li class="bitez-slider__item">
-                <a href="" class="bitez-slider__link">
-                    <img src="assets/media/png/burgers/burgers_2.png" alt="">
+    <header class="slider">
+        <ul class="slider__list">
+            <li class="slider__item">
+                <a href="" class="slider__link">
+                    <img src="assets/media/png/burgers/burgers_1.png" alt="">
                 </a>
             </li>
         </ul>
@@ -84,24 +69,230 @@
     <!-- header end here -->
 
     <!-- burger start here -->
-    <section class="bitez-burger">
-        <h1 class="bitez-burger__heading">Hot Delicious Burger</h1>
-        <div class="bitez-container">
-            <ul class="bitez-filter-tab">
-                 <li class="bitez-filter-tab__item">
-                    all
+    <section id="burger" class="product">
+        <h1 class="product__heading">Hot Delicious Burgers</h1>
+        <div class="container">
+            <menu class="filter-tab burger-filter-tab">
+                <li class="filter-tab__item filter-tab__item--active" data-filter-tab="all">
+                    <h2 class="filter-tab__title">all</h2>
                 </li>
-                <li class="bitez-filter-tab__item">
-                    smash burger
+                <li class="filter-tab__item" data-filter-tab="smash">
+                    <h2 class="filter-tab__title">smash burger</h2>
                 </li>
-                <li class="bitez-filter-tab__item">
-                    classic burger
+                <li class="filter-tab__item" data-filter-tab="chicken">
+                    <h2 class="filter-tab__title">chicken burger</h2>
                 </li>
-            </ul>
-            <ul class="bitez-burger__list"></ul>
+                <li class="filter-tab__item" data-filter-tab="toast_beef">
+                    <h2 class="filter-tab__title">toast beef burger</h2>
+                </li>
+                <li class="filter-tab__item" data-filter-tab="toast_chicken">
+                    <h2 class="filter-tab__title">toast chicken burger</h2>
+                </li>
+            </menu>
+            <menu class="product-card burger-card"></menu>
         </div>
     </section>
     <!-- burger end here -->
+
+    <!-- coffee start here -->
+    <section id="drink" class="product">
+        <h1 class="product__heading">Hot and Cold Delicious Drinks</h1>
+        <div class="container">
+            <menu class="filter-tab coffee-filter-tab">
+                <li class="filter-tab__item filter-tab__item--active" data-filter-tab="all">
+                    <h2 class="filter-tab__title">all</h2>
+                </li>
+                <li class="filter-tab__item" data-filter-tab="mocha">
+                    <h2 class="filter-tab__title">Mocha</h2>
+                </li>
+                <li class="filter-tab__item" data-filter-tab="latte">
+                    <h2 class="filter-tab__title">Latte</h2>
+                </li>
+                <li class="filter-tab__item" data-filter-tab="cappuccino">
+                    <h2 class="filter-tab__title">Cappuccino</h2>
+                </li>
+            </menu>
+            <menu class="product-card coffee-card"></menu>
+        </div>
+    </section>
+    <!-- coffee end here -->
+
+    <!-- footer start here -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <a href="" class="logo__link">
+                            <img src="assets/media/png/logo/bitez_main.png" alt="bitez">
+                        </a>
+                    </div>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptatum odio
+                        exercitationem, soluta sapiente id atque praesentium ipsa molestias voluptate placeat! Doloribus
+                        odit sequi ad laudantium, aliquam nobis repellat exercitationem.
+                    </p> -->
+                </div>
+                <section class="footer-contact">
+                    <h1 class="footer__heading footer-contact__heading">Contact</h1>
+                    <menu class="footer-contact__list">
+                        <li class="footer-conact__item">
+                            <a href="" class="footer-contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-locate-fixed-icon lucide-locate-fixed">
+                                    <line x1="2" x2="5" y1="12" y2="12" />
+                                    <line x1="19" x2="22" y1="12" y2="12" />
+                                    <line x1="12" x2="12" y1="2" y2="5" />
+                                    <line x1="12" x2="12" y1="19" y2="22" />
+                                    <circle cx="12" cy="12" r="7" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Germany (DE), Berlin
+                            </a>
+                        </li>
+                        <li class="footer-conact__item">
+                            <a href="tel:+49" class="footer-contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-smartphone-icon lucide-smartphone">
+                                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                                    <path d="M12 18h.01" />
+                                </svg>
+                                Mobile: (+49)-111-111-111
+                            </a>
+                        </li>
+                        <li class="footer-conact__item">
+                            <a href="mailto:" class="footer-contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+                                Email: bitez@mail.com
+                            </a>
+                        </li>
+                    </menu>
+                </section>
+                <section class="footer-link">
+                    <h1 class="footer__heading footer-link__heading">Links</h1>
+                    <nav class="footer-navigation">
+                        <ul class="footer-navigation__list">
+                            <li class="footer-navigation__item">
+                                <a href="" class="footer-navigation__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-house-icon lucide-house">
+                                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                        <path
+                                            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    </svg>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="" class="footer-navigation__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-hamburger-icon lucide-hamburger">
+                                        <path d="M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25" />
+                                        <path d="M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2" />
+                                        <path
+                                            d="M5 16a2 2 0 0 0-2 2 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 2 2 0 0 0-2-2q0 0 0 0" />
+                                        <path d="m6.67 12 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" />
+                                    </svg>
+                                    Burgers
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="" class="footer-navigation__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-cup-soda-icon lucide-cup-soda">
+                                        <path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" />
+                                        <path d="M5 8h14" />
+                                        <path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" />
+                                        <path d="m12 8 1-6h2" />
+                                    </svg>
+                                    Drinks
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="" class="footer-navigation__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-shield-question-mark-icon lucide-shield-question-mark">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                        <path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
+                                        <path d="M12 17h.01" />
+                                    </svg>
+                                    Faq
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="" class="footer-navigation__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-info-icon lucide-info">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 16v-4" />
+                                        <path d="M12 8h.01" />
+                                    </svg>
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="follow-us">
+                    <h1 class="footer__heading follow-us__heading">Follow Us</h1>
+                    <ul class="social-networks">
+                        <li class="social-networks__item">
+                            <a href="https://instagram.com" class="social-networks__link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    stroke="#ffffff">
+                                    <title xmlns="" stroke="#ffffff">instagram</title>
+                                    <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6zm14-2.9h.5"
+                                            stroke="#ffffff" />
+                                        <path d="M15.462 11.487a3.5 3.5 0 1 1-6.925 1.026a3.5 3.5 0 0 1 6.925-1.026"
+                                            stroke="#ffffff" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="https://whatsapp.com" class="social-networks__link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <title xmlns="">baseline-whatsapp</title>
+                                    <path fill="white"
+                                        d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="https://facebook.com" class="social-networks__link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    stroke="#ffffff">
+                                    <title xmlns="" stroke="#ffffff">facebook</title>
+                                    <path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end here -->
+
+    <!-- <div class="load-screen"></div> -->
 
 </body>
 

@@ -1,0 +1,13 @@
+@use '../../abstracts' as v;
+
+.social-networks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    &__link{
+        font-size: v.$footeLinkFontSize;
+        color: v.$black;
+    }
+}

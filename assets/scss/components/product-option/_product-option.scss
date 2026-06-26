@@ -1,0 +1,41 @@
+.product-option {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .3em;
+
+    &--extra {
+        &::before {
+            content: '+';
+            position: absolute;
+            left: -25%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3em;
+        }
+    }
+
+    &__label {
+        text-align: center;
+        font-size: .65em;
+    }
+
+    &__size,
+    &__price {
+        font-size: 1.3em;
+    }
+
+    &__size,
+    &__label {
+        text-transform: uppercase;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .1em;
+    }
+}

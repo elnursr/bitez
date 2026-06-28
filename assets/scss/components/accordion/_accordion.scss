@@ -1,0 +1,46 @@
+@use '../../abstracts' as v;
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    &__item {
+        // width: 85%;
+        padding: .7em;
+        border-radius: .3em;
+        border: 1px solid v.$black;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__body {
+        overflow: hidden;
+        height: 0;
+        transition: height .3s;
+
+
+    }
+
+    &__icon {
+        display: inline-block;
+        font-size: 1.9em;
+
+        svg {
+            transition: transform .3s;
+        }
+
+        &--active {
+            svg {
+                transform: rotate(135deg);
+            }
+        }
+    }
+}

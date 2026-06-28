@@ -14,7 +14,7 @@ dataService.fetchData('../assets/json/burgers.json')
         bitez.renderProductsToUI({
             products: burgers,
             productType: 'burgers',
-            productOptionType:'patty',
+            productOptionType: 'patty',
             productImageExtension: 'png',
             productCardElement: burgerCardElement
         });
@@ -74,7 +74,7 @@ dataService.fetchData('../assets/json/drinks.json')
         bitez.renderProductsToUI({
             products: drinks,
             productType: 'coffees',
-            productOptionType:'shot',
+            productOptionType: 'shot',
             productImageExtension: 'png',
             productCardElement: coffeeCardElement
         });
@@ -98,3 +98,20 @@ dataService.fetchData('../assets/json/drinks.json')
             });
         }
     })
+
+
+import Accordion from './accordion/index.js'
+
+let accordion = new Accordion({
+    element: document.querySelector('.accordion'),
+    elementItems: document.querySelectorAll('.accordion__item'),
+    headerElements: document.querySelectorAll('.accordion__head'),
+    bodyElements: document.querySelectorAll('.accordion__body'),
+    iconElements: document.querySelectorAll('.accordion__icon'),
+    classNames: {
+        iconClassNames: ['accordion__icon--active']
+    },
+    widthItems:'85%'
+});
+
+accordion.switch();

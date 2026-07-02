@@ -108,10 +108,14 @@ let accordion = new Accordion({
     headerElements: document.querySelectorAll('.accordion__head'),
     bodyElements: document.querySelectorAll('.accordion__body'),
     iconElements: document.querySelectorAll('.accordion__icon'),
+    titleElements: document.querySelectorAll('.accordion__title'),
     classNames: {
-        iconClassNames: ['accordion__icon--active']
+        iconClassName: 'accordion__icon--active',
+        titleClassName: 'accordion__title--active'
     },
-    widthItems:'85%'
+    widthItems: '85%'
 });
 
 accordion.switch();
+
+// accordion.toggle();

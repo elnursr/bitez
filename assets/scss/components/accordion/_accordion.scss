@@ -8,13 +8,14 @@
     gap: 1em;
 
     &__item {
-        // width: 85%;
+        position: relative;
         padding: .7em;
         border-radius: .3em;
         border: 1px solid v.$black;
     }
 
     &__head {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,11 +23,10 @@
     }
 
     &__body {
+        position: relative;
         overflow: hidden;
         height: 0;
         transition: height .3s;
-
-
     }
 
     &__icon {
@@ -39,8 +39,16 @@
 
         &--active {
             svg {
-                transform: rotate(135deg);
+                transform: rotate(315deg);
             }
+        }
+    }
+
+    &__title {
+        transition: color .3s;
+
+        &--active {
+            // color: v.$mainColor;
         }
     }
 }

@@ -25,6 +25,24 @@
   background-color: rgb(0, 0, 0);
 }
 
+.faq {
+  background-image: url("../media/png/shape/shape.png");
+}
+.faq__item {
+  position: relative;
+  background-image: url("../media/png/shape/shape_6.png");
+  background-position: center;
+  background-size: cover;
+}
+.faq__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 211, 73, 0.8);
+}
+
 .logo__link {
   display: block;
   width: 8em;
@@ -67,6 +85,63 @@
   padding: 3em 0;
 }
 
+.career {
+  padding: 7em;
+}
+.career-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.career-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 32%;
+  padding: 1.5em;
+  border-radius: 0.3em;
+  border: 1px solid;
+}
+.career-card__title {
+  text-transform: capitalize;
+}
+.career-card__description {
+  padding: 1em 0;
+}
+.career-card__link {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  padding: 0.5em 0.7em;
+  margin-top: 1em;
+  border-radius: 0.3em;
+  border: 1px solid;
+  color: rgb(0, 0, 0);
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+}
+.career-card__link:hover {
+  background-color: rgb(255, 211, 73);
+}
+.career-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.career-meta__item svg {
+  width: 1em;
+  height: 1em;
+}
+
 .slider {
   padding-top: 7em;
 }
@@ -80,7 +155,6 @@
 }
 
 .product {
-  padding: 7em 0;
   background-image: url("../media/png/shape/shape.png");
 }
 
@@ -198,8 +272,6 @@
   transition: -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
-  -webkit-box-shadow: 0 0 5px 2.5px rgb(255, 255, 255);
-          box-shadow: 0 0 5px 2.5px rgb(255, 255, 255);
 }
 .product-card__item--active {
   display: -webkit-box;
@@ -267,11 +339,6 @@
   font-size: 1em;
 }
 
-.brand__heading {
-  text-align: center;
-  font-size: 3.7em;
-}
-
 .footer-contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,6 +365,15 @@
 .footer-contact__link svg {
   width: 1em;
   height: 1em;
+}
+
+.section-layout {
+  padding: 7em 0 3em;
+}
+.section-layout__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.7em;
 }
 
 .product-option {
@@ -467,11 +543,13 @@
   gap: 1em;
 }
 .accordion__item {
+  position: relative;
   padding: 0.7em;
   border-radius: 0.3em;
   border: 1px solid rgb(0, 0, 0);
 }
 .accordion__head {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,6 +562,7 @@
   cursor: pointer;
 }
 .accordion__body {
+  position: relative;
   overflow: hidden;
   height: 0;
   -webkit-transition: height 0.3s;
@@ -500,6 +579,10 @@
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .accordion__icon--active svg {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+.accordion__title {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }

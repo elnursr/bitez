@@ -1,0 +1,57 @@
+@use '../../abstracts' as v;
+
+.career {
+    padding: 7em;
+
+    &-card {
+        display: flex;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 32%;
+            padding: 1.5em;
+            border-radius: .3em;
+            border: 1px solid;
+
+        }
+
+        &__title {
+            text-transform: capitalize;
+        }
+
+        &__description {
+            padding: 1em 0;
+        }
+
+        &__link {
+            display: block;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: .1em;
+            padding: .5em .7em;
+            margin-top: 1em;
+            border-radius: .3em;
+            border: 1px solid;
+            color: v.$black;
+            transition: .3s background-color;
+
+            &:hover {
+                background-color: v.$mainColor;
+            }
+        }
+    }
+
+    &-meta {
+        display: flex;
+        gap: 1em;
+
+        &__item {
+            svg {
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+}

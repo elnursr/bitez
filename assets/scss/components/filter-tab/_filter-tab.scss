@@ -1,31 +1,6 @@
 @use '../../abstracts' as v;
+@use '../../abstracts/' as mx;
 
 .filter-tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5em;
-    margin: 1em 0;
-
-    &__item {
-        position: relative;
-        cursor: pointer;
-        padding: .3em .9em;
-        font-size: 1.3em;
-        border-radius: .3em;
-        transition: box-shadow .3s;
-        box-shadow: 0 0 2.5px 2.5px inset rgb(223, 223, 223);
-        // border: .09em solid v.$black;
-        // color: v.$white;
-
-        &--active.filter-tab__item {
-            box-shadow: 0 0 2.5px 2.5px inset rgb(95, 95, 95);
-            background-color: #e6ad00;
-        }
-    }
-
-    &__title {
-        text-transform: capitalize;
-        font-size: 1em;
-    }
+    @include mx.filter-tab;
 }

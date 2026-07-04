@@ -1,0 +1,6 @@
+@use '../../../abstracts/' as v;
+@use '../../../abstracts' as mx;
+
+.footer-contact {
+    @include mx.footer-base(column, flex-start, flex-start,none, v.$white);
+}

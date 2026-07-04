@@ -1,0 +1,6 @@
+@use '../../../abstracts/' as v;
+@use '../../../abstracts' as mx;
+
+.footer-navigation {
+    @include mx.footer-base(column, flex-start, flex-start, uppercase, v.$white);
+}

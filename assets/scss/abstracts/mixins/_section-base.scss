@@ -1,5 +1,6 @@
-.section-layout {
-    padding: 7em 0 3em;
+@mixin section-base($backgroundImageUrl:'') {
+    padding: 7em 0;
+    background-image: url($backgroundImageUrl);
 
     &__heading {
         text-transform: uppercase;

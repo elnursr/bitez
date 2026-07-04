@@ -1,5 +1,6 @@
 @use '../../abstracts' as v;
+@use '../../abstracts' as mx;
 
 .product {
-    background-image: url('../media/png/shape/shape.png');
+    @include mx.section-base;
 }

@@ -1,10 +1,10 @@
 {
     "drinks": [
         {
-            "category_name": "mocha",
+            "category_name": "cola",
             "items": [
                 {
-                    "title": "coca_cola",
+                    "title": "coca_cola_caffeine_free",
                     "options": [
                         {
                             "label": "single",
@@ -44,12 +44,7 @@
                         }
                     ],
                     "content": "Our signature espresso meets white chocolate sauce and steamed milk, and then is finished off with sweetened whipped cream to create this supreme white chocolate delight."
-                }
-            ]
-        },
-        {
-            "category_name": "latte",
-            "items": [
+                },
                 {
                     "title": "diet_coke",
                     "options": [
@@ -67,29 +62,11 @@
                         }
                     ],
                     "content": "Smooth Starbucks® Blonde Espresso Roast and steamed milk, infused with sweet and subtle floral notes of lavender.  A delightful springtime twist on a coffeehouse classic."
-                },
-                {
-                    "title": "dr_pepper",
-                    "options": [
-                        {
-                            "label": "single",
-                            "size": "m",
-                            "price": 8,
-                            "isExtra": false
-                        },
-                        {
-                            "size": "xl",
-                            "label": "double",
-                            "price": 12,
-                            "isExtra": true
-                        }
-                    ],
-                    "content": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
                 }
             ]
         },
         {
-            "category_name": "cappuccino",
+            "category_name": "lemon_lime",
             "items": [
                 {
                     "title": "sprite",
@@ -108,6 +85,88 @@
                         }
                     ],
                     "content": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                },
+                {
+                    "title": "sprite_zero_sugar",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 12,
+                            "isExtra": true
+                        }
+                    ],
+                    "content": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                }
+            ]
+        },
+        {
+            "category_name": "fanta",
+            "items": [
+                {
+                    "title": "fanta_orange",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 12,
+                            "isExtra": true
+                        }
+                    ],
+                    "content": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                },
+                {
+                    "title": "fanta_orange_zero_sugar",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 12,
+                            "isExtra": true
+                        }
+                    ],
+                    "content": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                }
+            ]
+        },
+        {
+            "category_name": "soda",
+            "items": [
+                {
+                    "title": "dr_pepper",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 12,
+                            "isExtra": true
+                        }
+                    ],
+                    "content": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
                 }
             ]
         }

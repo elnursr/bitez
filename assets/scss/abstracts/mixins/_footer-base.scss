@@ -1,0 +1,37 @@
+@use '../variables' as v;
+
+@mixin footer-base($flexDirection: row, $mainX: flex-start, $crossX: flex-start, $textType, $iconColor) {
+    &__list {
+        display: flex;
+        flex-direction: $flexDirection;
+        justify-content: $mainX;
+        align-items: $crossX;
+        gap: 1.3em;
+    }
+
+    &__link {
+        display: flex;
+        align-items: flex-end;
+        gap: .3em;
+        letter-spacing: .09em;
+        font-size: v.$footeLinkFontSize;
+        color: v.$white;
+
+        &:hover {
+            h2 {
+                // padding-left: .3em;
+            }
+        }
+    }
+
+    &__title {
+        text-transform: $textType;
+        font-size: v.$footeLinkFontSize;
+        font-weight: 333;
+        transition: padding-left .3s;
+    }
+
+    &__icon {
+        color: $iconColor;
+    }
+}

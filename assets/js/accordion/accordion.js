@@ -8,7 +8,7 @@ export default function Accordion({
     icons = [] | undefined,
     titles = [] | undefined,
     descriptions = [] | undefined,
-    classNames = { iconClassName: '', titleClassName: '' } | undefined,
+    classNames = { iconClassName: '', titleClassName: '' ,headClassName:''} | undefined,
     widthItems = '' | undefined
 }) {
     this.element = element;
@@ -64,6 +64,11 @@ Accordion.prototype.switch = function () {
                 elements: this.titleElements,
                 className: this.classNames.titleClassName
             });
+             this.resetClass({
+                elements: this.headerElements,
+                className: this.classNames.headClassName
+            });
+            this.headerElements[i].classList.add(this.classNames.headClassName);
             this.iconElements[i].classList.add(this.classNames.iconClassName);
             this.titleElements[i].classList.add(this.classNames.titleClassName);
             this.bodyElements[i].style.height = this.bodyElements[i].scrollHeight + 'px';

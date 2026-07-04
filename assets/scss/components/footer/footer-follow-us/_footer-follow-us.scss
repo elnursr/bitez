@@ -1,0 +1,6 @@
+@use '../../../abstracts/' as v;
+@use '../../../abstracts' as mx;
+
+.footer-follow-us {
+    @include mx.footer-base(column, center, center, none, v.$white);
+}

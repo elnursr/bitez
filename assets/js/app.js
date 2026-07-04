@@ -73,7 +73,7 @@ dataService.fetchData('../assets/json/drinks.json')
     .then(({ drinks }) => {
         bitez.renderProductsToUI({
             products: drinks,
-            productType: 'coffees',
+            productType: 'drinks',
             productOptionType: 'shot',
             productImageExtension: 'png',
             productCardElement: coffeeCardElement
@@ -105,13 +105,14 @@ import Accordion from './accordion/index.js'
 let accordion = new Accordion({
     element: document.querySelector('.accordion'),
     elementItems: document.querySelectorAll('.accordion__item'),
-    headerElements: document.querySelectorAll('.accordion__head'),
+    headerElements: document.querySelectorAll('.faq__trigger'),
     bodyElements: document.querySelectorAll('.accordion__body'),
     iconElements: document.querySelectorAll('.accordion__icon'),
     titleElements: document.querySelectorAll('.accordion__title'),
     classNames: {
-        iconClassName: 'accordion__icon--active',
-        titleClassName: 'accordion__title--active'
+        iconClassName: 'faq__icon--active',
+        titleClassName: 'faq__title--active',
+        headClassName: 'faq__trigger--active'
     },
     widthItems: '85%'
 });

@@ -1,4 +1,4 @@
-export function ProductCardItem({title,content}, productType, categoryName, imageExtension) {
+export function ProducItem({title,content}, productType, categoryName, imageExtension) {
     return (
         `
             <li class="product-card__item product-card__item--active" data-filter-category="${categoryName}">

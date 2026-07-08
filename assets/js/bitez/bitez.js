@@ -1,6 +1,5 @@
+import { ProducItem } from '../components/ProducItem.js';
 import { ProductOption } from '../components/ProductOption.js';
-import { ProductCardItem } from '../components/ProductCardItem.js';
-
 
 export default function Bitez() {
 
@@ -31,7 +30,7 @@ Bitez.prototype.renderProductsToUI = function ({ products, productCardElement, p
 
     for (let i = 0; i < productItems.length; i++) {
         let { items, category_name } = productItems[i];
-        htmlContent += ProductCardItem(items, productType, category_name, productImageExtension);
+        htmlContent += ProducItem(items, productType, category_name, productImageExtension);
     }
 
     productCardElement.innerHTML = htmlContent;
@@ -57,4 +56,14 @@ Bitez.prototype.renderOptionsToUI = function ({ options, optionsElement, optionT
 
         optionsElement[i].innerHTML = htmlContent;
     }
+}
+
+Bitez.prototype.renderToUI = function ({ items, itemComponentWrapperElement, itemComponentElement }) {
+    let renderedContent = '';
+
+    for (let i = 0; i < items.length; i++) {
+        console.log(items[i]);
+        renderedContent += itemComponentElement(items[i]);
+    }
+    itemComponentWrapperElement.innerHTML = renderedContent;
 }

@@ -1,4 +1,12 @@
+// import default configs
+import navigationItems from './config/navigationItems.js';
+
+import { FaqItem } from './components/FaqItem.js';
+import { DesktopNavigationItem } from './components/DesktopNavigationItem.js';
+
 import Bitez from './bitez/index.js';
+
+import Accordion from './accordion/index.js'
 
 import { DataService } from './services/DataService.js';
 
@@ -7,6 +15,37 @@ import { burgerCardElement, coffeeCardElement, burgerFilterTabItemElement, coffe
 const bitez = new Bitez();
 
 const dataService = new DataService();
+
+bitez.renderToUI({
+    items: navigationItems,
+    itemComponentElement: DesktopNavigationItem,
+    itemComponentWrapperElement: document.querySelector('.desktop-navigation__list')
+})
+
+dataService.fetchData('../assets/json/faqs.json')
+    .then(({ faqs }) => {
+        bitez.renderToUI({
+            items: faqs,
+            itemComponentElement: FaqItem,
+            itemComponentWrapperElement: document.querySelector('.faq-accordion')
+        });
+
+        let accordion = new Accordion({
+            element: document.querySelector('.faq-accordion'),
+            elementItems: document.querySelectorAll('.faq-accordion__item'),
+            headerElements: document.querySelectorAll('.faq-accordion__head'),
+            bodyElements: document.querySelectorAll('.faq-accordion__body'),
+            iconElements: document.querySelectorAll('.faq-accordion__icon'),
+            titleElements: document.querySelectorAll('.faq-accordion__title'),
+            classNames: {
+                headClassName: 'faq-accordion__head--active',
+                iconClassName: 'faq-accordion__icon--active',
+                titleClassName: 'faq-accordion__title--active'
+            },
+            widthItems: '85%'
+        });
+        accordion.toggle();
+    })
 
 dataService.fetchData('../assets/json/burgers.json')
     .then(({ burgers }) => {
@@ -23,51 +62,34 @@ dataService.fetchData('../assets/json/burgers.json')
         for (let i = 0; i < burgerFilterTabItemElement.length; i++) {
             burgerFilterTabItemElement[i].addEventListener('click', function (e) {
                 e.preventDefault();
+
+                let index = 0;
+
                 for (let i = 0; i < burgerFilterTabItemElement.length; i++) {
                     burgerFilterTabItemElement[i].classList.remove('filter-tab__item--active');
                 }
+
                 burgerFilterTabItemElement[i].classList.add('filter-tab__item--active');
+
                 let filterTab = burgerFilterTabItemElement[i].dataset.filterTab;
+
                 for (let i = 0; i < burgerCardItemElement.length; i++) {
+
                     burgerCardItemElement[i].classList.remove('product-card__item--active');
+
                     let filterCategory = burgerCardItemElement[i].dataset.filterCategory;
+
                     if (filterTab === filterCategory || filterTab === 'all') {
-                        burgerCardItemElement[i].classList.add('product-card__item--active');
+                        setTimeout(function () {
+                            burgerCardItemElement[i].classList.add('product-card__item--active');
+                        }, 111);
+                        burgerCardItemElement[i].style.setProperty('--index', index);
+                        index++;
                     }
                 }
             });
         }
     })
-
-// dataService.fetchData('../assets/json/coffees.json')
-//     .then(({ coffees }) => {
-//         bitez.renderProductsToUI({
-//             products: coffees,
-//             productType: 'coffees',
-//             productOptionType:'shot',
-//             productImageExtension: 'png',
-//             productCardElement: coffeeCardElement
-//         });
-
-//         let coffeeCardItemElement = document.querySelectorAll('.coffee-card .product-card__item');
-//         for (let i = 0; i < coffeeFilterTabItemElement.length; i++) {
-//             coffeeFilterTabItemElement[i].addEventListener('click', function (e) {
-//                 e.preventDefault();
-//                 for (let i = 0; i < coffeeFilterTabItemElement.length; i++) {
-//                     coffeeFilterTabItemElement[i].classList.remove('filter-tab__item--active');
-//                 }
-//                 coffeeFilterTabItemElement[i].classList.add('filter-tab__item--active');
-//                 let filterTab = coffeeFilterTabItemElement[i].dataset.filterTab;
-//                 for (let i = 0; i < coffeeCardItemElement.length; i++) {
-//                     coffeeCardItemElement[i].classList.remove('product-card__item--active');
-//                     let filterCategory = coffeeCardItemElement[i].dataset.filterCategory;
-//                     if (filterTab === filterCategory || filterTab === 'all') {
-//                         coffeeCardItemElement[i].classList.add('product-card__item--active');
-//                     }
-//                 }
-//             });
-//         }
-//     })
 
 dataService.fetchData('../assets/json/drinks.json')
     .then(({ drinks }) => {
@@ -80,43 +102,38 @@ dataService.fetchData('../assets/json/drinks.json')
         });
 
         let coffeeCardItemElement = document.querySelectorAll('.coffee-card .product-card__item');
+
         for (let i = 0; i < coffeeFilterTabItemElement.length; i++) {
+
+
             coffeeFilterTabItemElement[i].addEventListener('click', function (e) {
                 e.preventDefault();
+
+                let index = 0;
+
                 for (let i = 0; i < coffeeFilterTabItemElement.length; i++) {
                     coffeeFilterTabItemElement[i].classList.remove('filter-tab__item--active');
                 }
+
                 coffeeFilterTabItemElement[i].classList.add('filter-tab__item--active');
+
                 let filterTab = coffeeFilterTabItemElement[i].dataset.filterTab;
+
                 for (let i = 0; i < coffeeCardItemElement.length; i++) {
                     coffeeCardItemElement[i].classList.remove('product-card__item--active');
+
                     let filterCategory = coffeeCardItemElement[i].dataset.filterCategory;
+
                     if (filterTab === filterCategory || filterTab === 'all') {
-                        coffeeCardItemElement[i].classList.add('product-card__item--active');
+                        coffeeCardItemElement[i].style.setProperty('--index', index);
+                        coffeeCardItemElement[i].classList.remove('product-card__item--active');
+                        // coffeeCardItemElement[i].classList.add('product-card__item--active');
+                        setTimeout(function () {
+                            coffeeCardItemElement[i].classList.add('product-card__item--active');
+                        }, 111)
+                        index++;
                     }
                 }
             });
         }
     })
-
-
-import Accordion from './accordion/index.js'
-
-let accordion = new Accordion({
-    element: document.querySelector('.accordion'),
-    elementItems: document.querySelectorAll('.accordion__item'),
-    headerElements: document.querySelectorAll('.faq__trigger'),
-    bodyElements: document.querySelectorAll('.accordion__body'),
-    iconElements: document.querySelectorAll('.accordion__icon'),
-    titleElements: document.querySelectorAll('.accordion__title'),
-    classNames: {
-        iconClassName: 'faq__icon--active',
-        titleClassName: 'faq__title--active',
-        headClassName: 'faq__trigger--active'
-    },
-    widthItems: '85%'
-});
-
-accordion.switch();
-
-// accordion.toggle();

@@ -30,60 +30,24 @@
         z-index: 1;
         border-radius: .35em;
         transition: box-shadow .5s;
-        // border: .1em solid v.$black;
-        // box-shadow: 0 0 5px 2.5px v.$black;
-        // background-image: url('../media/png/shape/shape.png');
 
         &--active {
             display: flex;
-            animation: customBounceIn .7s cubic-bezier(0.17, 0.89, 0.32, 1.28);
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: .35em;
-            transition: width .3s;
-            z-index: -1;
-            // background-color: rgba(v.$mainColor, .9);
+            animation-name: customBounceIn;
+            animation-duration: .7s;
+            animation-fill-mode: both;
+            animation-delay: calc(var(--index) * 0.11s);
+            animation-timing-function: cubic-bezier(0.17, 0.89, 0.32, 1.28);
         }
 
         &:hover {
 
             box-shadow: 0 0 5px 2.5px rgb(224, 224, 224);
 
-            .product-card__title {
-                // animation: headShake 1s;
-            }
-
             .product-card__link {
                 img {
                     animation: rubberBand 1.5s infinite;
                 }
-            }
-
-            .product-options {
-                .product-option {
-                    // animation: rubberBand .9s cubic-bezier(0.17, 0.89, 0.32, 1.28);
-                }
-
-                .product-option--extra {
-                    // animation: jello .9s;
-                }
-            }
-
-            .product-card__certificate {
-                img {
-                    // animation: pulse 1.1s;
-                }
-            }
-
-            .product-card__content {
-                // animation: fadeInUp .9s;
             }
         }
     }

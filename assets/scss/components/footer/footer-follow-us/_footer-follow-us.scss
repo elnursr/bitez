@@ -2,5 +2,5 @@
 @use '../../../abstracts' as mx;
 
 .footer-follow-us {
-    @include mx.footer-base(column, center, center, none, v.$white);
+    @include mx.footer-base(column, center, center, v.$white);
 }

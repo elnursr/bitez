@@ -1,7 +1,7 @@
 @import url("../vendors/libraries/css/animate/animate.css");
 @font-face {
   font-family: "agrandir_narrow";
-  src: url("../vendors/fonts/agrandir/agrandir_regular.otf") format("opentype");
+  src: url("../vendors/fonts/agrandir/agrandir_narrow.otf") format("opentype");
 }
 * {
   margin: 0;
@@ -233,15 +233,24 @@ svg {
   font-size: 1em;
   color: rgb(255, 255, 255);
 }
-.footer-contact__title {
-  text-transform: none;
-  font-size: 1em;
-  font-weight: 333;
-  -webkit-transition: padding-left 0.3s;
-  transition: padding-left 0.3s;
-}
 .footer-contact__icon {
   color: rgb(255, 255, 255);
+}
+.footer-contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25em;
+}
+.footer-contact__label {
+  text-transform: capitalize;
+}
+.footer-contact__value {
+  font-size: 1em;
+  font-weight: 333;
 }
 
 .footer-follow-us__list {
@@ -271,13 +280,6 @@ svg {
   letter-spacing: 0.09em;
   font-size: 1em;
   color: rgb(255, 255, 255);
-}
-.footer-follow-us__title {
-  text-transform: none;
-  font-size: 1em;
-  font-weight: 333;
-  -webkit-transition: padding-left 0.3s;
-  transition: padding-left 0.3s;
 }
 .footer-follow-us__icon {
   color: rgb(255, 255, 255);
@@ -311,15 +313,13 @@ svg {
   font-size: 1em;
   color: rgb(255, 255, 255);
 }
+.footer-navigation__icon {
+  color: rgb(255, 255, 255);
+}
 .footer-navigation__title {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 333;
-  -webkit-transition: padding-left 0.3s;
-  transition: padding-left 0.3s;
-}
-.footer-navigation__icon {
-  color: rgb(255, 255, 255);
 }
 
 .career {
@@ -335,6 +335,12 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
 }
 .career-card__item {
   display: -webkit-box;

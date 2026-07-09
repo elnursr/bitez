@@ -1,6 +1,6 @@
 @use '../variables' as v;
 
-@mixin footer-base($flexDirection: row, $mainX: flex-start, $crossX: flex-start, $textType, $iconColor) {
+@mixin footer-base($flexDirection: row, $mainX: flex-start, $crossX: flex-start,$iconColor) {
     &__list {
         display: flex;
         flex-direction: $flexDirection;
@@ -18,17 +18,7 @@
         color: v.$white;
 
         &:hover {
-            h2 {
-                // padding-left: .3em;
-            }
         }
-    }
-
-    &__title {
-        text-transform: $textType;
-        font-size: v.$footeLinkFontSize;
-        font-weight: 333;
-        transition: padding-left .3s;
     }
 
     &__icon {

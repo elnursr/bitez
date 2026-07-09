@@ -1,0 +1,28 @@
+{
+    "careers": [
+        {
+            "title": "accountant",
+            "type": "full",
+            "city": "berlin",
+            "description": "An accountant is a professional in finance who deals with the collection, classification and summary of financial transactions."
+        },
+        {
+            "title": "store manager",
+            "type": "full",
+            "city": "köhln",
+            "description": "A Store Manager, also known as a store manager, is responsible for the day-to-day operation of a retail store."
+        },
+        {
+            "title": "waiter",
+            "type": "part",
+            "city": "köhln",
+            "description": "A Waiter, also known as a waiter, is responsible for the day-to-day operation of a retail store."
+        },
+        {
+            "title": "content creator",
+            "type": "part",
+            "city": "köhln",
+            "description": "We are looking for a person who is responsible for our photo and video production and who helps shape the visual appearance of Goldies. You produce content for social, campaigns, YouTube, and events from recording to post-production."
+        }
+    ]
+}

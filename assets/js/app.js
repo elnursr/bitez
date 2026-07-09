@@ -1,7 +1,14 @@
 // import default configs
 import navigationItems from './config/navigationItems.js';
+import footerContactItems from './config/footerContactItems.js';
+import footerFollowUsItems from './config/footerFollowUsItems.js';
+import footerNavigationItems from './config/footerNavigationItems.js';
 
 import { FaqItem } from './components/FaqItem.js';
+import { CareerItem } from './components/CareerItem.js';
+import { FollowUsItem } from './components/FollowUsItem.js';
+import { FooterContactItem } from './components/FooterContactItem.js'
+import { FooterNavigationItem } from './components/FooterNavigationItem.js';
 import { DesktopNavigationItem } from './components/DesktopNavigationItem.js';
 
 import Bitez from './bitez/index.js';
@@ -10,7 +17,7 @@ import Accordion from './accordion/index.js'
 
 import { DataService } from './services/DataService.js';
 
-import { burgerCardElement, coffeeCardElement, burgerFilterTabItemElement, coffeeFilterTabItemElement } from './dom/dom-selectors.js';
+import { burgerCardElement, coffeeCardElement, burgerFilterTabItemElement, coffeeFilterTabItemElement, desktopNavigationListElement, footerContactListElement, footerFollowUsListElement, footerNavigationListElement } from './dom/dom-selectors.js';
 
 const bitez = new Bitez();
 
@@ -19,9 +26,39 @@ const dataService = new DataService();
 bitez.renderToUI({
     items: navigationItems,
     itemComponentElement: DesktopNavigationItem,
-    itemComponentWrapperElement: document.querySelector('.desktop-navigation__list')
-})
+    itemComponentWrapperElement: desktopNavigationListElement
+});
 
+bitez.renderToUI({
+    items: footerFollowUsItems,
+    itemComponentElement: FollowUsItem,
+    itemComponentWrapperElement: footerFollowUsListElement
+});
+
+bitez.renderToUI({
+    items: footerContactItems,
+    itemComponentElement: FooterContactItem,
+    itemComponentWrapperElement: footerContactListElement
+});
+
+bitez.renderToUI({
+    items: footerNavigationItems,
+    itemComponentElement: FooterNavigationItem,
+    itemComponentWrapperElement: footerNavigationListElement
+});
+
+// get career section content
+dataService.fetchData('../assets/json/careers.json')
+    .then(({ careers }) => {
+        console.log(careers);
+        bitez.renderToUI({
+            items: careers,
+            itemComponentElement: CareerItem,
+            itemComponentWrapperElement: document.querySelector('.career-card')
+        });
+    })
+
+// get faq section content
 dataService.fetchData('../assets/json/faqs.json')
     .then(({ faqs }) => {
         bitez.renderToUI({

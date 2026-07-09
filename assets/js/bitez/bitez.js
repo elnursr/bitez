@@ -62,7 +62,6 @@ Bitez.prototype.renderToUI = function ({ items, itemComponentWrapperElement, ite
     let renderedContent = '';
 
     for (let i = 0; i < items.length; i++) {
-        console.log(items[i]);
         renderedContent += itemComponentElement(items[i]);
     }
     itemComponentWrapperElement.innerHTML = renderedContent;

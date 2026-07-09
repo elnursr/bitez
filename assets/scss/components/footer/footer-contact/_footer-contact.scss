@@ -2,5 +2,19 @@
 @use '../../../abstracts' as mx;
 
 .footer-contact {
-    @include mx.footer-base(column, flex-start, flex-start,none, v.$white);
+    @include mx.footer-base(column, flex-start, flex-start, v.$white);
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: .25em;
+    }
+    &__label{
+        text-transform: capitalize;
+    }
+
+    &__value {
+        font-size: v.$footeLinkFontSize ;
+        font-weight: 333;
+    }
 }

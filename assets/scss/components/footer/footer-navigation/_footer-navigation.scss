@@ -2,5 +2,11 @@
 @use '../../../abstracts' as mx;
 
 .footer-navigation {
-    @include mx.footer-base(column, flex-start, flex-start, uppercase, v.$white);
+    @include mx.footer-base(column, flex-start, flex-start, v.$white);
+
+    &__title {
+        text-transform: uppercase;
+        font-size: v.$footeLinkFontSize;
+        font-weight: 333;
+    }
 }

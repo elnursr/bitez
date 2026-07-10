@@ -10,4 +10,4 @@ export function ProductOption({ size, label, isExtra }, optionType) {
     )
 }
 
-/*<span class="product-option__price">${option.price}</span>*/
+/* <span class="product-option__price">${price}</span> */

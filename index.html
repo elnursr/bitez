@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bitez</title>
+    <title>B!tez</title>
 
     <!-- favicon start here -->
     <link rel="icon" href="assets/media/png/logo/bitez.png">
@@ -25,57 +25,41 @@
 
 <body>
 
-    <!-- desktop navigation start here -->
-    <nav class="desktop-navigation">
-        <div class="container">
-            <div class="desktop-navigation__wrapper">
-                <div class="logo">
-                    <a href="" class="logo__link">
-                        <img src="assets/media/png/logo/bitez_main.png" alt="bitez">
-                    </a>
+    <header>
+        <!-- navigation start here -->
+        <nav class="navigation">
+            <div class="container">
+                <div class="navigation__wrapper">
+                    <div class="logo">
+                        <a href="" class="logo__link">
+                            <img src="assets/media/png/logo/bitez_main.png" alt="bitez">
+                        </a>
+                    </div>
+                    <ul class="navigation__list"></ul>
                 </div>
-                <ul class="desktop-navigation__list"></ul>
             </div>
-        </div>
-    </nav>
-    <!-- desktop navigation end here -->
-
-    <!-- header start here -->
-    <header class="slider">
-        <ul class="slider__list">
-            <li class="slider__item">
-                <a href="" class="slider__link">
-                    <img src="assets/media/png/burgers/burgers_1.png" alt="">
-                </a>
-            </li>
-        </ul>
-        <!-- <video autoplay muted loop class="video-motion">
-            <source src="assets/media/mp4/burger.mp4" type="video/mp4">
-        </video> -->
+        </nav>
+        <!-- navigation end here -->
     </header>
-    <!-- header end here -->
+
+    <main>
+        <section class="hero">
+            <ul class="hero-slider__list">
+                <li class="hero-slider__item">
+                    <!-- <img src="assets/media/png/burgers/burgers_1.png" alt=""> -->
+                    <!-- <video autoplay muted loop class="video-motion">
+                        <source src="assets/media/mp4/burger.mp4" type="video/mp4">
+                    </video> -->
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <!-- burger start here -->
     <section id="burgers" class="product">
         <h1 class="product__heading">hot delicious burgers</h1>
         <div class="container">
-            <menu class="filter-tab burger-filter-tab">
-                <li class="filter-tab__item filter-tab__item--active" data-filter-tab="all">
-                    <h2 class="filter-tab__title">all</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="smash">
-                    <h2 class="filter-tab__title">smash burger</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="chicken">
-                    <h2 class="filter-tab__title">chicken burger</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="toast_beef">
-                    <h2 class="filter-tab__title">toast beef burger</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="toast_chicken">
-                    <h2 class="filter-tab__title">toast chicken burger</h2>
-                </li>
-            </menu>
+            <menu class="filter-tab burger-filter-tab"></menu>
             <menu class="product-card burger-card"></menu>
         </div>
     </section>
@@ -85,24 +69,8 @@
     <section id="soft-drinks" class="product">
         <h1 class="product__heading">Soft Drinks</h1>
         <div class="container">
-            <menu class="filter-tab coffee-filter-tab">
-                <li class="filter-tab__item filter-tab__item--active" data-filter-tab="all">
-                    <h2 class="filter-tab__title">all</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="cola">
-                    <h2 class="filter-tab__title">coca cola</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="lemon_lime">
-                    <h2 class="filter-tab__title">lemon lime</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="fanta">
-                    <h2 class="filter-tab__title">fanta</h2>
-                </li>
-                <li class="filter-tab__item" data-filter-tab="soda">
-                    <h2 class="filter-tab__title">soda</h2>
-                </li>
-            </menu>
-            <menu class="product-card coffee-card"></menu>
+            <menu class="filter-tab soft-drink-filter-tab"></menu>
+            <menu class="product-card soft-drink-card"></menu>
         </div>
     </section>
     <!-- soft drink end here -->
@@ -118,32 +86,9 @@
 
     <!-- career start here -->
     <section id="careers" class="career">
-        <h1 class="career__heading section-layout__heading">career</h1>
+        <h1 class="career__heading">career</h1>
         <div class="container">
-            <ul class="career-card">
-                <!-- <li class="career-card__item">
-                    <h1 class="career-card__title">content creator</h1>
-                    <p class="career-card__description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                        accusantium possimus porro
-                    </p>
-                    <ul class="career-meta">
-                        <li class="career-meta__item career-meta__item--location">
-                            <svg class="career-meta__icon">
-                                <use href="assets/media/svg/icons/icons.svg#icon-location"></use>
-                            </svg>
-                            <h2 class="career-meta__title">kohln</h2>
-                        </li>
-                        <li class="career-meta__item career-meta__item--type">
-                            <svg class="career-meta__icon">
-                                <use href="assets/media/svg/icons/icons.svg#icon-time"></use>
-                            </svg>
-                            <h2 class="career-meta__title">full time</h2>
-                        </li>
-                    </ul>
-                    <a href="mailto:" class="career-card__link">apply now</a>
-                </li> -->
-            </ul>
+            <ul class="career-card"></ul>
         </div>
     </section>
     <!-- career end here -->

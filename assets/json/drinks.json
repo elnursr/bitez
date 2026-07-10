@@ -1,7 +1,7 @@
 {
     "drinks": [
         {
-            "category_name": "cola",
+            "category_name": "coca_cola",
             "items": [
                 {
                     "title": "coca_cola_caffeine_free",

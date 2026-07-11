@@ -1,22 +1,22 @@
 // import default configs
-import burgerFilterTabItems from './config/burgerFilterTabItems.js';
-import softDrinkFilterTabItems from './config/softDrinkFilterTabItems.js';
 import navigationItems from './config/navigationItems.js';
 import footerContactItems from './config/footerContactItems.js';
 import footerFollowUsItems from './config/footerFollowUsItems.js';
+import burgerFilterTabItems from './config/burgerFilterTabItems.js';
 import footerNavigationItems from './config/footerNavigationItems.js';
+import softDrinkFilterTabItems from './config/softDrinkFilterTabItems.js';
 
-import { FilterTabItem } from './components/FilterTabItem.js';
 import { FaqItem } from './components/FaqItem.js';
 import { CareerItem } from './components/CareerItem.js';
 import { FollowUsItem } from './components/FollowUsItem.js';
+import { FilterTabItem } from './components/FilterTabItem.js';
+import { NavigationItem } from './components/NavigationItem.js';
 import { FooterContactItem } from './components/FooterContactItem.js'
 import { FooterNavigationItem } from './components/FooterNavigationItem.js';
-import { NavigationItem } from './components/NavigationItem.js';
 
 import Bitez from './bitez/index.js';
-
 import Accordion from './accordion/index.js'
+import FilterManager from './filter/index.js';
 
 import { DataService } from './services/DataService.js';
 
@@ -30,6 +30,8 @@ import {
 const bitez = new Bitez();
 
 const dataService = new DataService();
+
+const filterManager = new FilterManager();
 
 bitez.renderToUI({
     items: burgerFilterTabItems,
@@ -78,38 +80,10 @@ dataService.fetchData('../assets/json/burgers.json')
             productCardElement: burgerCardElement
         });
 
-        let burgerCardItemElement = document.querySelectorAll('.burger-card .product-card__item'),
-            burgerFilterTabItemElement = document.querySelectorAll('.burger-filter-tab .filter-tab__item');
-        for (let i = 0; i < burgerFilterTabItemElement.length; i++) {
-            burgerFilterTabItemElement[i].addEventListener('click', function (e) {
-                e.preventDefault();
-
-                let index = 0;
-
-                for (let i = 0; i < burgerFilterTabItemElement.length; i++) {
-                    burgerFilterTabItemElement[i].classList.remove('filter-tab__item--active');
-                }
-
-                burgerFilterTabItemElement[i].classList.add('filter-tab__item--active');
-
-                let filterTab = burgerFilterTabItemElement[i].dataset.filterTab;
-
-                for (let i = 0; i < burgerCardItemElement.length; i++) {
-
-                    burgerCardItemElement[i].classList.remove('product-card__item--active');
-
-                    let filterCategory = burgerCardItemElement[i].dataset.filterCategory;
-
-                    if (filterTab === filterCategory || filterTab === 'all') {
-                        setTimeout(function () {
-                            burgerCardItemElement[i].classList.add('product-card__item--active');
-                        }, 111);
-                        burgerCardItemElement[i].style.setProperty('--index', index);
-                        index++;
-                    }
-                }
-            });
-        }
+        filterManager.filterMenu({
+            filteredItems: document.querySelectorAll('.burger-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.burger-filter-tab .filter-tab__item')
+        });
     })
 
 dataService.fetchData('../assets/json/drinks.json')
@@ -122,42 +96,10 @@ dataService.fetchData('../assets/json/drinks.json')
             productCardElement: softDrinkCardElement
         });
 
-        let softDrinkCardItemElement = document.querySelectorAll('.soft-drink-card .product-card__item'),
-            softDrinkFilterTabItemElement = document.querySelectorAll('.soft-drink-filter-tab .filter-tab__item');
-
-        for (let i = 0; i < softDrinkFilterTabItemElement.length; i++) {
-
-
-            softDrinkFilterTabItemElement[i].addEventListener('click', function (e) {
-                e.preventDefault();
-
-                let index = 0;
-
-                for (let i = 0; i < softDrinkFilterTabItemElement.length; i++) {
-                    softDrinkFilterTabItemElement[i].classList.remove('filter-tab__item--active');
-                }
-
-                softDrinkFilterTabItemElement[i].classList.add('filter-tab__item--active');
-
-                let filterTab = softDrinkFilterTabItemElement[i].dataset.filterTab;
-
-                for (let i = 0; i < softDrinkCardItemElement.length; i++) {
-                    softDrinkCardItemElement[i].classList.remove('product-card__item--active');
-
-                    let filterCategory = softDrinkCardItemElement[i].dataset.filterCategory;
-
-                    if (filterTab === filterCategory || filterTab === 'all') {
-                        softDrinkCardItemElement[i].style.setProperty('--index', index);
-                        softDrinkCardItemElement[i].classList.remove('product-card__item--active');
-                        // softDrinkCardItemElement[i].classList.add('product-card__item--active');
-                        setTimeout(function () {
-                            softDrinkCardItemElement[i].classList.add('product-card__item--active');
-                        }, 111)
-                        index++;
-                    }
-                }
-            });
-        }
+        filterManager.filterMenu({
+            filteredItems: document.querySelectorAll('.soft-drink-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.soft-drink-filter-tab .filter-tab__item')
+        });
     })
 
 // get faq section content
@@ -177,11 +119,11 @@ dataService.fetchData('../assets/json/faqs.json')
             iconElements: document.querySelectorAll('.faq-accordion__icon'),
             titleElements: document.querySelectorAll('.faq-accordion__title'),
             classNames: {
-                headClassName: 'faq-accordion__head--active',
                 iconClassName: 'faq-accordion__icon--active',
+                headClassName: 'faq-accordion__head--active',
                 titleClassName: 'faq-accordion__title--active'
             },
-            widthItems: '85%'
+            widthItems: '100%'
         });
         accordion.toggle();
     })

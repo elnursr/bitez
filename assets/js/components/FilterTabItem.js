@@ -3,7 +3,7 @@ export function FilterTabItem({ title, isActive }) {
     return (
         `
             <li class="filter-tab__item ${activeClass}" data-filter-tab="${title}">
-                <h2 class="filter-tab__title">${title}</h2>
+                <h2 class="filter-tab__title">${title.replace(/_/g, '-')}</h2>
             </li>    
         `
     )

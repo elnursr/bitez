@@ -8,7 +8,7 @@ export default function Accordion({
     icons = [] | undefined,
     titles = [] | undefined,
     descriptions = [] | undefined,
-    classNames = { iconClassName: '', titleClassName: '' ,headClassName:''} | undefined,
+    classNames = { iconClassName: '', titleClassName: '', headClassName: '' } | undefined,
     widthItems = '' | undefined
 }) {
     this.element = element;
@@ -34,18 +34,16 @@ Accordion.prototype.toggle = function () {
         let defaultItemHeight = this.elementItems[i].scrollHeight;
         this.headerElements[i].addEventListener('click', function (e) {
             e.preventDefault();
-            this.resetClass({
-                elements: this.titleElements,
-                className: this.classNames.titleClassName
-            });
             this.iconElements[i].classList.add(this.classNames.iconClassName);
             this.titleElements[i].classList.add(this.classNames.titleClassName);
+            this.headerElements[i].classList.add(this.classNames.headClassName);
             this.bodyElements[i].style.height = this.bodyElements[i].scrollHeight + 'px';
             let expandedItemHeight = this.elementItems[i].scrollHeight;
             if (defaultItemHeight < expandedItemHeight) {
                 this.bodyElements[i].style.height = '0px';
                 this.iconElements[i].classList.remove(this.classNames.iconClassName);
                 this.titleElements[i].classList.remove(this.classNames.titleClassName);
+                this.headerElements[i].classList.remove(this.classNames.headClassName);
             }
         }.bind(this));
     }
@@ -64,7 +62,7 @@ Accordion.prototype.switch = function () {
                 elements: this.titleElements,
                 className: this.classNames.titleClassName
             });
-             this.resetClass({
+            this.resetClass({
                 elements: this.headerElements,
                 className: this.classNames.headClassName
             });

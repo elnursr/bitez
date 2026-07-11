@@ -1,6 +1,6 @@
-@use '../../abstracts' as v;
-@use '../../abstracts' as mx;
-@use '../../abstracts/placeholders' as *;
+@use '../../abstracts'as v;
+@use '../../abstracts'as mx;
+@use '../../abstracts/placeholders'as *;
 
 .faq {
     @include mx.section-base;
@@ -32,6 +32,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            user-select: none;
+            border-radius: .3em;
             transition: background-color .3s;
 
             &--active {
@@ -52,7 +54,8 @@
         }
 
         &__title {
-            transition: color .5s;
+            text-transform: uppercase;
+            transition: color .3s;
 
             &--active {
                 color: v.$white;
@@ -62,7 +65,7 @@
         &__icon {
             display: inline-block;
             font-size: 1.9em;
-            transition: color .5s;
+            transition: color .3s;
 
             svg {
                 width: 1.1em;

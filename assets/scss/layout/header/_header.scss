@@ -1,4 +1,5 @@
-@use '../../abstracts' as v;
+@use '../../abstracts'as v;
+@use '../../abstracts'as bp;
 
 .navigation {
     position: fixed;
@@ -6,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 7;
-    background-color: v.$black;
+    background-color: v.$mainColor;
 
     &__wrapper {
         height: 7em;
@@ -19,6 +20,14 @@
     &__list {
         display: flex;
         gap: 1em;
+
+        @include bp.mobile {
+            display: none;
+        }
+
+        @include bp.tablet {
+            display: none;
+        }
     }
 
     &__link {
@@ -27,6 +36,6 @@
         gap: .5em;
         text-transform: uppercase;
         font-size: 1.3em;
-        color: v.$mainColor;
+        color: v.$black;
     }
 }

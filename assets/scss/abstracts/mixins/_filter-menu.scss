@@ -1,28 +1,44 @@
-@use '../variables' as v;
-@use '../placeholders' as *;
+@use '../variables'as v;
+@use '../breakpoints'as bp;
+@use '../placeholders'as *;
 
-@mixin filter-tab {
+@mixin filter-menu {
     @extend %flex-center;
     gap: .5em;
     margin: 1em 0;
+
+    @include bp.mobile {
+        flex-wrap: wrap;
+    }
 
     &__item {
         cursor: pointer;
         user-select: none;
         position: relative;
         padding: .3em .9em;
-        font-size: 1.3em;
         border-radius: .3em;
         transition: background-image .3s;
         border: .09em solid rgb(231, 173, 1);
 
-        &--active.filter-tab__item {
+        &--active {
             background-image: linear-gradient(135deg, rgb(231, 173, 1), rgb(201, 201, 201));
+        }
+
+        @include bp.mobile {
+            text-align: center;
         }
     }
 
     &__title {
         text-transform: capitalize;
-        font-size: 1em;
+        font-size: 1.3em;
+
+        @include bp.mobile {
+            font-size: .9em;
+        }
+
+        @include bp.tablet {
+            font-size: 1em;
+        }
     }
 }

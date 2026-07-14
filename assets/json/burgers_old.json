@@ -227,7 +227,7 @@
             ]
         },
         {
-            "category_name": "toast",
+            "category_name": "toast_beef",
             "items": [
                 {
                     "title": "classic_cheesy",
@@ -264,7 +264,12 @@
                         }
                     ],
                     "content": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, Chilli peppers, Chili-Cheese Sauce"
-                },
+                }
+            ]
+        },
+        {
+            "category_name": "toast_chicken",
+            "items": [
                 {
                     "title": "chicken_spicy",
                     "options": [

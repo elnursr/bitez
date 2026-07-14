@@ -12,11 +12,19 @@ export default [
         "isActive": false
     },
     {
-        "title": 'toast_beef',
+        "title": 'handmade chicken',
         "isActive": false
     },
     {
-        "title": 'toast_chicken',
+        "title": 'toast',
+        "isActive": false
+    },
+    {
+        "title": 'vegan',
+        "isActive": false
+    },
+    {
+        "title": 'fries & loaded fries',
         "isActive": false
     }
 ]

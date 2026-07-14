@@ -58,6 +58,16 @@ Bitez.prototype.renderOptionsToUI = function ({ options, optionsElement, optionT
     }
 }
 
+Bitez.prototype.careersMetaToUI = function ({ metaInfos, metaComponentWrapperElement, metaComponentElement }) {
+    let renderedContent = '';
+
+    for (let i = 0; i < metaInfos.length; i++) {
+        let { title, icon } = metaInfos[i];
+        renderedContent += metaComponentElement({ title, icon });
+    }
+    metaComponentWrapperElement.innerHTML = renderedContent;
+}
+
 Bitez.prototype.renderToUI = function ({ items, itemComponentWrapperElement, itemComponentElement }) {
     let renderedContent = '';
 

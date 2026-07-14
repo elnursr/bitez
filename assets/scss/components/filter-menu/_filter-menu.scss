@@ -1,0 +1,5 @@
+@use '../../abstracts/'as mx;
+
+.filter-menu {
+    @include mx.filter-menu;
+}

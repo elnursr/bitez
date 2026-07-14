@@ -1,6 +1,7 @@
-@use '../../abstracts' as v;
-@use '../../abstracts' as mx;
+@use '../../abstracts'as v;
+@use '../../abstracts'as mx;
+@use '../../abstracts/breakpoints'as bp;
 
 .product {
-    @include mx.section-base;
+    @include mx.section-base('../media/png/shape/shape_4.png');
 }

@@ -1,0 +1,14 @@
+$breakpoint-tablet:48em;
+$breakpoint-desktop:64em;
+
+@mixin mobile {
+    @media (width < $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (width < $breakpoint-desktop) and (width >= $breakpoint-tablet) {
+        @content;
+    }
+}

@@ -1,4 +1,5 @@
 @use '../../../abstracts'as v;
+@use '../../../abstracts'as bp;
 @use '../../../abstracts/animations'as *;
 
 .product-card {
@@ -6,7 +7,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
-    margin: 3em 0;
 
     &__item {
         position: relative;
@@ -39,16 +39,24 @@
                 }
             }
         }
+
+        @include bp.mobile {
+            width: 100%;
+        }
+
+        @include bp.tablet {
+            width: 100%;
+        }
     }
 
     &__title {
+        overflow: hidden;
         text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         text-transform: uppercase;
         font-size: 1.8em;
         padding: .7em 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         width: 9.9em;
     }
 

@@ -1,8 +1,10 @@
-@use '../../abstracts' as v;
-@use '../../abstracts' as mx;
+@use '../../abstracts'as v;
+@use '../../abstracts'as mx;
+@use '../../abstracts'as bp;
 
 .career {
     @include mx.section-base('../media/png/shape/shape.png');
+    padding-bottom: 7em;
 
     &-card {
         display: flex;
@@ -10,7 +12,10 @@
         flex-wrap: wrap;
         gap: 1em;
 
+
         &__item {
+            position: relative;
+            // overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -18,14 +23,44 @@
             padding: 1.5em;
             border-radius: v.$baseBorderRadius;
             border: 1px solid;
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                width: 150%;
+                height: 150%;
+                transform: rotate(45deg);
+                // background-image: conic-gradient(rgba(0, 0, 0, 0.3) 180deg, rgba(255, 209, 73, .3) 180deg);
+            }
+
+            @include bp.mobile {
+                width: 100%;
+                padding: .5em;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            @include bp.tablet {
+                width: 100%;
+            }
         }
 
         &__title {
             text-transform: capitalize;
+
+            @include bp.mobile {
+                font-size: 1.4em;
+            }
         }
 
         &__description {
             padding: 1em 0;
+
+            @include bp.mobile {
+                text-align: center;
+                padding: .5em;
+            }
         }
 
         &__link {
@@ -41,6 +76,10 @@
             transition: .3s background-color;
 
             &:hover {
+                background-color: v.$mainColor;
+            }
+
+            @include bp.mobile {
                 background-color: v.$mainColor;
             }
         }

@@ -1,10 +1,22 @@
+@use '../breakpoints'as bp;
+
 @mixin section-base($backgroundImageUrl:'') {
-    padding: 7em 0;
-    background-image: url($backgroundImageUrl);
+    padding-top: 7em;
+    background-color: #fff5e4;
+    // background-image: url($backgroundImageUrl);
 
     &__heading {
         text-transform: uppercase;
         text-align: center;
         font-size: 3.7em;
+        padding: .3em 0;
+
+        @include bp.mobile {
+            font-size: 2.1em;
+        }
+
+        @include bp.tablet {
+            font-size: 2.5em;
+        }
     }
 }

@@ -2,14 +2,14 @@
 import navigationItems from './config/navigationItems.js';
 import footerContactItems from './config/footerContactItems.js';
 import footerFollowUsItems from './config/footerFollowUsItems.js';
-import burgerFilterTabItems from './config/burgerFilterTabItems.js';
+import burgerFilterMenuItems from './config/burgerFilterMenuItems.js';
 import footerNavigationItems from './config/footerNavigationItems.js';
-import softDrinkFilterTabItems from './config/softDrinkFilterTabItems.js';
+import softDrinkFilterMenuItems from './config/softDrinkFilterMenuItems.js';
 
 import { FaqItem } from './components/FaqItem.js';
 import { CareerItem } from './components/CareerItem.js';
 import { FollowUsItem } from './components/FollowUsItem.js';
-import { FilterTabItem } from './components/FilterTabItem.js';
+import { FilterMenuItem } from './components/FilterMenuItem.js';
 import { NavigationItem } from './components/NavigationItem.js';
 import { FooterContactItem } from './components/FooterContactItem.js'
 import { FooterNavigationItem } from './components/FooterNavigationItem.js';
@@ -25,25 +25,13 @@ import {
     navigationListElement,
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement
-} from './dom/dom-selectors.js';
+} from './dom/index.js';
 
 const bitez = new Bitez();
 
 const dataService = new DataService();
 
 const filterManager = new FilterManager();
-
-bitez.renderToUI({
-    items: burgerFilterTabItems,
-    itemComponentElement: FilterTabItem,
-    itemComponentWrapperElement: document.querySelector('.burger-filter-tab')
-});
-
-bitez.renderToUI({
-    items: softDrinkFilterTabItems,
-    itemComponentElement: FilterTabItem,
-    itemComponentWrapperElement: document.querySelector('.soft-drink-filter-tab')
-});
 
 bitez.renderToUI({
     items: navigationItems,
@@ -69,6 +57,18 @@ bitez.renderToUI({
     itemComponentWrapperElement: footerNavigationListElement
 });
 
+bitez.renderToUI({
+    items: burgerFilterMenuItems,
+    itemComponentElement: FilterMenuItem,
+    itemComponentWrapperElement: document.querySelector('.burger-filter-menu')
+});
+
+bitez.renderToUI({
+    items: softDrinkFilterMenuItems,
+    itemComponentElement: FilterMenuItem,
+    itemComponentWrapperElement: document.querySelector('.soft-drink-filter-menu')
+});
+
 dataService.fetchData('../assets/json/burgers.json')
     .then(({ burgers }) => {
 
@@ -81,8 +81,10 @@ dataService.fetchData('../assets/json/burgers.json')
         });
 
         filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
             filteredItems: document.querySelectorAll('.burger-card .product-card__item'),
-            filterMenuItems: document.querySelectorAll('.burger-filter-tab .filter-tab__item')
+            filterMenuItems: document.querySelectorAll('.burger-filter-menu .filter-menu__item')
         });
     })
 
@@ -97,8 +99,10 @@ dataService.fetchData('../assets/json/drinks.json')
         });
 
         filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
             filteredItems: document.querySelectorAll('.soft-drink-card .product-card__item'),
-            filterMenuItems: document.querySelectorAll('.soft-drink-filter-tab .filter-tab__item')
+            filterMenuItems: document.querySelectorAll('.soft-drink-filter-menu .filter-menu__item')
         });
     })
 
@@ -111,24 +115,27 @@ dataService.fetchData('../assets/json/faqs.json')
             itemComponentWrapperElement: document.querySelector('.faq-accordion')
         });
 
+
+        let items = document.querySelectorAll('.faq-accordion__item');
+
         let accordion = new Accordion({
             element: document.querySelector('.faq-accordion'),
-            elementItems: document.querySelectorAll('.faq-accordion__item'),
-            headerElements: document.querySelectorAll('.faq-accordion__head'),
+            elementItems: items,
+            headElements: document.querySelectorAll('.faq-accordion__head'),
             bodyElements: document.querySelectorAll('.faq-accordion__body'),
-            iconElements: document.querySelectorAll('.faq-accordion__icon'),
             titleElements: document.querySelectorAll('.faq-accordion__title'),
+            iconElements: document.querySelectorAll('.faq-accordion__icon'),
             classNames: {
-                iconClassName: 'faq-accordion__icon--active',
                 headClassName: 'faq-accordion__head--active',
-                titleClassName: 'faq-accordion__title--active'
-            },
-            widthItems: '100%'
+                titleClassName: 'faq-accordion__title--active',
+                iconClassName: 'faq-accordion__icon--active'
+            }
         });
-        accordion.toggle();
+        accordion.switch();
     })
 
 // get career section content
+import { MetaItem } from './components/MetaItem.js';
 dataService.fetchData('../assets/json/careers.json')
     .then(({ careers }) => {
         bitez.renderToUI({

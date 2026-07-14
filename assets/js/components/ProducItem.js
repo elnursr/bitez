@@ -2,7 +2,7 @@ export function ProducItem({title,content}, productType, categoryName, imageExte
     return (
         `
             <li class="product-card__item product-card__item--active" data-filter-category="${categoryName}">
-                <h1 class="product-card__title">${title.replace(/_/g, ' ')}</h1>
+                <h1 class="product-card__title" title="${title.replace(/_/g, ' ')}">${title.replace(/_/g, ' ')}</h1>
                 <a href="" class="product-card__link">
                     <img src="assets/media/${imageExtension}/${productType}/${title}.${imageExtension}" alt="${title}">
                 </a>

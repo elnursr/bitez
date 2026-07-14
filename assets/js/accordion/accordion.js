@@ -1,7 +1,10 @@
+import { removeActiveClasses } from '../dom/index.js';
+
+
 export default function Accordion({
     element = '' | undefined,
     elementItems = [] | undefined,
-    headerElements = [] | undefined,
+    headElements = [] | undefined,
     bodyElements = [] | undefined,
     iconElements = [] | undefined,
     titleElements = [] | undefined,
@@ -13,7 +16,7 @@ export default function Accordion({
 }) {
     this.element = element;
     this.elementItems = elementItems;
-    this.headerElements = headerElements;
+    this.headElements = headElements;
     this.bodyElements = bodyElements;
     this.iconElements = iconElements;
     this.titleElements = titleElements;
@@ -30,43 +33,47 @@ export default function Accordion({
 }
 
 Accordion.prototype.toggle = function () {
-    for (let i = 0; i < this.headerElements.length; i++) {
+    for (let i = 0; i < this.headElements.length; i++) {
         let defaultItemHeight = this.elementItems[i].scrollHeight;
-        this.headerElements[i].addEventListener('click', function (e) {
+        this.headElements[i].addEventListener('click', function (e) {
             e.preventDefault();
             this.iconElements[i].classList.add(this.classNames.iconClassName);
             this.titleElements[i].classList.add(this.classNames.titleClassName);
-            this.headerElements[i].classList.add(this.classNames.headClassName);
+            this.headElements[i].classList.add(this.classNames.headClassName);
             this.bodyElements[i].style.height = this.bodyElements[i].scrollHeight + 'px';
             let expandedItemHeight = this.elementItems[i].scrollHeight;
             if (defaultItemHeight < expandedItemHeight) {
                 this.bodyElements[i].style.height = '0px';
                 this.iconElements[i].classList.remove(this.classNames.iconClassName);
                 this.titleElements[i].classList.remove(this.classNames.titleClassName);
-                this.headerElements[i].classList.remove(this.classNames.headClassName);
+                this.headElements[i].classList.remove(this.classNames.headClassName);
             }
         }.bind(this));
     }
 }
 
 Accordion.prototype.switch = function () {
-    for (let i = 0; i < this.headerElements.length; i++) {
-        this.headerElements[i].addEventListener('click', function (e) {
+    for (let i = 0; i < this.headElements.length; i++) {
+        this.headElements[i].addEventListener('click', function (e) {
             e.preventDefault();
             this.resetHeight();
-            this.resetClass({
+
+            removeActiveClasses({
                 elements: this.iconElements,
-                className: this.classNames.iconClassName
+                activeClass: this.classNames.iconClassName
             });
-            this.resetClass({
+
+            removeActiveClasses({
                 elements: this.titleElements,
-                className: this.classNames.titleClassName
+                activeClass: this.classNames.titleClassName
             });
-            this.resetClass({
-                elements: this.headerElements,
-                className: this.classNames.headClassName
+
+            removeActiveClasses({
+                elements: this.headElements,
+                activeClass: this.classNames.headClassName
             });
-            this.headerElements[i].classList.add(this.classNames.headClassName);
+
+            this.headElements[i].classList.add(this.classNames.headClassName);
             this.iconElements[i].classList.add(this.classNames.iconClassName);
             this.titleElements[i].classList.add(this.classNames.titleClassName);
             this.bodyElements[i].style.height = this.bodyElements[i].scrollHeight + 'px';
@@ -77,11 +84,5 @@ Accordion.prototype.switch = function () {
 Accordion.prototype.resetHeight = function () {
     for (let i = 0; i < this.bodyElements.length; i++) {
         this.bodyElements[i].style.height = '0px';
-    }
-}
-
-Accordion.prototype.resetClass = function ({ elements, className }) {
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].classList.remove(className);
     }
 }

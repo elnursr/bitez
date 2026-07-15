@@ -1,5 +1,6 @@
-@use '../../../abstracts/' as v;
-@use '../../../abstracts' as mx;
+@use '../../../abstracts/'as v;
+@use '../../../abstracts'as mx;
+@use '../../../abstracts'as bp;
 
 .footer-navigation {
     @include mx.footer-base(column, flex-start, flex-start, v.$white);
@@ -8,5 +9,17 @@
         text-transform: uppercase;
         font-size: v.$footeLinkFontSize;
         font-weight: 333;
+
+        @include bp.tablet {
+            font-size: .7em;
+        }
+    }
+
+    &__list {
+        @include bp.mobile {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }

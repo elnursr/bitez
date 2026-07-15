@@ -1,3 +1,5 @@
+@use '../../../abstracts/breakpoints'as bp;
+
 .product-option {
     position: relative;
     display: flex;
@@ -14,17 +16,29 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 1.3em;
+
+            @include bp.mobile {
+                left: -32%;
+            }
         }
     }
 
     &__label {
         text-align: center;
         font-size: .65em;
+
+        @include bp.mobile {
+            font-size: .49em;
+        }
     }
 
     &__size,
     &__price {
         font-size: 1.3em;
+
+        @include bp.mobile {
+            font-size: 1em;
+        }
     }
 
     &__size,

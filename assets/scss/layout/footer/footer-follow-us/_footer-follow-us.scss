@@ -1,6 +1,14 @@
-@use '../../../abstracts/' as v;
-@use '../../../abstracts' as mx;
+@use '../../../abstracts/'as v;
+@use '../../../abstracts'as mx;
+@use '../../../abstracts'as bp;
+
 
 .footer-follow-us {
     @include mx.footer-base(column, center, center, v.$white);
+
+    &__list {
+        @include bp.mobile {
+            flex-direction: row;
+        }
+    }
 }

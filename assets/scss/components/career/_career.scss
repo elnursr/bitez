@@ -4,7 +4,6 @@
 
 .career {
     @include mx.section-base('../media/png/shape/shape.png');
-    padding-bottom: 7em;
 
     &-card {
         display: flex;
@@ -14,24 +13,17 @@
 
 
         &__item {
-            position: relative;
-            // overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 32%;
             padding: 1.5em;
+            transition: box-shadow .5s;
             border-radius: v.$baseBorderRadius;
-            border: 1px solid;
+            border: 1px solid v.$borderCardColor;
 
-            &::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                width: 150%;
-                height: 150%;
-                transform: rotate(45deg);
-                // background-image: conic-gradient(rgba(0, 0, 0, 0.3) 180deg, rgba(255, 209, 73, .3) 180deg);
+            &:hover {
+                box-shadow: 0 0 9px 3.5px v.$mainColor;
             }
 
             @include bp.mobile {
@@ -42,7 +34,8 @@
             }
 
             @include bp.tablet {
-                width: 100%;
+                width: 47%;
+                padding: 1.1em;
             }
         }
 
@@ -71,9 +64,9 @@
             padding: .5em .7em;
             margin-top: 1em;
             border-radius: v.$baseBorderRadius;
-            border: 1px solid;
+            border: 1px solid v.$borderCardColor;
             color: v.$black;
-            transition: .3s background-color;
+            transition: .7s background-color;
 
             &:hover {
                 background-color: v.$mainColor;

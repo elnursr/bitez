@@ -12,12 +12,12 @@ export default [
         url: '#soft-drinks'
     },
     {
-        title: 'faq',
-        url: '#faqs'
-    },
-    {
         title: 'career',
         url: '#careers'
+    },
+    {
+        title: 'faq',
+        url: '#faqs'
     },
     {
         title: 'about-us',

@@ -7,7 +7,11 @@
     left: 0;
     width: 100%;
     z-index: 7;
-    background-color: v.$mainColor;
+    background-color: #1d1d1d;
+
+    @include bp.mobile {}
+
+    @include bp.tablet {}
 
     &__wrapper {
         height: 7em;
@@ -15,6 +19,13 @@
         align-items: center;
         justify-content: space-between;
 
+        @include bp.mobile {
+            height: 5.7em;
+        }
+
+        @include bp.tablet {
+            height: 5.9em;
+        }
     }
 
     &__list {
@@ -35,7 +46,23 @@
         align-items: center;
         gap: .5em;
         text-transform: uppercase;
+        letter-spacing: .09em;
+        font-weight: 615;
         font-size: 1.3em;
-        color: v.$black;
+        color: v.$mainColor;
+    }
+
+    &-menu {
+        cursor: pointer;
+        user-select: none;
+        display: none;
+
+        @include bp.mobile {
+            display: block;
+        }
+
+        @include bp.tablet {
+            display: block;
+        }
     }
 }

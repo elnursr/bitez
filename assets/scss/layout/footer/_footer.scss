@@ -1,8 +1,9 @@
-@use '../../abstracts' as v;
+@use '../../abstracts'as v;
+@use '../../abstracts'as bp;
 
 .footer {
     position: relative;
-    background-image: url('../media/png/shape/shape_2.png');
+    background-image: url('../media/png/shape/shape.png');
     background-size: cover;
     background-position: center;
 
@@ -20,7 +21,18 @@
         padding-bottom: .5em;
         letter-spacing: .1em;
         font-size: 1.8em;
-        color: v.$white
+        color: v.$white;
+
+        @include bp.mobile {
+            text-align: center;
+            padding: 1em 0;
+            font-size: 1.25em;
+            letter-spacing: .17em;
+        }
+
+        @include bp.tablet {
+            font-size: 1.3em;
+        }
     }
 
     &__wrapper {
@@ -28,5 +40,10 @@
         display: flex;
         justify-content: space-between;
         padding: 3em 0;
+
+        @include bp.mobile {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

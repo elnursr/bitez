@@ -1,12 +1,21 @@
-@use '../../../abstracts/' as v;
+@use '../../../abstracts/'as v;
+@use '../../../abstracts'as bp;
 
 .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &__decription {
         font-style: italic;
         font-weight: 555;
         line-height: 1.5em;
         letter-spacing: .011em;
-        color:v.$white;
+        color: v.$white;
+
+        @include bp.tablet {
+            font-size: .7em;
+        }
     }
 
     &__logo {

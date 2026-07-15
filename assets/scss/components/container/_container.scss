@@ -1,5 +1,15 @@
+@use '../../abstracts/breakpoints'as bp;
+
 .container {
     margin: 0 auto;
     // width: 71.31em;
     width: 65%;
+
+    @include bp.mobile {
+        width: 83%;
+    }
+
+    @include bp.tablet {
+        width: 85%;
+    }
 }

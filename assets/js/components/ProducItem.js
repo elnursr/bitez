@@ -1,4 +1,4 @@
-export function ProducItem({title,content}, productType, categoryName, imageExtension) {
+export function ProducItem({ title, description }, productType, categoryName, imageExtension) {
     return (
         `
             <li class="product-card__item product-card__item--active" data-filter-category="${categoryName}">
@@ -7,13 +7,14 @@ export function ProducItem({title,content}, productType, categoryName, imageExte
                     <img src="assets/media/${imageExtension}/${productType}/${title}.${imageExtension}" alt="${title}">
                 </a>
                 <ul class="product-options ${productType}-option"></ul>
-                <p class="product-card__content">${content}</p>
-                <div class="product-card__certificate">
-                    <svg class="product-card__icon" viewBox="0 0 201 201">
-                        <use href="assets/media/svg/icons/icons.svg#icon-halal"></use>
-                    </svg>
-                </div>
+                <p class="product-card__description">${description}</p>
             </li>
         `
     )
 }
+
+/*<div class="product-card__certificate">
+    <svg class="product-card__icon" viewBox="0 0 500 500">
+        <use href="assets/media/svg/icons/icons.svg#icon-halal"></use>
+    </svg>
+</div>*/

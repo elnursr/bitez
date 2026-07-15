@@ -27,10 +27,15 @@
         @include bp.mobile {
             text-align: center;
         }
+
+        @include bp.tablet {
+            padding: .3em .7em;
+        }
     }
 
     &__title {
         text-transform: capitalize;
+        text-align: center;
         font-size: 1.3em;
 
         @include bp.mobile {
@@ -38,7 +43,7 @@
         }
 
         @include bp.tablet {
-            font-size: 1em;
+            font-size: .61em;
         }
     }
 }

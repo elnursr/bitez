@@ -56,6 +56,7 @@ Accordion.prototype.switch = function () {
     for (let i = 0; i < this.headElements.length; i++) {
         this.headElements[i].addEventListener('click', function (e) {
             e.preventDefault();
+
             this.resetHeight();
 
             removeActiveClasses({

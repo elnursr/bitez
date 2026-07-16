@@ -24,8 +24,28 @@ import {
     burgerCardElement, softDrinkCardElement,
     navigationListElement,
     footerNavigationListElement,
-    footerContactListElement, footerFollowUsListElement
+    footerContactListElement, footerFollowUsListElement,
+    syncActiveClasses
 } from './dom/index.js';
+
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+let swiper = new Swiper('.hero', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3555,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+    },
+});
 
 const bitez = new Bitez();
 
@@ -135,7 +155,6 @@ dataService.fetchData('../assets/json/faqs.json')
     })
 
 // get career section content
-import { MetaItem } from './components/MetaItem.js';
 dataService.fetchData('../assets/json/careers.json')
     .then(({ careers }) => {
         bitez.renderToUI({
@@ -144,3 +163,19 @@ dataService.fetchData('../assets/json/careers.json')
             itemComponentWrapperElement: document.querySelector('.career-card')
         });
     })
+
+// setActiveClass({
+//     elements: document.querySelectorAll('.navigation__link'),
+//     activeClass: 'navigation__link--active'
+// });
+
+syncActiveClasses([
+    {
+        elements: document.querySelectorAll('.navigation__link'),
+        activeClass: 'navigation__link--active'
+    },
+    {
+        elements: document.querySelectorAll('.footer-navigation__link'),
+        activeClass: 'footer-navigation__link--active'
+    }
+]);

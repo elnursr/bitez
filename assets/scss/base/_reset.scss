@@ -1,5 +1,5 @@
 // external url font family start here
-// @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('');
 // external url font family end here
 
 // external url font awesome start here
@@ -12,9 +12,13 @@
     src: url('../vendors/fonts/agrandir/agrandir_narrow.otf') format('opentype');
 }
 
-// internal_url_font_family_end_here
+// internal url font family end here
 
-// @import url('../vendors/libraries/css/animate/animate.css');
+// vendors start here
+
+@import url('../vendors/libraries/css/swiper/swiper.min.css');
+
+// vendors end here
 
 // defaults start here
 * {
@@ -26,7 +30,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'agrandir_narrow';
-    // font-family: 'Luckiest Guy';
 }
 
 // defaults end here

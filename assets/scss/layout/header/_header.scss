@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 7;
-    background-color: #1d1d1d;
+    background-color: #000000;
 
     @include bp.mobile {}
 
@@ -42,14 +42,20 @@
     }
 
     &__link {
-        display: flex;
-        align-items: center;
-        gap: .5em;
         text-transform: uppercase;
         letter-spacing: .09em;
-        font-weight: 615;
         font-size: 1.3em;
+        padding: .5em .25em;
+        transition: color .3s, background-color .5s;
+        border-radius: v.$baseBorderRadius;
         color: v.$mainColor;
+
+        &--active {
+            text-shadow: 1.1px 1.1px 4.5px v.$mainColor;
+            // color: v.$black;
+            // box-shadow: 0 0 3px 1.5px v.$mainColor;
+            // background-color: v.$mainColor;
+        }
     }
 
     &-menu {

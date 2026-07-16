@@ -1,9 +1,35 @@
+@use '../../abstracts'as v;
+@use '../../abstracts'as bp;
+@use '../../abstracts/placeholders'as p;
+
 .hero {
     padding-top: 7em;
 
+    @include bp.mobile {
+        padding-top: 5.7em;
+    }
+
+    @include bp.tablet {
+        padding-top: 5.9em;
+    }
+
     &-slider__item {
-        overflow: hidden;
+        position: relative;
         height: 47em;
+
+        @include bp.mobile {
+            height: 16em;
+        }
+
+        @include bp.tablet {
+            height: 23em;
+        }
+
+        // mask-image: linear-gradient(to bottom, transparent, transparent 10%, black 1%, black 80%, transparent 90%, transparent);
+        &::before {
+            @extend %before-after;
+            background-color: rgba(v.$black, .25);
+        }
 
         img {
             aspect-ratio: 16 / 9;

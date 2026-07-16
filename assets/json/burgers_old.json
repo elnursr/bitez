@@ -19,7 +19,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "description": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
                 },
                 {
                     "title": "cheeseburger",
@@ -37,7 +37,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "description": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
                 },
                 {
                     "title": "chili_cheeseburger",
@@ -55,7 +55,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
+                    "description": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
                 },
                 {
                     "title": "7th_street_burger",
@@ -73,7 +73,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Fried onions, Pickled gherkins, B!tez Sauce"
+                    "description": "Smashed Beef Patty, American Cheese, Fried onions, Pickled gherkins, B!tez Sauce"
                 },
                 {
                     "title": "b!tez_special",
@@ -91,7 +91,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, Pickled gherkins, B!tez Sauce"
+                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, Pickled gherkins, B!tez Sauce"
                 },
                 {
                     "title": "b!tez_deluxe",
@@ -109,7 +109,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Iceberg lettuce, Tomato, diced onion, Pickled gherkins, Mayo"
+                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, Tomato, diced onion, Pickled gherkins, Mayo"
                 }
             ]
         },
@@ -132,7 +132,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                    "description": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
                 },
                 {
                     "title": "superme_chicken",
@@ -150,7 +150,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
+                    "description": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
                 },
                 {
                     "title": "golden_slaw_chicken",
@@ -168,7 +168,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
+                    "description": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
                 },
                 {
                     "title": "hot_sweet_chicken",
@@ -186,7 +186,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, Iceberg lettuce, Sweet-Chili Sauce"
+                    "description": "Crispy Chicken Patty, Iceberg lettuce, Sweet-Chili Sauce"
                 },
                 {
                     "title": "chili_chicken",
@@ -204,7 +204,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, Iceberg lettuce, Chilli peppers, Spicy Sauce"
+                    "description": "Crispy Chicken Patty, Iceberg lettuce, Chilli peppers, Spicy Sauce"
                 },
                 {
                     "title": "garlic_parmesan_chicken",
@@ -222,7 +222,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, Parmesan cheese, gherkin, Garlic Sauce"
+                    "description": "Crispy Chicken Patty, Parmesan cheese, gherkin, Garlic Sauce"
                 }
             ]
         },
@@ -245,7 +245,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, B!tez Sauce"
+                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, B!tez Sauce"
                 },
                 {
                     "title": "chili_cheesy",
@@ -263,7 +263,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, Chilli peppers, Chili-Cheese Sauce"
+                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, Chilli peppers, Chili-Cheese Sauce"
                 }
             ]
         },
@@ -286,7 +286,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, Chilli peppers, Spicy Sauce"
+                    "description": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, Chilli peppers, Spicy Sauce"
                 },
                 {
                     "title": "chicken_parmesan_garlicy",
@@ -304,7 +304,7 @@
                             "isExtra": true
                         }
                     ],
-                    "content": "Crispy Chicken Sauce, Parmesan cheese, Iceberg lettuce, Garlic Sauce"
+                    "description": "Crispy Chicken Sauce, Parmesan cheese, Iceberg lettuce, Garlic Sauce"
                 }
             ]
         }

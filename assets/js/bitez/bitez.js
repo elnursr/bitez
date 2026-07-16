@@ -1,3 +1,5 @@
+import { removeActiveClasses } from '../dom/index.js';
+
 import { ProducItem } from '../components/ProducItem.js';
 import { ProductOption } from '../components/ProductOption.js';
 

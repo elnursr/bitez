@@ -3,5 +3,5 @@
 @use '../../abstracts/breakpoints'as bp;
 
 .product {
-    @include mx.section-base('../media/png/shape/shape_4.png');
+    @include mx.section-base();
 }

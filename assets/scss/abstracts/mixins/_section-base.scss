@@ -1,17 +1,16 @@
 @use '../variables'as v;
 @use '../breakpoints'as bp;
 
-@mixin section-base($backgroundImageUrl:'') {
+@mixin section-base() {
     padding-top: 5.7em;
-    background-color: v.$sectionBaseBackground;
-    // background-image: url($backgroundImageUrl);
+    // background-color: v.$sectionBaseBackground;
 
     &__heading {
         text-transform: uppercase;
         text-align: center;
         font-size: 3.7em;
         padding: .3em 0;
-        // text-shadow: -3px -3px 3px v.$mainColor;
+        // color: v.$bitez-secondary;
 
         @include bp.mobile {
             font-size: 1.8em;

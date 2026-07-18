@@ -18,10 +18,10 @@
         padding: .3em .9em;
         border-radius: .3em;
         transition: background-image .3s;
-        border: .09em solid rgb(231, 173, 1);
+        border: .09em solid v.$bitez-secondary;
 
         &--active {
-            background-image: linear-gradient(135deg, rgb(231, 173, 1), rgb(201, 201, 201));
+            background-color: v.$bitez-secondary;
         }
 
         @include bp.mobile {
@@ -37,6 +37,7 @@
         text-transform: capitalize;
         text-align: center;
         font-size: 1.3em;
+        // color: v.$bitez-secondary;
 
         @include bp.mobile {
             font-size: .9em;

@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 7;
-    background-color: #000000;
+    background-color: v.$bitez-primary;
 
     @include bp.mobile {}
 
@@ -43,18 +43,15 @@
 
     &__link {
         text-transform: uppercase;
-        letter-spacing: .09em;
         font-size: 1.3em;
-        padding: .5em .25em;
+        padding: .3em .25em;
         transition: color .3s, background-color .5s;
-        border-radius: v.$baseBorderRadius;
-        color: v.$mainColor;
+        border-bottom: 2.5px solid transparent;
+        color: v.$black;
 
         &--active {
-            text-shadow: 1.1px 1.1px 4.5px v.$mainColor;
-            // color: v.$black;
-            // box-shadow: 0 0 3px 1.5px v.$mainColor;
-            // background-color: v.$mainColor;
+            color: v.$bitez-secondary;
+            border-bottom: 2.5px solid v.$bitez-secondary;
         }
     }
 

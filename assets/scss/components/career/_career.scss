@@ -3,7 +3,8 @@
 @use '../../abstracts'as bp;
 
 .career {
-    @include mx.section-base('../media/png/shape/shape.png');
+    @include mx.section-base();
+    padding-bottom: 5.7em;
 
     &-card {
         display: flex;
@@ -21,10 +22,11 @@
             transition: box-shadow .5s;
             border-radius: v.$baseBorderRadius;
             border: 1px solid v.$borderCardColor;
-            box-shadow: 0 0 9px 3.5px rgb(212, 203, 187);
+            // box-shadow: 0 0 9px 3.5px rgb(212, 203, 187);
+            background-color: v.$card-background-color;
 
             &:hover {
-                box-shadow: 0 0 9px 3.5px rgb(212, 203, 187);
+                // box-shadow: 0 0 9px 3.5px rgb(212, 203, 187);
             }
 
             @include bp.mobile {

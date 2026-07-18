@@ -2,4 +2,13 @@
 
 .filter-menu {
     @include mx.filter-menu;
+
+    &__item {
+        &--active {
+            .filter-menu__title{
+                color:white;
+            }
+        }
+    }
+
 }

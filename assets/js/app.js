@@ -28,24 +28,24 @@ import {
     syncActiveClasses
 } from './dom/index.js';
 
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-let swiper = new Swiper('.hero', {
-    spaceBetween: 0,
-    centeredSlides: true,
-    autoplay: {
-        delay: 3555,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        prevEl: '.swiper-button-prev',
-        nextEl: '.swiper-button-next',
-    },
-});
+// let swiper = new Swiper('.hero', {
+//     spaceBetween: 0,
+//     centeredSlides: true,
+//     autoplay: {
+//         delay: 3555,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     navigation: {
+//         prevEl: '.swiper-button-prev',
+//         nextEl: '.swiper-button-next',
+//     },
+// });
 
 const bitez = new Bitez();
 
@@ -127,32 +127,32 @@ dataService.fetchData('../assets/json/drinks.json')
     })
 
 // get faq section content
-dataService.fetchData('../assets/json/faqs.json')
-    .then(({ faqs }) => {
-        bitez.renderToUI({
-            items: faqs,
-            itemComponentElement: FaqItem,
-            itemComponentWrapperElement: document.querySelector('.faq-accordion')
-        });
+// dataService.fetchData('../assets/json/faqs.json')
+//     .then(({ faqs }) => {
+//         bitez.renderToUI({
+//             items: faqs,
+//             itemComponentElement: FaqItem,
+//             itemComponentWrapperElement: document.querySelector('.faq-accordion')
+//         });
 
 
-        let items = document.querySelectorAll('.faq-accordion__item');
+//         let items = document.querySelectorAll('.faq-accordion__item');
 
-        let accordion = new Accordion({
-            element: document.querySelector('.faq-accordion'),
-            elementItems: items,
-            headElements: document.querySelectorAll('.faq-accordion__head'),
-            bodyElements: document.querySelectorAll('.faq-accordion__body'),
-            titleElements: document.querySelectorAll('.faq-accordion__title'),
-            iconElements: document.querySelectorAll('.faq-accordion__icon'),
-            classNames: {
-                headClassName: 'faq-accordion__head--active',
-                titleClassName: 'faq-accordion__title--active',
-                iconClassName: 'faq-accordion__icon--active'
-            }
-        });
-        accordion.switch();
-    })
+//         let accordion = new Accordion({
+//             element: document.querySelector('.faq-accordion'),
+//             elementItems: items,
+//             headElements: document.querySelectorAll('.faq-accordion__head'),
+//             bodyElements: document.querySelectorAll('.faq-accordion__body'),
+//             titleElements: document.querySelectorAll('.faq-accordion__title'),
+//             iconElements: document.querySelectorAll('.faq-accordion__icon'),
+//             classNames: {
+//                 headClassName: 'faq-accordion__head--active',
+//                 titleClassName: 'faq-accordion__title--active',
+//                 iconClassName: 'faq-accordion__icon--active'
+//             }
+//         });
+//         accordion.switch();
+//     })
 
 // get career section content
 dataService.fetchData('../assets/json/careers.json')
@@ -164,11 +164,6 @@ dataService.fetchData('../assets/json/careers.json')
         });
     })
 
-// setActiveClass({
-//     elements: document.querySelectorAll('.navigation__link'),
-//     activeClass: 'navigation__link--active'
-// });
-
 syncActiveClasses([
     {
         elements: document.querySelectorAll('.navigation__link'),
@@ -176,6 +171,6 @@ syncActiveClasses([
     },
     {
         elements: document.querySelectorAll('.footer-navigation__link'),
-        activeClass: 'footer-navigation__link--active'
+        activeClass: 'navigation__link--active'
     }
 ]);

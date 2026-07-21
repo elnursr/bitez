@@ -1,0 +1,166 @@
+{
+    "cool_drinks": [
+        {
+            "category_name": "coca_cola",
+            "items": [
+                {
+                    "title": "coca_cola",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CARAMEL COLOR, PHOSPHORIC ACID, NATURAL FLAVORS, CAFFEINE."
+                },
+                {
+                    "title": "coca_cola_peach",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Carbonated water, coloring (E150d), acidity regulators (E338, E331), natural flavors (incl. caffeine), sweeteners (aspartame, acesulfame K). Contains a source of phenylalanine."
+                },
+                {
+                    "title": "coca_cola_zero_sugar",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Carbonated water, color (Caramel E150d), acidity regulator (E338, E331), sweetener (aspartame, acesulfame K), natural flavors, aroma caffeine. Contains a source of phenylalanine."
+                }
+            ]
+        },
+        {
+            "category_name": "lemon_lime",
+            "items": [
+                {
+                    "title": "sprite",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                }
+            ]
+        },
+        {
+            "category_name": "fanta",
+            "items": [
+                {
+                    "title": "fanta",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                }
+            ]
+        },
+        {
+            "category_name": "mezzo",
+            "items": [
+                {
+                    "title": "mezzo_mix",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
+                }
+            ]
+        },
+        {
+            "category_name": "water",
+            "items": [
+                {
+                    "title": "adelholzener_natural",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.2,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
+                },
+                {
+                    "title": "adelholzener_sparkling",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.2,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
+                }
+            ]
+        },
+        {
+            "category_name": "limonade",
+            "items": [
+                {
+                    "title": "blueberry",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.5,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
+                },
+                {
+                    "title": "peach",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.5,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
+                },
+                {
+                    "title": "lemon",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.5,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Flavors of sweet pistachio and a brown-buttery topping paired with espresso and steamed milk, specially crafted to keep you comforted and energized."
+                }
+            ]
+        }
+    ]
+}

@@ -48,40 +48,44 @@
     </header>
 
     <main>
-        <section class="hero-slider">
-            <div class="container">
-                <ul class="hero-slider__list swiper-wrapper">
-                    <li class="hero-slider__item swiper-slide">
-                        <!-- <video autoplay muted loop class="video-motion">
-                        <source src="assets/media/mp4/burger.mp4" type="video/mp4">
-                    </video> -->
-                        <div class="hero-slider__content">
-                            <h1 class="hero-slider__title">smash burgers</h1>
-                            <div class="hero-slider__label">
-                                100% beef. fresh. halal. handmade
-                            </div>
+        <section class="hero-slider swiper ">
+            <ul class="hero-slider__list swiper-wrapper">
+                <li class="hero-slider__item swiper-slide">
+                    <div class="hero-slider__content">
+                        <h3 class="hero-slider__suptitle">hot delicious</h3>
+                        <h1 class="hero-slider__title">smash</h1>
+                        <h3 class="hero-slider__subtitle">burger</h3>
+                        <div class="hero-slider__label">
+                            100% beef. fresh. halal. handmade
                         </div>
-                        <div class="hero-slider__image">
-                            <img src="assets/media/png/burgers/hero/burger.png" alt="hero_1">
+                    </div>
+                    <div class="hero-slider__image">
+                        <img src="assets/media/png/hero/smash_hero_2.png" alt="smash_hero_2">
+                    </div>
+                </li>
+                <li class="hero-slider__item swiper-slide">
+                    <div class="hero-slider__content">
+                        <h3 class="hero-slider__suptitle">hot delicious</h3>
+                        <h1 class="hero-slider__title">chicken</h1>
+                        <h3 class="hero-slider__subtitle">wraps</h3>
+                        <div class="hero-slider__label">
+                            100% beef. fresh. halal. handmade
                         </div>
-                    </li>
-                    <li class="hero-slider__item swiper-slide">
-                        <!-- <img src="assets/media/jpg/hero/hero_2.jpg" alt="hero_2"> -->
-                    </li>
-                    <li class="hero-slider__item swiper-slide">
-                        <!-- <img src="assets/media/jpg/hero/hero_3.jpg" alt="hero_3"> -->
-                    </li>
-                </ul>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+                    </div>
+                    <div class="hero-slider__image">
+                        <img src="assets/media/png/wraps/wrap.png" alt="wrap">
+                    </div>
+                </li>
+            </ul>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </section>
     </main>
 
     <!-- burger start here -->
     <section id="burgers" class="product burger">
-        <h1 class="product__heading burger__heading">hot delicious burgers</h1>
+        <h1 class="product__heading burger__heading">burgers</h1>
         <div class="container">
             <menu class="filter-menu burger-filter-menu"></menu>
             <ul class="product-card burger-card"></ul>
@@ -89,15 +93,35 @@
     </section>
     <!-- burger end here -->
 
-    <!-- soft-drink start here -->
-    <section id="soft-drinks" class="product">
-        <h1 class="product__heading">Soft-Drinks</h1>
+    <!-- sides start here -->
+    <section id="sides" class="product side">
+        <h1 class="product__heading side__heading">sides</h1>
         <div class="container">
-            <menu class="filter-menu soft-drink-filter-menu"></menu>
-            <ul class="product-card soft-drink-card"></ul>
+            <menu class="filter-menu side-filter-menu"></menu>
+            <ul class="product-card side-card"></ul>
         </div>
     </section>
-    <!-- soft-drink end here -->
+    <!-- burger end here -->
+
+    <!-- cool-drink start here -->
+    <section id="cool-drinks" class="product">
+        <h1 class="product__heading">Cool-Drinks</h1>
+        <div class="container">
+            <menu class="filter-menu cool-drink-filter-menu"></menu>
+            <ul class="product-card cool-drink-card"></ul>
+        </div>
+    </section>
+    <!-- cool-drink end here -->
+
+    <!-- hot-drink start here -->
+    <section id="hot-drinks" class="product">
+        <h1 class="product__heading">Hot-Drinks</h1>
+        <div class="container">
+            <menu class="filter-menu hot-drink-filter-menu"></menu>
+            <ul class="product-card hot-drink-card"></ul>
+        </div>
+    </section>
+    <!-- hot-drink end here -->
 
     <!-- career start here -->
     <section id="careers" class="career">

@@ -1,4 +1,4 @@
-export function ProductOption({ size, label, isExtra }, optionType) {
+export function ProductOption({ size, label, price, isExtra }, optionType) {
     let extraClass = isExtra ? 'product-option--extra' : '';
     return (
         `
@@ -9,5 +9,4 @@ export function ProductOption({ size, label, isExtra }, optionType) {
         `
     )
 }
-
-/* <span class="product-option__price">${price}</span> */
+/*<span class="product-option__price">${price}</span>*/

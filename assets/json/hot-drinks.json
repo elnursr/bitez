@@ -1,0 +1,145 @@
+{
+    "hot_drinks": [
+        {
+            "category_name": "coffee",
+            "items": [
+                {
+                    "title": "coffee",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.2,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 2.7,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "cappuccino",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 3.3,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "latte_macchiato",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.2,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 3.7,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": "Our signature espresso meets white chocolate sauce and steamed milk, and then is finished off with sweetened whipped cream to create this supreme white chocolate delight."
+                },
+                {
+                    "title": "espresso",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.2,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 2.5,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "hot_chocolate",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 3.3,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "tea",
+            "items": [
+                {
+                    "title": "tea",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 2.7,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": "Smooth Starbucks® Blonde Espresso Roast and steamed milk, infused with sweet and subtle floral notes of lavender.  A delightful springtime twist on a coffeehouse classic."
+                }
+            ]
+        },
+        {
+            "category_name": "cappuccino",
+            "items": [
+                {
+                    "title": "cappuccino",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 12,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft."
+                }
+            ]
+        }
+    ]
+}

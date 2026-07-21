@@ -8,7 +8,14 @@
 
 // internal url font family start here
 @font-face {
+    font-family: 'agrandir_narrow';
+    font-weight: 555;
+    src: url('../vendors/fonts/agrandir/agrandir_narrow.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'agrandir_narrow_black';
+    font-weight: 555;
     src: url('../vendors/fonts/agrandir/agrandir_narrow_black.otf') format('opentype');
 }
 
@@ -29,8 +36,7 @@
     list-style-type: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-weight: 555;
-    font-family: 'agrandir_narrow_black';
+    font-family: 'agrandir_narrow';
 }
 
 // defaults end here

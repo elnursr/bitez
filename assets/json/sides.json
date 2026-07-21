@@ -1,0 +1,92 @@
+{
+    "sides": [
+        {
+            "category_name": "fries",
+            "items": [
+                {
+                    "title": "currywurst_with_chips",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                },
+                {
+                    "title": "currywurst",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 4.5,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                },
+                {
+                    "title": "plain_chips",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.1,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 4.1,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
+                }
+            ]
+        },
+        {
+            "category_name": "loaded_fries",
+            "items": [
+                {
+                    "title": "garlic_parmesan",
+                    "options": [
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                },
+                {
+                    "title": "hot_chicken",
+                    "options": [
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
+                },
+                {
+                    "title": "chili_cheese",
+                    "options": [
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
+                }
+            ]
+        }
+    ]
+}

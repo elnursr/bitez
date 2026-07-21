@@ -3,8 +3,10 @@ import navigationItems from './config/navigationItems.js';
 import footerContactItems from './config/footerContactItems.js';
 import footerFollowUsItems from './config/footerFollowUsItems.js';
 import burgerFilterMenuItems from './config/burgerFilterMenuItems.js';
+import sidesFilterMenuItems from './config/sidesFilterMenuItems.js';
 import footerNavigationItems from './config/footerNavigationItems.js';
-import softDrinkFilterMenuItems from './config/softDrinkFilterMenuItems.js';
+import hotDrinkFilterMenuItems from './config/hotDrinkFilterMenuItems.js';
+import coolDrinkFilterMenuItems from './config/coolDrinkFilterMenuItems.js';
 
 import { FaqItem } from './components/FaqItem.js';
 import { CareerItem } from './components/CareerItem.js';
@@ -21,31 +23,31 @@ import FilterManager from './filter/index.js';
 import { DataService } from './services/DataService.js';
 
 import {
-    burgerCardElement, softDrinkCardElement,
+    burgerCardElement, sideCardElement, coolDrinkCardElement, hotDrinkCardElement,
     navigationListElement,
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement,
     syncActiveClasses
 } from './dom/index.js';
 
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-// let swiper = new Swiper('.hero', {
-//     spaceBetween: 0,
-//     centeredSlides: true,
-//     autoplay: {
-//         delay: 3555,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//     },
-//     navigation: {
-//         prevEl: '.swiper-button-prev',
-//         nextEl: '.swiper-button-next',
-//     },
-// });
+let swiper = new Swiper('.hero-slider', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3555,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+    },
+});
 
 const bitez = new Bitez();
 
@@ -84,9 +86,21 @@ bitez.renderToUI({
 });
 
 bitez.renderToUI({
-    items: softDrinkFilterMenuItems,
+    items: sidesFilterMenuItems,
     itemComponentElement: FilterMenuItem,
-    itemComponentWrapperElement: document.querySelector('.soft-drink-filter-menu')
+    itemComponentWrapperElement: document.querySelector('.side-filter-menu')
+});
+
+bitez.renderToUI({
+    items: coolDrinkFilterMenuItems,
+    itemComponentElement: FilterMenuItem,
+    itemComponentWrapperElement: document.querySelector('.cool-drink-filter-menu')
+});
+
+bitez.renderToUI({
+    items: hotDrinkFilterMenuItems,
+    itemComponentElement: FilterMenuItem,
+    itemComponentWrapperElement: document.querySelector('.hot-drink-filter-menu')
 });
 
 dataService.fetchData('../assets/json/burgers.json')
@@ -108,21 +122,58 @@ dataService.fetchData('../assets/json/burgers.json')
         });
     })
 
-dataService.fetchData('../assets/json/drinks.json')
-    .then(({ drinks }) => {
+dataService.fetchData('../assets/json/sides.json')
+    .then(({ sides }) => {
+
         bitez.renderProductsToUI({
-            products: drinks,
-            productType: 'drinks',
-            productOptionType: 'shot',
+            products: sides,
+            productType: 'sides',
+            productOptionType: 'patty',
             productImageExtension: 'png',
-            productCardElement: softDrinkCardElement
+            productCardElement: sideCardElement
         });
 
         filterManager.filterMenu({
             menuActiveClassName: 'filter-menu__item--active',
             itemActiveClassName: 'product-card__item--active',
-            filteredItems: document.querySelectorAll('.soft-drink-card .product-card__item'),
-            filterMenuItems: document.querySelectorAll('.soft-drink-filter-menu .filter-menu__item')
+            filteredItems: document.querySelectorAll('.side-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.side-filter-menu .filter-menu__item')
+        });
+    })
+
+dataService.fetchData('../assets/json/cool-drinks.json')
+    .then(({ cool_drinks }) => {
+        bitez.renderProductsToUI({
+            products: cool_drinks,
+            productType: 'cool-drinks',
+            productOptionType: 'shot',
+            productImageExtension: 'png',
+            productCardElement: coolDrinkCardElement
+        });
+
+        filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
+            filteredItems: document.querySelectorAll('.cool-drink-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.cool-drink-filter-menu .filter-menu__item')
+        });
+    })
+
+dataService.fetchData('../assets/json/hot-drinks.json')
+    .then(({ hot_drinks }) => {
+        bitez.renderProductsToUI({
+            products: hot_drinks,
+            productType: 'hot-drinks',
+            productOptionType: 'shot',
+            productImageExtension: 'png',
+            productCardElement: hotDrinkCardElement
+        });
+
+        filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
+            filteredItems: document.querySelectorAll('.hot-drink-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.hot-drink-filter-menu .filter-menu__item')
         });
     })
 
@@ -171,6 +222,6 @@ syncActiveClasses([
     },
     {
         elements: document.querySelectorAll('.footer-navigation__link'),
-        activeClass: 'navigation__link--active'
+        activeClass: 'footer__link--active'
     }
 ]);

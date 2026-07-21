@@ -2,11 +2,15 @@
     &-pagination-bullet {
         width: .9em;
         height: .9em;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(223, 23, 95);
     }
 
     &-button-next,
     &-button-prev {
-        color: rgb(255, 255, 255);
+        color: rgb(223, 23, 95);
+    }
+
+    &-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 0;
     }
 }

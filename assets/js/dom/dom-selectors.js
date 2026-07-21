@@ -1,5 +1,7 @@
 export const burgerCardElement = document.querySelector('.burger-card'),
-    softDrinkCardElement = document.querySelector('.soft-drink-card'),
+    sideCardElement = document.querySelector('.side-card'),
+    coolDrinkCardElement = document.querySelector('.cool-drink-card'),
+    hotDrinkCardElement = document.querySelector('.hot-drink-card'),
     navigationListElement = document.querySelector('.navigation__list'),
     footerContactListElement = document.querySelector('.footer-contact__list'),
     footerNavigationListElement = document.querySelector('.footer-navigation__list'),

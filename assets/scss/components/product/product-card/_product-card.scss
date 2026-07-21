@@ -1,5 +1,6 @@
 @use '../../../abstracts'as v;
 @use '../../../abstracts'as bp;
+@use '../../../abstracts/placeholders'as p;
 @use '../../../abstracts/animations'as *;
 
 .product-card {
@@ -15,10 +16,12 @@
     &__item {
         position: relative;
         display: none;
-        flex-direction: column;
-        align-items: center;
+        // flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
         padding: 1.5em 1.3em;
         width: 32%;
+        // width: 37%;
         z-index: 1;
         border-radius: .35em;
         transition: box-shadow .5s;
@@ -33,8 +36,17 @@
             animation-timing-function: cubic-bezier(0.17, 0.89, 0.32, 1.28);
         }
 
+        &::after {
+            @extend %before-after;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('../media/svg/noise.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
         &:hover {
-            border: 1.5px solid rgba(v.$bitez-secondary, .7);
             // box-shadow: 0 0 5px 2.5px rgb(212, 203, 187);
 
             .product-card__link {
@@ -55,16 +67,41 @@
         }
     }
 
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__right-side {
+        position: absolute;
+        bottom: 13%;
+        right: -3%;
+    }
+
     &__title {
+        position: relative;
         overflow: hidden;
-        text-align: center;
+        // text-align: center;
         white-space: nowrap;
         text-overflow: ellipsis;
         text-transform: uppercase;
-        font-size: 1.8em;
+        // font-size: 1.8em;
+        font-size: 1.5em;
+        font-weight: 755;
         padding: .7em 0;
-        width: 9.9em;
+        width: 13.9em;
         color: v.$bitez-secondary;
+
+        &::after {
+            @extend %before-after;
+            top: 71%;
+            width: 39%;
+            height: 18%;
+            background-image: url('../media/svg/line.svg');
+            background-size: cover;
+            background-position: center;
+        }
 
         @include bp.mobile {
             font-size: 1.3em;
@@ -79,8 +116,11 @@
     &__link {
         text-align: center;
         display: block;
-        width: 15em;
-        height: 12em;
+        width: 13em;
+        height: 9em;
+        // width: 15em;
+        // height: 12em;
+
 
         img {
             max-width: 100%;
@@ -113,9 +153,11 @@
     // }
 
     &__description {
-        text-align: center;
-        font-weight: 115;
-        font-size: 1em;
+        // text-align: center;
+        // font-size: 1em
+        width: 51%;
+        font-size: .8em;
+        line-height: 1.3em;
 
         @include bp.mobile {
             font-size: .8em;

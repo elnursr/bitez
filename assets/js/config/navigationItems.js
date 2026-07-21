@@ -1,26 +1,37 @@
 export default [
     {
         title: 'home',
-        url: '#'
+        url: '#',
+        "isActive": true
     },
     {
         title: 'burgers',
-        url: '#burgers'
+        url: '#burgers',
+        "isActive": false
     },
     {
-        title: 'soft-drinks',
-        url: '#soft-drinks'
+        title: 'sides',
+        url: '#sides',
+        "isActive": false
+    },
+    {
+        title: 'cool-drinks',
+        url: '#cool-drinks',
+        "isActive": false
+    },
+    {
+        title: 'hot-drinks',
+        url: '#hot-drinks',
+        "isActive": false
     },
     {
         title: 'career',
-        url: '#careers'
-    },
-    {
-        title: 'faq',
-        url: '#faqs'
+        url: '#careers',
+        "isActive": false
     },
     {
         title: 'about-us',
-        url: '#about-us'
+        url: '#about-us',
+        "isActive": false
     },
 ];

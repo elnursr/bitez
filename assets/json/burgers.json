@@ -11,15 +11,9 @@
                             "size": "m",
                             "price": 6.9,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
                 },
                 {
                     "title": "cheeseburger",
@@ -29,15 +23,9 @@
                             "size": "m",
                             "price": 6.9,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
                 },
                 {
                     "title": "chili_cheeseburger",
@@ -45,17 +33,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.9,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
                 },
                 {
                     "title": "7th_street_burger",
@@ -63,17 +45,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.9,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Fried onions, Pickled gherkins, B!tez Sauce"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Fried onions, Pickled gherkins, B!tez Sauce"
                 },
                 {
                     "title": "b!tez_special",
@@ -81,17 +57,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.9,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, Pickled gherkins, B!tez Sauce"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, Pickled gherkins, B!tez Sauce"
                 },
                 {
                     "title": "b!tez_deluxe",
@@ -99,17 +69,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.9,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, Tomato, diced onion, Pickled gherkins, Mayo"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, Tomato, diced onion, Pickled gherkins, Mayo"
                 }
             ]
         },
@@ -122,35 +86,23 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 8.99,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
                 },
                 {
-                    "title": "superme_chicken",
+                    "title": "supreme_chicken",
                     "options": [
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 8.99,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
+                    "ingredients": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
                 },
                 {
                     "title": "golden_slaw_chicken",
@@ -158,17 +110,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 8.99,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
                 },
                 {
                     "title": "hot_sweet_chicken",
@@ -176,53 +122,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 8.99,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Crispy Chicken Patty, Iceberg lettuce, Sweet-Chili Sauce"
-                },
-                {
-                    "title": "chili_chicken",
-                    "options": [
-                        {
-                            "label": "single",
-                            "size": "m",
-                            "price": 8.99,
-                            "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
-                        }
-                    ],
-                    "description": "Crispy Chicken Patty, Iceberg lettuce, Chilli peppers, Spicy Sauce"
-                },
-                {
-                    "title": "garlic_parmesan_chicken",
-                    "options": [
-                        {
-                            "label": "single",
-                            "size": "m",
-                            "price": 8.99,
-                            "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
-                        }
-                    ],
-                    "description": "Crispy Chicken Patty, Parmesan cheese, gherkin, Garlic Sauce"
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Sweet-Chili Sauce"
                 }
             ]
         },
@@ -235,17 +139,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.9,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, B!tez Sauce"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, B!tez Sauce"
                 },
                 {
                     "title": "chili_cheesy",
@@ -253,17 +151,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.9,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.0,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, Chilli peppers, Chili-Cheese Sauce"
+                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, Chilli peppers, Chili-Cheese Sauce"
                 },
                 {
                     "title": "chicken_spicy",
@@ -271,35 +163,23 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 8.99,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, Chilli peppers, Spicy Sauce"
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, Chilli peppers, Spicy Sauce"
                 },
                 {
-                    "title": "chicken_parmesan_garlicy",
+                    "title": "chicken_parmesan",
                     "options": [
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 8.99,
+                            "price": 7.5,
                             "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 2.7,
-                            "isExtra": true
                         }
                     ],
-                    "description": "Crispy Chicken Sauce, Parmesan cheese, Iceberg lettuce, Garlic Sauce"
+                    "ingredients": "Crispy Chicken Sauce, Parmesan cheese, Iceberg lettuce, Garlic Sauce"
                 }
             ]
         }

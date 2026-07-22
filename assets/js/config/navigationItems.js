@@ -10,6 +10,11 @@ export default [
         "isActive": false
     },
     {
+        title: 'wraps',
+        url: '#wraps',
+        "isActive": false
+    },
+    {
         title: 'sides',
         url: '#sides',
         "isActive": false

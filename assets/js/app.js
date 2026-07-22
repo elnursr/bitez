@@ -177,6 +177,27 @@ dataService.fetchData('../assets/json/hot-drinks.json')
         });
     })
 
+// get career section content
+dataService.fetchData('../assets/json/careers.json')
+    .then(({ careers }) => {
+        bitez.renderToUI({
+            items: careers,
+            itemComponentElement: CareerItem,
+            itemComponentWrapperElement: document.querySelector('.career-card')
+        });
+    })
+
+syncActiveClasses([
+    {
+        elements: document.querySelectorAll('.navigation__link'),
+        activeClass: 'navigation__link--active'
+    },
+    {
+        elements: document.querySelectorAll('.footer-navigation__link'),
+        activeClass: 'footer__link--active'
+    }
+]);
+
 // get faq section content
 // dataService.fetchData('../assets/json/faqs.json')
 //     .then(({ faqs }) => {
@@ -204,24 +225,3 @@ dataService.fetchData('../assets/json/hot-drinks.json')
 //         });
 //         accordion.switch();
 //     })
-
-// get career section content
-dataService.fetchData('../assets/json/careers.json')
-    .then(({ careers }) => {
-        bitez.renderToUI({
-            items: careers,
-            itemComponentElement: CareerItem,
-            itemComponentWrapperElement: document.querySelector('.career-card')
-        });
-    })
-
-syncActiveClasses([
-    {
-        elements: document.querySelectorAll('.navigation__link'),
-        activeClass: 'navigation__link--active'
-    },
-    {
-        elements: document.querySelectorAll('.footer-navigation__link'),
-        activeClass: 'footer__link--active'
-    }
-]);

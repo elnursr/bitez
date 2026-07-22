@@ -1,11 +1,21 @@
 .cool-drink-card {
-    .product-card__link {
-        width: 15em;
-        height: 11em;
+
+    [data-filter-category="limonade"] {
+        .product-card__right-side {
+            .product-card__link {
+                width: 15em;
+                height: 9em;
+            }
+        }
     }
 
     .product-card__right-side {
         bottom: 3%;
         right: -3%;
+
+        .product-card__link {
+            width: 8em;
+            height: 13em;
+        }
     }
 }

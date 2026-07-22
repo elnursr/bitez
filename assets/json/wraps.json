@@ -1,0 +1,50 @@
+{
+    "sides": [
+        {
+            "category_name": "wraps",
+            "items": [
+                {
+                    "title": "currywurst_with_chips",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                },
+                {
+                    "title": "currywurst",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 4.5,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                }
+            ]
+        },
+        {
+            "category_name": "falafel",
+            "items": [
+                {
+                    "title": "garlic_parmesan",
+                    "options": [
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                }
+            ]
+        }
+    ]
+}

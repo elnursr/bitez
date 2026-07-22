@@ -961,8 +961,8 @@ svg {
 }
 .product-card__right-side {
   position: absolute;
-  bottom: 13%;
-  right: -3%;
+  bottom: 1%;
+  right: 1%;
 }
 .product-card__title {
   position: relative;
@@ -1188,13 +1188,21 @@ svg {
   color: white;
 }
 
-.cool-drink-card .product-card__link {
+.hot-drink-card .product-card__right-side {
+  right: -1%;
+}
+
+.cool-drink-card [data-filter-category=limonade] .product-card__right-side .product-card__link {
   width: 15em;
-  height: 11em;
+  height: 9em;
 }
 .cool-drink-card .product-card__right-side {
   bottom: 3%;
   right: -3%;
+}
+.cool-drink-card .product-card__right-side .product-card__link {
+  width: 8em;
+  height: 13em;
 }
 
 body {

@@ -12,19 +12,11 @@ export default [
         "isActive": false
     },
     {
-        "title": 'handmade chicken',
-        "isActive": false
-    },
-    {
         "title": 'toast',
         "isActive": false
     },
     {
-        "title": 'vegan',
-        "isActive": false
-    },
-    {
-        "title": 'fries & loaded fries',
+        "title": 'veggie',
         "isActive": false
     }
 ]

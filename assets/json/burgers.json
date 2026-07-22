@@ -182,6 +182,23 @@
                     "ingredients": "Crispy Chicken Sauce, Parmesan cheese, Iceberg lettuce, Garlic Sauce"
                 }
             ]
+        },
+        {
+            "category_name": "veggie",
+            "items": [
+                {
+                    "title": "veggie",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 7.49,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Veggie patty, Iceberg lettuce, Tomatoes, Red onions, Cucumbers, B!tez sauce, Falafel wrap"
+                }
+            ]
         }
     ]
 }

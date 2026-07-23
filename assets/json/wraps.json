@@ -1,31 +1,31 @@
 {
-    "sides": [
+    "wraps": [
         {
             "category_name": "wraps",
             "items": [
                 {
-                    "title": "currywurst_with_chips",
+                    "title": "garlic_chicken",
                     "options": [
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 6.8,
+                            "price": 7.5,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": "Chicken tender, Fries, Little gherkin, Garlic sauce"
                 },
                 {
-                    "title": "currywurst",
+                    "title": "golden_chicken",
                     "options": [
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 4.5,
+                            "price": 7.5,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": "Chicken tender, Fries, Coleslaw, Joppie sauce"
                 }
             ]
         },
@@ -33,7 +33,7 @@
             "category_name": "falafel",
             "items": [
                 {
-                    "title": "garlic_parmesan",
+                    "title": "falafel",
                     "options": [
                         {
                             "label": "double",
@@ -42,7 +42,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                    "ingredients": "Falafel, Iceberg lettuce, Tomatoes, Cucumbers, Red onions, Parsley, Hummus sauce"
                 }
             ]
         }

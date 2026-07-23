@@ -13,7 +13,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": "Smashed beef patty, Little gherkin, Diced onion, Ketchup & Mustard"
                 },
                 {
                     "title": "cheeseburger",
@@ -25,7 +25,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": "Smashed beef patty, American cheese, Diced onion, Little gherkin, Ketchup & Mustard"
                 },
                 {
                     "title": "chili_cheeseburger",
@@ -37,7 +37,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
+                    "ingredients": "Smashed beef patty, American cheese, Jalapeños, Diced onion, Little gherkin, Chili cheese sauce"
                 },
                 {
                     "title": "7th_street_burger",
@@ -49,7 +49,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Fried onions, Pickled gherkins, B!tez Sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Diced onion(seared), Little gherkin, B!tez sauce"
                 },
                 {
                     "title": "b!tez_special",
@@ -61,7 +61,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, Pickled gherkins, B!tez Sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, B!tez sauce"
                 },
                 {
                     "title": "b!tez_deluxe",
@@ -73,7 +73,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, Tomato, diced onion, Pickled gherkins, Mayo"
+                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Tomato, Mayo"
                 }
             ]
         },
@@ -90,7 +90,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Mayo"
                 },
                 {
                     "title": "supreme_chicken",
@@ -102,7 +102,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
+                    "ingredients": "Crispy chicken patty, American cheese, Iceberg lettuce, Tomato, Mayo"
                 },
                 {
                     "title": "golden_slaw_chicken",
@@ -114,7 +114,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
+                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Coleslaw, Little gherkin, Red onions, Joppie sauce"
                 },
                 {
                     "title": "hot_sweet_chicken",
@@ -126,7 +126,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Sweet-Chili Sauce"
+                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Sweet chili sauce"
                 }
             ]
         },
@@ -143,7 +143,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, B!tez Sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, B!tez sauce"
                 },
                 {
                     "title": "chili_cheesy",
@@ -155,7 +155,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Iceberg lettuce, diced onion, gherkin, Chilli peppers, Chili-Cheese Sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Jalapeños, Chili cheese sauce"
                 },
                 {
                     "title": "chicken_spicy",
@@ -167,7 +167,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, Chilli peppers, Spicy Sauce"
+                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Coleslaw, Jalapeños, Spicy sauce"
                 },
                 {
                     "title": "chicken_parmesan",
@@ -179,7 +179,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Sauce, Parmesan cheese, Iceberg lettuce, Garlic Sauce"
+                    "ingredients": "Crispy chicken sauce, Parmesan cheese, Iceberg lettuce, Garlic sauce"
                 }
             ]
         },

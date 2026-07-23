@@ -4,14 +4,15 @@
 @use 'components';
 
 body {
-    position: relative;
+    // position: relative;
     background-color: rgb(253, 201, 15);
-    &::before{
+
+    &::before {
         // content: '';
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../media/svg/doodles.svg');
+        // position: absolute;
+        // inset: 0;
+        // width: 100%;
+        // height: 100%;
+        // background-image: url('../media/svg/doodles.svg');
     }
 }

@@ -4,6 +4,7 @@ import footerContactItems from './config/footerContactItems.js';
 import footerFollowUsItems from './config/footerFollowUsItems.js';
 import burgerFilterMenuItems from './config/burgerFilterMenuItems.js';
 import sidesFilterMenuItems from './config/sidesFilterMenuItems.js';
+import wrapsFilterMenuItems from './config/wrapsFilterMenuItems.js';
 import footerNavigationItems from './config/footerNavigationItems.js';
 import hotDrinkFilterMenuItems from './config/hotDrinkFilterMenuItems.js';
 import coolDrinkFilterMenuItems from './config/coolDrinkFilterMenuItems.js';
@@ -23,7 +24,8 @@ import FilterManager from './filter/index.js';
 import { DataService } from './services/DataService.js';
 
 import {
-    burgerCardElement, sideCardElement, coolDrinkCardElement, hotDrinkCardElement,
+    burgerCardElement, sideCardElement, wrapCardElement,
+    coolDrinkCardElement, hotDrinkCardElement,
     navigationListElement,
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement,
@@ -92,6 +94,12 @@ bitez.renderToUI({
 });
 
 bitez.renderToUI({
+    items: wrapsFilterMenuItems,
+    itemComponentElement: FilterMenuItem,
+    itemComponentWrapperElement: document.querySelector('.wrap-filter-menu')
+});
+
+bitez.renderToUI({
     items: coolDrinkFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.cool-drink-filter-menu')
@@ -103,6 +111,7 @@ bitez.renderToUI({
     itemComponentWrapperElement: document.querySelector('.hot-drink-filter-menu')
 });
 
+// burgers
 dataService.fetchData('../assets/json/burgers.json')
     .then(({ burgers }) => {
 
@@ -122,6 +131,7 @@ dataService.fetchData('../assets/json/burgers.json')
         });
     })
 
+// sides
 dataService.fetchData('../assets/json/sides.json')
     .then(({ sides }) => {
 
@@ -141,6 +151,27 @@ dataService.fetchData('../assets/json/sides.json')
         });
     })
 
+// wraps
+dataService.fetchData('../assets/json/wraps.json')
+    .then(({ wraps }) => {
+
+        bitez.renderProductsToUI({
+            products: wraps,
+            productType: 'wraps',
+            productOptionType: 'patty',
+            productImageExtension: 'png',
+            productCardElement: wrapCardElement
+        });
+
+        filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
+            filteredItems: document.querySelectorAll('.wrap-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.wrap-filter-menu .filter-menu__item')
+        });
+    })
+
+// cool-drinks
 dataService.fetchData('../assets/json/cool-drinks.json')
     .then(({ cool_drinks }) => {
         bitez.renderProductsToUI({
@@ -158,7 +189,8 @@ dataService.fetchData('../assets/json/cool-drinks.json')
             filterMenuItems: document.querySelectorAll('.cool-drink-filter-menu .filter-menu__item')
         });
     })
-
+    
+// hot-drinks
 dataService.fetchData('../assets/json/hot-drinks.json')
     .then(({ hot_drinks }) => {
         bitez.renderProductsToUI({
@@ -177,7 +209,7 @@ dataService.fetchData('../assets/json/hot-drinks.json')
         });
     })
 
-// get career section content
+// career
 dataService.fetchData('../assets/json/careers.json')
     .then(({ careers }) => {
         bitez.renderToUI({
@@ -197,31 +229,3 @@ syncActiveClasses([
         activeClass: 'footer__link--active'
     }
 ]);
-
-// get faq section content
-// dataService.fetchData('../assets/json/faqs.json')
-//     .then(({ faqs }) => {
-//         bitez.renderToUI({
-//             items: faqs,
-//             itemComponentElement: FaqItem,
-//             itemComponentWrapperElement: document.querySelector('.faq-accordion')
-//         });
-
-
-//         let items = document.querySelectorAll('.faq-accordion__item');
-
-//         let accordion = new Accordion({
-//             element: document.querySelector('.faq-accordion'),
-//             elementItems: items,
-//             headElements: document.querySelectorAll('.faq-accordion__head'),
-//             bodyElements: document.querySelectorAll('.faq-accordion__body'),
-//             titleElements: document.querySelectorAll('.faq-accordion__title'),
-//             iconElements: document.querySelectorAll('.faq-accordion__icon'),
-//             classNames: {
-//                 headClassName: 'faq-accordion__head--active',
-//                 titleClassName: 'faq-accordion__title--active',
-//                 iconClassName: 'faq-accordion__icon--active'
-//             }
-//         });
-//         accordion.switch();
-//     })

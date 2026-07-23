@@ -13,7 +13,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": ""
                 },
                 {
                     "title": "currywurst",
@@ -25,14 +25,14 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Ketchup & mustard, Pickled gherkins, diced onion"
+                    "ingredients": ""
                 },
                 {
                     "title": "plain_chips",
                     "options": [
                         {
                             "label": "single",
-                            "size": "m",
+                            "size": "l",
                             "price": 3.1,
                             "isExtra": false
                         },
@@ -43,7 +43,7 @@
                             "isExtra": true
                         }
                     ],
-                    "ingredients": "Smashed Beef Patty, American Cheese, Chili-Cheese-Sauce, Chilli peppers, Pickled gherkins, diced onion"
+                    "ingredients": ""
                 }
             ]
         },
@@ -60,7 +60,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Mayo"
+                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Jalapeños, Chili cheese sauce"
                 },
                 {
                     "title": "hot_chicken",
@@ -72,7 +72,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, American Cheese, Iceberg lettuce, Tomato, Mayo"
+                    "ingredients": "Fries, Tender(finely chopped), Jalapeños, B!tez sauce"
                 },
                 {
                     "title": "chili_cheese",
@@ -84,7 +84,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy Chicken Patty, Iceberg lettuce, Coleslaw, gherkin, Fried onions, Joppie Sauce"
+                    "ingredients": "Fries, Jalapeños, Chili cheese sauce"
                 }
             ]
         }

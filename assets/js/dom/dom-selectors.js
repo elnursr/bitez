@@ -1,5 +1,6 @@
 export const burgerCardElement = document.querySelector('.burger-card'),
     sideCardElement = document.querySelector('.side-card'),
+    wrapCardElement = document.querySelector('.wrap-card'),
     coolDrinkCardElement = document.querySelector('.cool-drink-card'),
     hotDrinkCardElement = document.querySelector('.hot-drink-card'),
     navigationListElement = document.querySelector('.navigation__list'),

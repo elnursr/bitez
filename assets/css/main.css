@@ -557,12 +557,36 @@
   gap: 0 7em;
   height: 25em;
 }
+@media (width < 48em) {
+  .hero-slider__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 3em;
+    height: 27em;
+  }
+}
+@media (width < 48em) {
+  .hero-slider__content {
+    text-align: center;
+  }
+}
 .hero-slider__title, .hero-slider__suptitle, .hero-slider__subtitle {
   text-transform: uppercase;
   font-family: "agrandir_narrow_black";
   font-size: 6.1em;
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
+}
+@media (width < 48em) {
+  .hero-slider__title, .hero-slider__suptitle, .hero-slider__subtitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    font-size: 2.3em;
+  }
 }
 .hero-slider__title {
   color: white;
@@ -593,7 +617,6 @@
 }
 .hero-slider__image {
   position: relative;
-  overflow: hidden;
   width: 29em;
   height: 22.5em;
 }
@@ -604,6 +627,12 @@
   background-image: url("../media/svg/doodles.svg");
   background-size: cover;
   background-position: center;
+}
+@media (width < 48em) {
+  .hero-slider__image {
+    width: initial;
+    height: 13.1em;
+  }
 }
 .hero-slider__image img {
   aspect-ratio: 16/9;

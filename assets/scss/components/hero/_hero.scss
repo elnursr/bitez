@@ -19,15 +19,22 @@
         justify-content: center;
         align-items: center;
         gap: 0 7em;
-        // height: 47em;
         height: 25em;
 
         @include bp.mobile {
-            // height: 16em;
+            flex-direction: column-reverse;
+            gap: 3em;
+            height: 27em;
         }
 
         @include bp.tablet {
             // height: 23em;
+        }
+    }
+
+    &__content {
+        @include bp.mobile {
+            text-align: center;
         }
     }
 
@@ -38,6 +45,11 @@
         font-family: v.$hero-font;
         font-size: 6.1em;
         transform: rotate(-1deg);
+
+        @include bp.mobile {
+            flex-direction: column-reverse;
+            font-size: 2.3em;
+        }
     }
 
     &__title {
@@ -76,9 +88,9 @@
 
     &__image {
         position: relative;
-        overflow: hidden;
         width: 29em;
         height: 22.5em;
+
 
         &::after {
             @extend %before-after;
@@ -88,6 +100,11 @@
             background-image: url('../media/svg/doodles.svg');
             background-size: cover;
             background-position: center;
+        }
+
+        @include bp.mobile {
+            width: initial;
+            height: 13.1em;
         }
 
         img {

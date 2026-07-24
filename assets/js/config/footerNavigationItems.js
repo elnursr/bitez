@@ -10,14 +10,9 @@ export default [
         url: '#burgers'
     },
     {
-        title: 'soft-drinks',
+        title: 'cool-drinks',
         icon: 'drink',
-        url: '#soft-drinks'
-    },
-    {
-        title: 'faq',
-        icon: 'faq',
-        url: '#faqs'
+        url: '#cool-drinks'
     },
     {
         title: 'career',

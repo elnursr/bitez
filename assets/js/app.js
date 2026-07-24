@@ -1,21 +1,7 @@
-// import default configs
-import navigationItems from './config/navigationItems.js';
-import footerContactItems from './config/footerContactItems.js';
-import footerFollowUsItems from './config/footerFollowUsItems.js';
-import burgerFilterMenuItems from './config/burgerFilterMenuItems.js';
-import sidesFilterMenuItems from './config/sidesFilterMenuItems.js';
-import wrapsFilterMenuItems from './config/wrapsFilterMenuItems.js';
-import footerNavigationItems from './config/footerNavigationItems.js';
-import hotDrinkFilterMenuItems from './config/hotDrinkFilterMenuItems.js';
-import coolDrinkFilterMenuItems from './config/coolDrinkFilterMenuItems.js';
+import { FaqItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
-import { FaqItem } from './components/FaqItem.js';
-import { CareerItem } from './components/CareerItem.js';
-import { FollowUsItem } from './components/FollowUsItem.js';
-import { FilterMenuItem } from './components/FilterMenuItem.js';
-import { NavigationItem } from './components/NavigationItem.js';
-import { FooterContactItem } from './components/FooterContactItem.js'
-import { FooterNavigationItem } from './components/FooterNavigationItem.js';
+import { navigationItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
+
 
 import Bitez from './bitez/index.js';
 import Accordion from './accordion/index.js'
@@ -189,7 +175,7 @@ dataService.fetchData('../assets/json/cool-drinks.json')
             filterMenuItems: document.querySelectorAll('.cool-drink-filter-menu .filter-menu__item')
         });
     })
-    
+
 // hot-drinks
 dataService.fetchData('../assets/json/hot-drinks.json')
     .then(({ hot_drinks }) => {
@@ -219,13 +205,13 @@ dataService.fetchData('../assets/json/careers.json')
         });
     })
 
-syncActiveClasses([
-    {
-        elements: document.querySelectorAll('.navigation__link'),
-        activeClass: 'navigation__link--active'
-    },
-    {
-        elements: document.querySelectorAll('.footer-navigation__link'),
-        activeClass: 'footer__link--active'
-    }
-]);
+// syncActiveClasses([
+//     {
+//         elements: document.querySelectorAll('.navigation__link'),
+//         activeClass: 'navigation__link--active'
+//     },
+//     {
+//         elements: document.querySelectorAll('.footer-navigation__link'),
+//         activeClass: 'footer__link--active'
+//     }
+// ]);

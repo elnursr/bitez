@@ -41,10 +41,8 @@
     &__title,
     &__suptitle,
     &__subtitle {
-        text-transform: uppercase;
-        font-family: v.$hero-font;
+        @extend %heading-text-effect;
         font-size: 6.1em;
-        transform: rotate(-1deg);
 
         @include bp.mobile {
             flex-direction: column-reverse;
@@ -52,15 +50,9 @@
         }
     }
 
-    &__title {
-        color: v.$white;
-        text-shadow: 7px 0 1px v.$black;
-    }
-
     &__suptitle,
     &__subtitle {
         color: v.$bitez-secondary;
-        text-shadow: 7px 0 1px v.$black;
     }
 
     &__label {
@@ -82,8 +74,6 @@
             background-size: cover;
             background-position: center;
         }
-
-        // background-color: v.$bitez-secondary;
     }
 
     &__image {

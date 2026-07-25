@@ -1,0 +1,9 @@
+@use '../variables'as v;
+
+%heading-text-effect {
+    text-transform: uppercase;
+    transform: rotate(-1deg);
+    color: v.$white;
+    font-family: v.$hero-font;
+    text-shadow: 7px 0 1px v.$black;
+}

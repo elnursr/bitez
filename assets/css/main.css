@@ -41,6 +41,15 @@
   height: 100%;
 }
 
+.hero-slider__title, .hero-slider__suptitle, .hero-slider__subtitle, .faq__heading, .product__heading, .career__heading {
+  text-transform: uppercase;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  color: white;
+  font-family: "agrandir_narrow_black";
+  text-shadow: 7px 0 1px black;
+}
+
 ::-moz-selection {
   color: white;
   background-color: black;
@@ -57,6 +66,8 @@
   left: 0;
   width: 100%;
   z-index: 7;
+  -webkit-box-shadow: 0 0 5px 2.5px black;
+          box-shadow: 0 0 5px 2.5px black;
   background-color: #fdc90f;
 }
 .navigation__wrapper {
@@ -402,14 +413,13 @@
 }
 
 .faq {
-  padding-top: 5.7em;
+  padding-top: 7.3em;
   padding-bottom: 5.7em;
 }
 .faq__heading {
-  text-transform: uppercase;
   text-align: center;
-  font-size: 3.7em;
-  padding: 0.3em 0;
+  font-size: 4.1em;
+  letter-spacing: 0.1em;
 }
 @media (width < 48em) {
   .faq__heading {
@@ -573,11 +583,7 @@
   }
 }
 .hero-slider__title, .hero-slider__suptitle, .hero-slider__subtitle {
-  text-transform: uppercase;
-  font-family: "agrandir_narrow_black";
   font-size: 6.1em;
-  -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg);
 }
 @media (width < 48em) {
   .hero-slider__title, .hero-slider__suptitle, .hero-slider__subtitle {
@@ -588,13 +594,8 @@
     font-size: 2.3em;
   }
 }
-.hero-slider__title {
-  color: white;
-  text-shadow: 7px 0 1px black;
-}
 .hero-slider__suptitle, .hero-slider__subtitle {
   color: #df175f;
-  text-shadow: 7px 0 1px black;
 }
 .hero-slider__label {
   position: relative;
@@ -662,14 +663,13 @@ svg {
 }
 
 .career {
-  padding-top: 5.7em;
+  padding-top: 7.3em;
   padding-bottom: 5.7em;
 }
 .career__heading {
-  text-transform: uppercase;
   text-align: center;
-  font-size: 3.7em;
-  padding: 0.3em 0;
+  font-size: 4.1em;
+  letter-spacing: 0.1em;
 }
 @media (width < 48em) {
   .career__heading {
@@ -814,13 +814,12 @@ svg {
 }
 
 .product {
-  padding-top: 5.7em;
+  padding-top: 7.3em;
 }
 .product__heading {
-  text-transform: uppercase;
   text-align: center;
-  font-size: 3.7em;
-  padding: 0.3em 0;
+  font-size: 4.1em;
+  letter-spacing: 0.1em;
 }
 @media (width < 48em) {
   .product__heading {

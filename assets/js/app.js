@@ -1,18 +1,16 @@
-import { FaqItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
+import { FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
-import { navigationItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
+import { navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
 
 
 import Bitez from './bitez/index.js';
-import Accordion from './accordion/index.js'
 import FilterManager from './filter/index.js';
-
 import { DataService } from './services/DataService.js';
 
 import {
     burgerCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
-    navigationListElement,
+    heroSliderListElement, navigationListElement,
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement,
     syncActiveClasses
@@ -22,10 +20,11 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 let swiper = new Swiper('.hero-slider', {
     spaceBetween: 0,
+    // loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 3555,
-        disableOnInteraction: false,
+        delay: 4777,
+        disableOnInteraction: true,
     },
     pagination: {
         el: '.swiper-pagination',
@@ -42,6 +41,12 @@ const bitez = new Bitez();
 const dataService = new DataService();
 
 const filterManager = new FilterManager();
+
+bitez.renderToUI({
+    items: heroSliderItems,
+    itemComponentElement: HeroSliderItem,
+    itemComponentWrapperElement: heroSliderListElement
+});
 
 bitez.renderToUI({
     items: navigationItems,

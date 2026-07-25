@@ -1,3 +1,4 @@
+import heroSliderItems from './heroSliderItems.js';
 import navigationItems from './navigationItems.js';
 import footerContactItems from './footerContactItems.js';
 import footerFollowUsItems from './footerFollowUsItems.js';
@@ -9,6 +10,7 @@ import hotDrinkFilterMenuItems from './hotDrinkFilterMenuItems.js';
 import coolDrinkFilterMenuItems from './coolDrinkFilterMenuItems.js';
 
 export {
+    heroSliderItems,
     navigationItems,
     footerContactItems,
     footerFollowUsItems,

@@ -1,4 +1,22 @@
+@use '../../abstracts/animations'as *;
+
 .cool-drink-card {
+
+    [data-filter-category="fanta"],
+    [data-filter-category="mezzo"],
+    [data-filter-category="water"],
+    [data-filter-category="coca_cola"],
+    [data-filter-category="lemon_lime"] {
+        &:hover {
+
+            .product-card__link {
+                img {
+                    animation: wooble 1.5s;
+                }
+            }
+        }
+    }
+
 
     [data-filter-category="limonade"] {
         .product-card__right-side {

@@ -1,12 +1,13 @@
+@use '../../abstracts/placeholders'as p;
+
 .logo {
     &__link {
         display: block;
-        width: 8em;
+        width: 9em;
         height: 3.1em;
 
         img {
-            width: 100%;
-            height: 100%;
+            @extend %img;
         }
     }
 }

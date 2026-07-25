@@ -35,6 +35,15 @@
 
         @include bp.mobile {
             display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5em;
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-color: v.$bitez-primary;
         }
 
         @include bp.tablet {
@@ -43,6 +52,7 @@
     }
 
     &__link {
+        // position: relative;
         text-transform: uppercase;
         font-size: 1.3em;
         padding: .3em .25em;
@@ -54,19 +64,35 @@
             color: v.$bitez-secondary;
             border-bottom: 2.5px solid v.$bitez-secondary;
         }
+
+        @include bp.mobile {
+            font-size: 1.5em;
+        }
     }
 
     &-menu {
+        position: relative;
         cursor: pointer;
         user-select: none;
         display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .41em;
+
+        &__item {
+            width: 2.5em;
+            height: .21em;
+            box-shadow: 0 0 1.1px 1.8px v.$black;
+            background-color: v.$white;
+        }
 
         @include bp.mobile {
-            display: block;
+            display: flex;
         }
 
         @include bp.tablet {
-            display: block;
+            display: flex;
         }
     }
 }

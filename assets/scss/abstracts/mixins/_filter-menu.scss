@@ -1,6 +1,6 @@
 @use '../variables'as v;
+@use '../placeholders'as p;
 @use '../breakpoints'as bp;
-@use '../placeholders'as *;
 
 @mixin filter-menu {
     @extend %flex-center;
@@ -18,10 +18,10 @@
         padding: .3em .9em;
         border-radius: .3em;
         transition: background-image .3s;
-        border: .09em solid v.$bitez-secondary;
+        border: .09em solid v.$color-secondary;
 
         &--active {
-            background-color: v.$bitez-secondary;
+            background-color: v.$color-secondary;
         }
 
         @include bp.mobile {
@@ -37,7 +37,6 @@
         text-transform: capitalize;
         text-align: center;
         font-size: 1.3em;
-        // color: v.$bitez-secondary;
 
         @include bp.mobile {
             font-size: .9em;

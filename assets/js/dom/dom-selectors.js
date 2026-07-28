@@ -7,4 +7,5 @@ export const burgerCardElement = document.querySelector('.burger-card'),
     navigationListElement = document.querySelector('.navigation__list'),
     footerContactListElement = document.querySelector('.footer-contact__list'),
     footerNavigationListElement = document.querySelector('.footer-navigation__list'),
-    footerFollowUsListElement = document.querySelector('.footer-follow-us__list');
+    footerFollowUsListElement = document.querySelector('.footer-follow-us__list'),
+    cookieBannerButton=document.querySelector('.cookie-banner__button');

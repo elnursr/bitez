@@ -1,16 +1,19 @@
+@use '../../abstracts'as v;
+
 .swiper {
     &-pagination-bullet {
         width: .9em;
         height: .9em;
-        background-color: rgb(223, 23, 95);
+        background-color: v.$color-secondary;
     }
 
     &-button-next,
     &-button-prev {
-        color: rgb(223, 23, 95);
+        color: v.$color-secondary;
     }
 
-    &-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    &-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
         bottom: 0;
     }
 }

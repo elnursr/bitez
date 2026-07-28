@@ -1,10 +1,9 @@
 @use '../variables'as v;
-@use '../placeholders/'as p;
+@use '../placeholders'as p;
 @use '../breakpoints'as bp;
 
 @mixin section-base() {
     padding-top: 7.3em;
-    // background-color: v.$sectionBaseBackground;
 
     &__heading {
         @extend %heading-text-effect;
@@ -13,11 +12,11 @@
         letter-spacing: .1em;
 
         @include bp.mobile {
-            font-size: 1.8em;
+            font-size: 2.3em;
         }
 
         @include bp.tablet {
-            font-size: 2.1em;
+            font-size: 2.7em;
         }
     }
 }

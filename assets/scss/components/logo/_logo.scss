@@ -1,6 +1,9 @@
 @use '../../abstracts/placeholders'as p;
 
 .logo {
+    position: relative;
+    z-index: 7;
+
     &__link {
         display: block;
         width: 9em;

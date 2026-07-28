@@ -1,12 +1,13 @@
-@use '../../abstracts/'as mx;
+@use '../../abstracts'as v;
+@use '../../abstracts'as mx;
 
 .filter-menu {
     @include mx.filter-menu;
 
     &__item {
         &--active {
-            .filter-menu__title{
-                color:white;
+            .filter-menu__title {
+                color: v.$text-secondary;
             }
         }
     }

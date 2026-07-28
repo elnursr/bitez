@@ -1,0 +1,44 @@
+@use '../../abstracts'as v;
+
+.cookie-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 1em 1.5em;
+    transition: bottom .3s;
+    background-color: v.$bg-primary;
+
+    @starting-style {
+        bottom: -35%;
+    }
+
+    &--deactive {
+        bottom: -35%;
+    }
+
+    &__heading {
+        text-transform: capitalize;
+    }
+
+    &__description {
+        padding: .3em 0;
+        font-size: 1em;
+    }
+
+    &__button {
+        cursor: pointer;
+        outline: none;
+        align-self: flex-end;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        border-radius: .35em;
+        padding: .5em 1em;
+        border: 1px solid v.$color-border;
+        background-color: v.$color-primary;
+    }
+}

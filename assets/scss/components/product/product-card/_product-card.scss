@@ -1,7 +1,7 @@
 @use '../../../abstracts'as v;
 @use '../../../abstracts'as bp;
-@use '../../../abstracts/placeholders'as p;
 @use '../../../abstracts/animations'as *;
+@use '../../../abstracts/placeholders'as p;
 
 .product-card {
     display: flex;
@@ -16,19 +16,15 @@
     &__item {
         position: relative;
         display: none;
-        // flex-direction: column;
-        justify-content: space-between;
-        // align-items: center;
         padding: 1.5em 1.3em;
         width: 32%;
-        // width: 37%;
         z-index: 1;
         border-radius: .35em;
         transition: box-shadow .5s;
-        background-color: v.$card-background-color;
+        background-color: v.$bg-primary;
 
         &--active {
-            display: flex;
+            display: block;
             animation-name: bounceIn;
             animation-duration: .7s;
             animation-fill-mode: both;
@@ -47,7 +43,6 @@
         }
 
         &:hover {
-            // box-shadow: 0 0 5px 2.5px rgb(212, 203, 187);
 
             .product-card__link {
                 img {
@@ -59,7 +54,7 @@
         @include bp.mobile {
             width: 100%;
             padding: 1em;
-            border: 1px solid v.$borderCardColor;
+            border: 1px solid v.$color-border;
         }
 
         @include bp.tablet {
@@ -82,16 +77,14 @@
     &__title {
         position: relative;
         overflow: hidden;
-        // text-align: center;
         white-space: nowrap;
         text-overflow: ellipsis;
         text-transform: uppercase;
-        // font-size: 1.8em;
         font-size: 1.5em;
         font-weight: 755;
         padding: .7em 0;
         width: 13.9em;
-        color: v.$bitez-secondary;
+        color: v.$color-secondary;
 
         &::after {
             @extend %before-after;
@@ -118,18 +111,15 @@
         display: block;
         width: 13em;
         height: 9em;
-        // width: 15em;
-        // height: 12em;
 
 
         img {
-            max-width: 100%;
-            height: 100%;
+            @extend %img;
         }
 
         @include bp.mobile {
-            width: 12em;
-            height: 9em;
+            width: 10.3em;
+            height: 7.3em;
         }
 
         @include bp.tablet {
@@ -153,14 +143,13 @@
     // }
 
     &__description {
-        // text-align: center;
-        // font-size: 1em
         width: 51%;
         font-size: .8em;
         line-height: 1.3em;
 
         @include bp.mobile {
             font-size: .8em;
+            width: 43%;
         }
     }
 }

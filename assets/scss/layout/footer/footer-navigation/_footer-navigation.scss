@@ -1,13 +1,13 @@
-@use '../../../abstracts/'as v;
+@use '../../../abstracts'as v;
 @use '../../../abstracts'as mx;
 @use '../../../abstracts'as bp;
 
 .footer-navigation {
-    @include mx.footer-base(column, flex-start, flex-start, v.$white);
+    @include mx.footer-base(column, flex-start, flex-start, v.$text-secondary);
 
     &__title {
         text-transform: uppercase;
-        font-size: v.$footeLinkFontSize;
+        font-size: v.$font-size-footer-link;
         font-weight: 333;
 
         @include bp.tablet {

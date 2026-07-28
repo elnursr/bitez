@@ -1,5 +1,6 @@
 @use '../../abstracts'as v;
 @use '../../abstracts'as bp;
+@use '../../abstracts/placeholders'as p;
 
 .navigation {
     position: fixed;
@@ -7,12 +8,8 @@
     left: 0;
     width: 100%;
     z-index: 7;
-    box-shadow: 0 0 5px 2.5px v.$black;
-    background-color: v.$bitez-primary;
-
-    @include bp.mobile {}
-
-    @include bp.tablet {}
+    box-shadow: 0 0 5px 2.5px v.$color-black;
+    background-color: v.$color-primary;
 
     &__wrapper {
         height: 7em;
@@ -34,16 +31,26 @@
         gap: 1em;
 
         @include bp.mobile {
-            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 1.5em;
             position: fixed;
-            inset: 0;
+            left: 0%;
+            top: 100%;
             width: 100%;
-            height: 100%;
-            background-color: v.$bitez-primary;
+            height: 77%;
+            transition: top .5s;
+            background-color: rgba(v.$color-primary, .9);
+
+            @starting-style {
+                display: none;
+                top: 100%;
+            }
+
+            &--active {
+                top: 0;
+            }
         }
 
         @include bp.tablet {
@@ -52,18 +59,10 @@
     }
 
     &__link {
-        // position: relative;
         text-transform: uppercase;
         font-size: 1.3em;
         padding: .3em .25em;
-        transition: color .3s, background-color .5s;
-        border-bottom: 2.5px solid transparent;
-        color: v.$black;
-
-        &--active {
-            color: v.$bitez-secondary;
-            border-bottom: 2.5px solid v.$bitez-secondary;
-        }
+        color: v.$text-primary;
 
         @include bp.mobile {
             font-size: 1.5em;
@@ -74,6 +73,7 @@
         position: relative;
         cursor: pointer;
         user-select: none;
+        z-index: 7;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -83,8 +83,8 @@
         &__item {
             width: 2.5em;
             height: .21em;
-            box-shadow: 0 0 1.1px 1.8px v.$black;
-            background-color: v.$white;
+            box-shadow: 0 0 1.1px 1.8px v.$color-black;
+            background-color: v.$color-white;
         }
 
         @include bp.mobile {

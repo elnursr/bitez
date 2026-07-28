@@ -1,4 +1,6 @@
+@use '../../../abstracts'as v;
 @use '../../../abstracts/breakpoints'as bp;
+
 
 .product-option {
     position: relative;
@@ -7,21 +9,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 .3em;
-
-    // &--extra {
-    //     &::before {
-    //         content: '+';
-    //         position: absolute;
-    //         left: -25%;
-    //         top: 50%;
-    //         transform: translateY(-50%);
-    //         font-size: 1.3em;
-
-    //         @include bp.mobile {
-    //             left: -32%;
-    //         }
-    //     }
-    // }
 
     &--extra {
         &::before {
@@ -32,10 +19,11 @@
             height: 100%;
             font-size: 1.3em;
             transform: translateY(-50%);
-            border-left: 1.7px solid rgb(225, 211, 177);
+            border-left: 1.7px solid v.$color-border;
 
             @include bp.mobile {
-                left: -32%;
+                left: -12%;
+                height: 81%;
             }
         }
     }
@@ -54,7 +42,7 @@
         font-size: 1.3em;
 
         @include bp.mobile {
-            font-size: 1em;
+            font-size: .9em;
         }
     }
 

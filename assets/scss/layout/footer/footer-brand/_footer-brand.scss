@@ -1,4 +1,4 @@
-@use '../../../abstracts/'as v;
+@use '../../../abstracts'as v;
 @use '../../../abstracts'as bp;
 @use '../../../abstracts/placeholders'as p;
 
@@ -11,7 +11,7 @@
         font-weight: 555;
         line-height: 1.5em;
         letter-spacing: .011em;
-        color: v.$white;
+        color: v.$text-secondary;
 
         @include bp.tablet {
             font-size: .7em;

@@ -4,7 +4,7 @@
 @use 'components';
 
 body {
-    // position: relative;
+    position: relative;
     background-color: rgb(253, 201, 15);
 
     &::before {

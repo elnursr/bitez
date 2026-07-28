@@ -1,31 +1,27 @@
-$black: rgb(0, 0, 0);
-$white: rgb(255, 255, 255);
+// color
+$color-black: rgb(0, 0, 0);
+$color-border:rgba($color-black, .1);
+$color-white: rgb(255, 255, 255);
+$color-primary:rgb(253, 201, 15);
+$color-secondary:rgb(223, 23, 95);
 
+// background color
+$bg-primary:rgb(251, 235, 205);
 
-$bitez-primary:rgb(253, 201, 15);
-$bitez-secondary:rgb(223, 23, 95);
+// border radius
+$border-radius-base:.3rem;
 
-$card-background-color:rgb(251, 235, 205);
+// font size
+$font-size-footer-link:1rem;
 
+// text color
+$text-primary:$color-black;
+$text-secondary:$color-white;
 
-$mainColor: rgb(253, 201, 15);
+// selection
+$color-selection: $color-white;
+$bg-color-selection: $color-black;
 
-$borderCardColor:rgb($black, .1);
-$sectionBaseBackground:rgb(255, 243, 227);
-
-// default configs start here
-
-$default-font:'agrandir_narrow';
-$hero-font:'agrandir_narrow_black';
-
-// default configs end here
-
-// footer contact, links, follow us font size
-$footeLinkFontSize: 1em;
-
-$baseBorderRadius:.3em;
-
-// selection variables start here
-$colorSelection: $white;
-$backgroundColorSelection: $black;
-// selection variables end here
+// font family
+$font-family-primary:'agrandir_narrow';
+$font-family-secondary:'agrandir_narrow_black';

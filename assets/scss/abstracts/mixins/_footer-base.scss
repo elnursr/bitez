@@ -1,6 +1,6 @@
-@use '../variables' as v;
+@use '../variables'as v;
 
-@mixin footer-base($flexDirection: row, $mainX: flex-start, $crossX: flex-start,$iconColor) {
+@mixin footer-base($flexDirection: row, $mainX: flex-start, $crossX: flex-start, $iconColor) {
     &__list {
         display: flex;
         flex-direction: $flexDirection;
@@ -14,8 +14,8 @@
         align-items: flex-end;
         gap: .3em;
         letter-spacing: .09em;
-        font-size: v.$footeLinkFontSize;
-        color: v.$white;
+        font-size: v.$font-size-footer-link;
+        color: v.$text-secondary;
     }
 
     &__icon {

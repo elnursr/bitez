@@ -1,6 +1,6 @@
 @use '../abstracts'as v;
 
 ::selection {
-    color: v.$colorSelection;
-    background-color: v.$backgroundColorSelection;
+    color: v.$color-selection;
+    background-color: v.$bg-color-selection;
 }

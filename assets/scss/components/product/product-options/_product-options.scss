@@ -1,6 +1,13 @@
+@use '../../../abstracts/breakpoints'as bp;
+
 .product-options {
     display: flex;
     // justify-content: center;
     gap: 1em;
-    margin: 1em 0;   
+    margin: 1em 0;
+
+    @include bp.mobile {
+        width: 43%;
+        gap: .1em;
+    }
 }

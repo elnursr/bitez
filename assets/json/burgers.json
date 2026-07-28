@@ -11,6 +11,12 @@
                             "size": "m",
                             "price": 6.9,
                             "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 2.5,
+                            "isExtra": true
                         }
                     ],
                     "ingredients": "Smashed beef patty, Little gherkin, Diced onion, Ketchup & Mustard"

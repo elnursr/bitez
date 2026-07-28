@@ -13,10 +13,11 @@ import {
     heroSliderListElement, navigationListElement,
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement,
+    cookieBannerButton,
     syncActiveClasses
 } from './dom/index.js';
 
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+import {Swiper} from './vendors/swiper/swiper.min.js';
 
 let swiper = new Swiper('.hero-slider', {
     spaceBetween: 0,
@@ -220,3 +221,20 @@ dataService.fetchData('../assets/json/careers.json')
 //         activeClass: 'footer__link--active'
 //     }
 // ]);
+
+cookieBannerButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    localStorage.setItem('isUnderstood', true);
+    document.querySelector('.cookie-banner').style.bottom = '-35%';
+});
+
+let isUnderstood = localStorage.getItem('isUnderstood');
+if (Boolean(isUnderstood) || document.querySelector('.cookie-banner').classList.contains('cookie-banner--deactive')) {
+    // document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
+    // document.querySelector('.cookie-banner').style.bottom = '-35%';
+}
+
+document.querySelector('.navigation-menu').addEventListener('click', function (e) {
+    e.preventDefault();
+    navigationListElement.classList.toggle('navigation__list--active');
+});

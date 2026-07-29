@@ -28,6 +28,18 @@
                     "ingredients": "Carbonated water, coloring (E150d), acidity regulators (E338, E331), natural flavors (incl. caffeine), sweeteners (aspartame, acesulfame K). Contains a source of phenylalanine."
                 },
                 {
+                    "title": "coca_cola_zero",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Carbonated water, color (Caramel E150d), acidity regulator (E338, E331), sweetener (aspartame, acesulfame K), natural flavors, aroma caffeine. Contains a source of phenylalanine."
+                },
+                {
                     "title": "coca_cola_zero_sugar",
                     "options": [
                         {

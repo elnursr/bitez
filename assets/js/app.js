@@ -1,7 +1,9 @@
+// vendor
+import { Swiper } from './vendors/swiper/swiper.min.js';
+
 import { FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
 import { navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
-
 
 import Bitez from './bitez/index.js';
 import FilterManager from './filter/index.js';
@@ -16,8 +18,6 @@ import {
     cookieBannerButton,
     syncActiveClasses
 } from './dom/index.js';
-
-import {Swiper} from './vendors/swiper/swiper.min.js';
 
 let swiper = new Swiper('.hero-slider', {
     spaceBetween: 0,
@@ -225,13 +225,12 @@ dataService.fetchData('../assets/json/careers.json')
 cookieBannerButton.addEventListener('click', function (e) {
     e.preventDefault();
     localStorage.setItem('isUnderstood', true);
-    document.querySelector('.cookie-banner').style.bottom = '-35%';
+    document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
 });
 
 let isUnderstood = localStorage.getItem('isUnderstood');
-if (Boolean(isUnderstood) || document.querySelector('.cookie-banner').classList.contains('cookie-banner--deactive')) {
-    // document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
-    // document.querySelector('.cookie-banner').style.bottom = '-35%';
+if (Boolean(isUnderstood)) {
+    document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
 }
 
 document.querySelector('.navigation-menu').addEventListener('click', function (e) {

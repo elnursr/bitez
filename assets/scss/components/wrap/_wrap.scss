@@ -1,0 +1,16 @@
+.wrap {
+    .product-card__right-side {
+        .product-card__link {
+            width: 15em;
+            height: 6.5em;
+        }
+    }
+
+    [data-filter-category="falafel"] {
+        .product-card__right-side {
+            .product-card__link {
+                height: 8em;
+            }
+        }
+    }
+}

@@ -10,15 +10,14 @@
     z-index: 9;
     width: 100%;
     padding: 1em 1.5em;
-    transition: bottom .3s;
     background-color: v.$bg-primary;
 
-    @starting-style {
-        bottom: -35%;
+    &--active {
+        // display: flex;
     }
 
     &--deactive {
-        bottom: -35%;
+        display: none;
     }
 
     &__heading {

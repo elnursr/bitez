@@ -40,7 +40,7 @@
             top: 100%;
             width: 100%;
             height: 77%;
-            transition: top .5s;
+            transition: top .3s;
             background-color: rgba(v.$color-primary, .9);
 
             @starting-style {
@@ -79,6 +79,7 @@
         justify-content: center;
         align-items: center;
         gap: .41em;
+        padding: .5em;
 
         &__item {
             width: 2.5em;

@@ -1,7 +1,7 @@
 {
     "wraps": [
         {
-            "category_name": "wraps",
+            "category_name": "wrap",
             "items": [
                 {
                     "title": "garlic_chicken",
@@ -38,7 +38,7 @@
                         {
                             "label": "double",
                             "size": "xl",
-                            "price": 6.8,
+                            "price": 7.3,
                             "isExtra": false
                         }
                     ],

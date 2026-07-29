@@ -4,7 +4,7 @@ export default [
         "isActive": true
     },
     {
-        "title": 'wraps',
+        "title": 'wrap',
         "isActive": false
     },
     {

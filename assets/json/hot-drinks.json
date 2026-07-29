@@ -74,24 +74,6 @@
                         }
                     ],
                     "ingredients": ""
-                },
-                {
-                    "title": "hot_chocolate",
-                    "options": [
-                        {
-                            "label": "single",
-                            "size": "m",
-                            "price": 2.8,
-                            "isExtra": false
-                        },
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 3.3,
-                            "isExtra": true
-                        }
-                    ],
-                    "ingredients": ""
                 }
             ]
         },
@@ -111,29 +93,6 @@
                             "size": "xl",
                             "label": "double",
                             "price": 2.7,
-                            "isExtra": true
-                        }
-                    ],
-                    "ingredients": ""
-                }
-            ]
-        },
-        {
-            "category_name": "cappuccino",
-            "items": [
-                {
-                    "title": "cappuccino",
-                    "options": [
-                        {
-                            "label": "single",
-                            "size": "m",
-                            "price": 8,
-                            "isExtra": false
-                        },
-                        {
-                            "size": "xl",
-                            "label": "double",
-                            "price": 12,
                             "isExtra": true
                         }
                     ],

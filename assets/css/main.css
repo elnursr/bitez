@@ -556,6 +556,11 @@
     height: 13.1em;
   }
 }
+.side .product-card__right-side .product-card__link {
+  width: 11em;
+  height: 7em;
+}
+
 .wrap .product-card__right-side .product-card__link {
   width: 15em;
   height: 6.5em;

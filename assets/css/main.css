@@ -199,6 +199,7 @@
 
 .footer {
   position: relative;
+  margin-top: 5.7em;
   background-image: url("../media/png/shape/shape.png");
   background-size: cover;
   background-position: center;
@@ -589,7 +590,6 @@ svg {
 
 .career {
   padding-top: 7.3em;
-  padding-bottom: 5.7em;
 }
 .career__heading {
   text-align: center;
@@ -1262,6 +1262,15 @@ svg {
   height: 8em;
 }
 
+.cool-drink-card [data-filter-category=fanta] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=mezzo] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=water] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=coca_cola] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=capri_sun] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=lemon_lime] .product-card__right-side .product-card__link {
+  width: 8em;
+  height: 10.7em;
+}
 .cool-drink-card [data-filter-category=fanta]:hover .product-card__link img,
 .cool-drink-card [data-filter-category=mezzo]:hover .product-card__link img,
 .cool-drink-card [data-filter-category=water]:hover .product-card__link img,
@@ -1277,10 +1286,6 @@ svg {
 .cool-drink-card .product-card__right-side {
   bottom: 3%;
   right: -3%;
-}
-.cool-drink-card .product-card__right-side .product-card__link {
-  width: 8em;
-  height: 13em;
 }
 
 body {

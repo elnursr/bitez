@@ -6,6 +6,20 @@
     [data-filter-category="mezzo"],
     [data-filter-category="water"],
     [data-filter-category="coca_cola"],
+    [data-filter-category="capri_sun"],
+    [data-filter-category="lemon_lime"] {
+        .product-card__right-side {
+            .product-card__link {
+                width: 8em;
+                height: 10.7em;
+            }
+        }
+    }
+
+    [data-filter-category="fanta"],
+    [data-filter-category="mezzo"],
+    [data-filter-category="water"],
+    [data-filter-category="coca_cola"],
     [data-filter-category="lemon_lime"] {
         &:hover {
 
@@ -30,10 +44,5 @@
     .product-card__right-side {
         bottom: 3%;
         right: -3%;
-
-        .product-card__link {
-            width: 8em;
-            height: 13em;
-        }
     }
 }

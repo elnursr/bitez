@@ -24,6 +24,10 @@ export default [
         "isActive": false
     },
     {
+        "title": 'capri_sun',
+        "isActive": false
+    },
+    {
         "title": 'limonade',
         "isActive": false
     }

@@ -4,8 +4,6 @@
 
 .career {
     @include mx.section-base();
-    padding-bottom: 5.7em;
-
     &-card {
         display: flex;
         justify-content: center;

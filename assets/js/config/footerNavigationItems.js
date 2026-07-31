@@ -13,15 +13,5 @@ export default [
         title: 'cool-drinks',
         icon: 'drink',
         url: '#cool-drinks'
-    },
-    {
-        title: 'career',
-        icon: 'business',
-        url: '#careers'
-    },
-    {
-        title: 'about-us',
-        icon: 'about',
-        url: '#about-us'
-    },
+    }
 ]

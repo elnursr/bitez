@@ -33,10 +33,5 @@ export default [
         title: 'career',
         url: '#careers',
         "isActive": false
-    },
-    {
-        title: 'about-us',
-        url: '#about-us',
-        "isActive": false
-    },
+    }
 ];

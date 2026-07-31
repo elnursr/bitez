@@ -130,7 +130,7 @@ dataService.fetchData('../assets/json/sides.json')
         bitez.renderProductsToUI({
             products: sides,
             productType: 'sides',
-            productOptionType: 'patty',
+            productOptionType: 'portion',
             productImageExtension: 'png',
             productCardElement: sideCardElement
         });
@@ -150,7 +150,7 @@ dataService.fetchData('../assets/json/wraps.json')
         bitez.renderProductsToUI({
             products: wraps,
             productType: 'wraps',
-            productOptionType: 'patty',
+            productOptionType: 'portion',
             productImageExtension: 'png',
             productCardElement: wrapCardElement
         });
@@ -169,7 +169,7 @@ dataService.fetchData('../assets/json/cool-drinks.json')
         bitez.renderProductsToUI({
             products: cool_drinks,
             productType: 'cool-drinks',
-            productOptionType: 'shot',
+            productOptionType: 'bottle',
             productImageExtension: 'png',
             productCardElement: coolDrinkCardElement
         });
@@ -202,25 +202,14 @@ dataService.fetchData('../assets/json/hot-drinks.json')
     })
 
 // career
-dataService.fetchData('../assets/json/careers.json')
-    .then(({ careers }) => {
-        bitez.renderToUI({
-            items: careers,
-            itemComponentElement: CareerItem,
-            itemComponentWrapperElement: document.querySelector('.career-card')
-        });
-    })
-
-// syncActiveClasses([
-//     {
-//         elements: document.querySelectorAll('.navigation__link'),
-//         activeClass: 'navigation__link--active'
-//     },
-//     {
-//         elements: document.querySelectorAll('.footer-navigation__link'),
-//         activeClass: 'footer__link--active'
-//     }
-// ]);
+// dataService.fetchData('../assets/json/careers.json')
+//     .then(({ careers }) => {
+//         bitez.renderToUI({
+//             items: careers,
+//             itemComponentElement: CareerItem,
+//             itemComponentWrapperElement: document.querySelector('.career-card')
+//         });
+//     })
 
 cookieBannerButton.addEventListener('click', function (e) {
     e.preventDefault();

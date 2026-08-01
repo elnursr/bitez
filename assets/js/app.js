@@ -123,26 +123,6 @@ dataService.fetchData('../assets/json/burgers.json')
         });
     })
 
-// sides
-dataService.fetchData('../assets/json/sides.json')
-    .then(({ sides }) => {
-
-        bitez.renderProductsToUI({
-            products: sides,
-            productType: 'sides',
-            productOptionType: 'portion',
-            productImageExtension: 'png',
-            productCardElement: sideCardElement
-        });
-
-        filterManager.filterMenu({
-            menuActiveClassName: 'filter-menu__item--active',
-            itemActiveClassName: 'product-card__item--active',
-            filteredItems: document.querySelectorAll('.side-card .product-card__item'),
-            filterMenuItems: document.querySelectorAll('.side-filter-menu .filter-menu__item')
-        });
-    })
-
 // wraps
 dataService.fetchData('../assets/json/wraps.json')
     .then(({ wraps }) => {
@@ -163,13 +143,33 @@ dataService.fetchData('../assets/json/wraps.json')
         });
     })
 
+// sides
+dataService.fetchData('../assets/json/sides.json')
+    .then(({ sides }) => {
+
+        bitez.renderProductsToUI({
+            products: sides,
+            productType: 'sides',
+            productOptionType: 'portion',
+            productImageExtension: 'png',
+            productCardElement: sideCardElement
+        });
+
+        filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
+            filteredItems: document.querySelectorAll('.side-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.side-filter-menu .filter-menu__item')
+        });
+    })
+
 // cool-drinks
 dataService.fetchData('../assets/json/cool-drinks.json')
     .then(({ cool_drinks }) => {
         bitez.renderProductsToUI({
             products: cool_drinks,
             productType: 'cool-drinks',
-            productOptionType: 'bottle',
+            // productOptionType: 'bottle',
             productImageExtension: 'png',
             productCardElement: coolDrinkCardElement
         });
@@ -224,5 +224,5 @@ if (Boolean(isUnderstood)) {
 
 document.querySelector('.navigation-menu').addEventListener('click', function (e) {
     e.preventDefault();
-    navigationListElement.classList.toggle('navigation__list--active');
+    navigationListElement.classList.add('navigation__list--active');
 });

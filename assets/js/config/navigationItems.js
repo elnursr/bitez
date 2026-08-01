@@ -28,10 +28,5 @@ export default [
         title: 'hot-drinks',
         url: '#hot-drinks',
         "isActive": false
-    },
-    {
-        title: 'career',
-        url: '#careers',
-        "isActive": false
     }
 ];

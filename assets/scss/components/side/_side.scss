@@ -1,8 +1,31 @@
+@use '../../abstracts'as bp;
+
 .side {
+
+    .product-card__left-side {
+        .product-card__title {
+
+            // width: 5em;
+            @include bp.tablet {
+            }
+        }
+    }
+
     .product-card__right-side {
+
         .product-card__link {
             width: 11em;
             height: 7em;
+
+            @include bp.mobile {
+                width: 12em;
+                height: 8em;
+            }
+
+            @include bp.tablet {
+                width: 11em;
+                height: 6.5em;
+            }
         }
     }
 }

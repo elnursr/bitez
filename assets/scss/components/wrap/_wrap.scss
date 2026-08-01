@@ -1,8 +1,15 @@
+@use '../../abstracts'as bp;
+
 .wrap {
     .product-card__right-side {
         .product-card__link {
             width: 15em;
             height: 6.5em;
+
+            @include bp.mobile {
+                width: 12em;
+                height: 5.5em;
+            }
         }
     }
 
@@ -10,6 +17,10 @@
         .product-card__right-side {
             .product-card__link {
                 height: 8em;
+
+                @include bp.mobile {
+                    height: 7.3em;
+                }
             }
         }
     }

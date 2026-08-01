@@ -10,6 +10,10 @@
     align-items: center;
     margin: 0 .3em;
 
+    @include bp.tablet {
+        margin: 0 .21em;
+    }
+
     &--extra {
         &::before {
             content: '';
@@ -25,6 +29,11 @@
                 left: -12%;
                 height: 81%;
             }
+
+            @include bp.tablet {
+                left: -9%;
+                height: 85%;
+            }
         }
     }
 
@@ -35,6 +44,10 @@
         @include bp.mobile {
             font-size: .49em;
         }
+
+        @include bp.tablet {
+            font-size: .41em;
+        }
     }
 
     &__size,
@@ -43,6 +56,10 @@
 
         @include bp.mobile {
             font-size: .9em;
+        }
+
+        @include bp.tablet {
+            font-size: .8em;
         }
     }
 

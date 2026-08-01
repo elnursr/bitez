@@ -1,4 +1,7 @@
 export function ProductOption({ size, label, price, isExtra }, optionType) {
+    if (optionType === undefined) {
+        optionType = '';
+    }
     let extraClass = isExtra ? 'product-option--extra' : '';
     return (
         `
@@ -9,4 +12,5 @@ export function ProductOption({ size, label, price, isExtra }, optionType) {
         `
     )
 }
+
 /*<span class="product-option__price">${price}</span>*/

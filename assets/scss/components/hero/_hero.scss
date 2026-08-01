@@ -28,7 +28,8 @@
         }
 
         @include bp.tablet {
-            // height: 23em;
+            gap: 0;
+            height: 23em;
         }
     }
 
@@ -47,6 +48,10 @@
         @include bp.mobile {
             flex-direction: column-reverse;
             font-size: 2.3em;
+        }
+
+        @include bp.tablet {
+            font-size: 3.1em;
         }
     }
 
@@ -78,7 +83,7 @@
 
     &__image {
         position: relative;
-        width: 29em;
+        // width: 29em;
         height: 22.5em;
 
 
@@ -92,13 +97,18 @@
             background-position: center;
         }
 
+        img {
+            @extend %img;
+        }
+
         @include bp.mobile {
             width: initial;
             height: 13.1em;
         }
 
-        img {
-            @extend %img;
+        @include bp.tablet {
+            width: initial;
+            height: 10.5em;
         }
     }
 }

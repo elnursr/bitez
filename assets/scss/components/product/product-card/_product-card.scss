@@ -42,15 +42,6 @@
             background-position: center;
         }
 
-        &:hover {
-
-            .product-card__link {
-                img {
-                    animation: rubberBand 1.5s;
-                }
-            }
-        }
-
         @include bp.mobile {
             width: 100%;
             padding: 1em;
@@ -120,11 +111,6 @@
         @include bp.mobile {
             width: 10.3em;
             height: 7.3em;
-        }
-
-        @include bp.tablet {
-            width: 13em;
-            height: 11em;
         }
     }
 

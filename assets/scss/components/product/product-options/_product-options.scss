@@ -10,4 +10,8 @@
         width: 43%;
         gap: .1em;
     }
+
+    @include bp.tablet {
+        gap: 0;
+    }
 }

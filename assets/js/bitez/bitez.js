@@ -4,7 +4,6 @@ import { ProducItem } from '../components/ProducItem.js';
 import { ProductOption } from '../components/ProductOption.js';
 
 export default function Bitez() {
-
 }
 
 Bitez.prototype.getProductsFromAPI = function (products) {
@@ -32,10 +31,6 @@ Bitez.prototype.renderProductsToUI = function ({ products, productCardElement, p
 
     for (let i = 0; i < productItems.length; i++) {
         let { items, category_name } = productItems[i];
-        if (category_name === 'limonade') {
-            // productOptionType = 'glass';
-            console.log(category_name);
-        }
         htmlContent += ProducItem(items, productType, category_name, productImageExtension);
     }
 

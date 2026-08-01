@@ -51,18 +51,6 @@
             "category_name": "loaded_fries",
             "items": [
                 {
-                    "title": "garlic_parmesan",
-                    "options": [
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 6.8,
-                            "isExtra": false
-                        }
-                    ],
-                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Jalapeños, Chili cheese sauce"
-                },
-                {
                     "title": "hot_chicken",
                     "options": [
                         {
@@ -73,6 +61,18 @@
                         }
                     ],
                     "ingredients": "Fries, Tender(finely chopped), Jalapeños, B!tez sauce"
+                },
+                {
+                    "title": "garlic_parmesan",
+                    "options": [
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 6.8,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Jalapeños, Chili cheese sauce"
                 },
                 {
                     "title": "chili_cheese",

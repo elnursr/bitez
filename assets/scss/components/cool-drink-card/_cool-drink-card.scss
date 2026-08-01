@@ -1,3 +1,4 @@
+@use '../../abstracts'as bp;
 @use '../../abstracts/animations'as *;
 
 .cool-drink-card {
@@ -12,6 +13,16 @@
             .product-card__link {
                 width: 8em;
                 height: 10.7em;
+
+                @include bp.mobile {
+                    width: 7em;
+                    height: 7.7em;
+                }
+
+                @include bp.tablet {
+                    width: 7em;
+                    height: 9em;
+                }
             }
         }
     }
@@ -37,6 +48,22 @@
             .product-card__link {
                 width: 15em;
                 height: 9em;
+
+                @include bp.mobile {
+                    width: 12em;
+                    height: 7em;
+                }
+            }
+        }
+    }
+
+    [data-filter-category="capri_sun"] {
+        .product-card__right-side {
+            .product-card__link {
+                @include bp.tablet {
+                    width: 7em;
+                    height: 7em;
+                }
             }
         }
     }

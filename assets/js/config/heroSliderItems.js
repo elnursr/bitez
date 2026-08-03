@@ -14,5 +14,5 @@ export default [
     {
         "productType": 'wrap',
         "productTitle": 'falafel'
-    },
+    }
 ]

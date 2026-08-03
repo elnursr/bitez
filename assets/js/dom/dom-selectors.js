@@ -1,4 +1,5 @@
-export const burgerCardElement = document.querySelector('.burger-card'),
+export const highlightsCardElement = document.querySelector('.highlights__card'),
+    burgerCardElement = document.querySelector('.burger-card'),
     sideCardElement = document.querySelector('.side-card'),
     wrapCardElement = document.querySelector('.wrap-card'),
     coolDrinkCardElement = document.querySelector('.cool-drink-card'),
@@ -8,4 +9,4 @@ export const burgerCardElement = document.querySelector('.burger-card'),
     footerContactListElement = document.querySelector('.footer-contact__list'),
     footerNavigationListElement = document.querySelector('.footer-navigation__list'),
     footerFollowUsListElement = document.querySelector('.footer-follow-us__list'),
-    cookieBannerButton=document.querySelector('.cookie-banner__button');
+    cookieBannerButton = document.querySelector('.cookie-banner__button');

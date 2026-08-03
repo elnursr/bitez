@@ -1,15 +1,16 @@
 // vendor
 import { Swiper } from './vendors/swiper/swiper.min.js';
 
-import { FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
+import { HighLightItem, FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
-import { navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
+import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
 
 import Bitez from './bitez/index.js';
 import FilterManager from './filter/index.js';
 import { DataService } from './services/DataService.js';
 
 import {
+    highlightsCardElement,
     burgerCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
     heroSliderListElement, navigationListElement,
@@ -42,6 +43,12 @@ const bitez = new Bitez();
 const dataService = new DataService();
 
 const filterManager = new FilterManager();
+
+bitez.renderToUI({
+    items: highLightItems,
+    itemComponentElement: HighLightItem,
+    itemComponentWrapperElement: highlightsCardElement
+});
 
 bitez.renderToUI({
     items: heroSliderItems,

@@ -13,5 +13,10 @@ export default [
         title: 'cool-drinks',
         icon: 'drink',
         url: '#cool-drinks'
+    },
+    {
+        title: 'Delivery',
+        icon: 'delivery',
+        url: '#'
     }
 ]

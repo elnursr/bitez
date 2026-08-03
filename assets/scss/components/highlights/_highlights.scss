@@ -1,0 +1,54 @@
+@use '../../abstracts' as v;
+@use '../../abstracts' as mx;
+@use '../../abstracts/breakpoints' as bp;
+
+.highlights {
+    padding-top: 7em;
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        gap: .3em;
+
+        @include bp.mobile {
+            flex-wrap: wrap;
+        }
+
+        @include bp.tablet {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin: 0 .9em;
+        background-color: v.$bg-primary;
+
+        @include bp.mobile {
+            width: 100%;
+        }
+
+        @include bp.tablet {
+            width: 45%;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3em;
+        padding: 0 .9em;
+        color: v.$color-white;
+        background-color: v.$color-secondary;
+    }
+
+    &__content {
+        text-align: center;
+        padding: 1.5em;
+    }
+
+    &__title {
+        text-transform: capitalize;
+    }
+}

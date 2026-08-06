@@ -9,4 +9,5 @@ export const highlightsCardElement = document.querySelector('.highlights__card')
     footerContactListElement = document.querySelector('.footer-contact__list'),
     footerNavigationListElement = document.querySelector('.footer-navigation__list'),
     footerFollowUsListElement = document.querySelector('.footer-follow-us__list'),
+    navigationMenuElement = document.querySelector('.navigation-menu'),
     cookieBannerButton = document.querySelector('.cookie-banner__button');

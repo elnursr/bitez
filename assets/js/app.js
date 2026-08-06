@@ -17,6 +17,7 @@ import {
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement,
     cookieBannerButton,
+    navigationMenuElement,
     syncActiveClasses
 } from './dom/index.js';
 
@@ -229,7 +230,8 @@ if (Boolean(isUnderstood)) {
     document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
 }
 
-document.querySelector('.navigation-menu').addEventListener('click', function (e) {
+navigationMenuElement.addEventListener('click', function (e) {
     e.preventDefault();
-    navigationListElement.classList.add('navigation__list--active');
+    navigationMenuElement.classList.toggle('navigation-menu--active');
+    navigationListElement.classList.toggle('navigation__list--active');
 });

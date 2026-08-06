@@ -1,6 +1,6 @@
-@use '../../abstracts'as v;
-@use '../../abstracts'as bp;
-@use '../../abstracts/placeholders'as p;
+@use '../../abstracts' as v;
+@use '../../abstracts' as bp;
+@use '../../abstracts/placeholders' as *;
 
 .navigation {
     position: fixed;
@@ -39,12 +39,12 @@
             left: 0%;
             top: 100%;
             width: 100%;
-            height: 77%;
+            height: 100%;
+            z-index: 5;
             transition: top .3s;
             background-color: rgba(v.$color-primary, .9);
 
             @starting-style {
-                display: none;
                 top: 100%;
             }
 
@@ -54,18 +54,40 @@
         }
 
         @include bp.tablet {
-            display: none;
+            align-items: center;
         }
     }
 
     &__link {
+        position: relative;
+        display: block;
         text-transform: uppercase;
         font-size: 1.3em;
         padding: .3em .25em;
         color: v.$text-primary;
 
+        &::after {
+            @extend %before-after;
+            top: 71%;
+            width: 100%;
+            height: 29%;
+        }
+
         @include bp.mobile {
-            font-size: 1.5em;
+            text-transform: uppercase;
+            font-size: 2.3em;
+            letter-spacing: .1em;
+            font-family: v.$font-family-secondary;
+            text-shadow: 7px 0 1px v.$color-black;
+            color: v.$text-secondary;
+
+            background-size: cover;
+            background-position: center;
+            background-image: url('../media/svg/line.svg');
+        }
+
+        @include bp.tablet {
+            font-size: .9em;
         }
     }
 
@@ -86,6 +108,21 @@
             height: .21em;
             box-shadow: 0 0 1.1px 1.8px v.$color-black;
             background-color: v.$color-white;
+            transition: transform .3s;
+        }
+
+        &--active {
+            .navigation-menu__item:first-child {
+                transform: translateY(.5em) rotate(45deg);
+            }
+
+            .navigation-menu__item:nth-child(2) {
+                transform: scale(0);
+            }
+
+            .navigation-menu__item:last-child {
+                transform: translateY(-.75em) rotate(-45deg);
+            }
         }
 
         @include bp.mobile {
@@ -93,7 +130,7 @@
         }
 
         @include bp.tablet {
-            display: flex;
+            display: none;
         }
     }
 }

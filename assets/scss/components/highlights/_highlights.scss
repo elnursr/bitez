@@ -8,7 +8,7 @@
     &__card {
         display: flex;
         justify-content: center;
-        gap: .3em;
+        gap: .5em;
 
         @include bp.mobile {
             flex-wrap: wrap;
@@ -41,14 +41,33 @@
         padding: 0 .9em;
         color: v.$color-white;
         background-color: v.$color-secondary;
+
+        @include bp.mobile {
+            padding: 0 .7em;
+            font-size: 2.1em;
+        }
     }
 
     &__content {
         text-align: center;
         padding: 1.5em;
+
+        @include bp.mobile {
+            padding: .9em;
+        }
     }
 
     &__title {
         text-transform: capitalize;
+
+        @include bp.mobile {
+            font-size: 1em;
+        }
+    }
+
+    &__text {
+        @include bp.mobile {
+            font-size: .7em;
+        }
     }
 }

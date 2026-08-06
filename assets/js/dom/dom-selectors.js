@@ -1,5 +1,6 @@
 export const highlightsCardElement = document.querySelector('.highlights__card'),
     burgerCardElement = document.querySelector('.burger-card'),
+    handmadeChickenCardElement = document.querySelector('.handmade-chicken-card'),
     sideCardElement = document.querySelector('.side-card'),
     wrapCardElement = document.querySelector('.wrap-card'),
     coolDrinkCardElement = document.querySelector('.cool-drink-card'),

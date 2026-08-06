@@ -9,6 +9,7 @@ import burgerFilterMenuItems from './burgerFilterMenuItems.js';
 import footerNavigationItems from './footerNavigationItems.js';
 import hotDrinkFilterMenuItems from './hotDrinkFilterMenuItems.js';
 import coolDrinkFilterMenuItems from './coolDrinkFilterMenuItems.js';
+import handmadeChickenFilterMenuItems from './handmadeChickenFilterMenuItems.js';
 
 export {
     highLightItems,
@@ -21,5 +22,6 @@ export {
     burgerFilterMenuItems,
     footerNavigationItems,
     hotDrinkFilterMenuItems,
-    coolDrinkFilterMenuItems
+    coolDrinkFilterMenuItems,
+    handmadeChickenFilterMenuItems
 }

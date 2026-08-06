@@ -77,3 +77,18 @@ Bitez.prototype.renderToUI = function ({ items, itemComponentWrapperElement, ite
     }
     itemComponentWrapperElement.innerHTML = renderedContent;
 }
+
+Bitez.prototype.removeActiveClass = function (elements) {
+    for (let i = 0; i < elements.length; i++) {
+        let { element, activeClass } = elements[i];
+        element.classList.remove(activeClass);
+    }
+}
+
+Bitez.prototype.closeMobileMenu = function ({ linkElements, elements }) {
+    for (let i = 0; i < linkElements.length; i++) {
+        linkElements[i].addEventListener('click', function () {
+            this.removeActiveClass(elements);
+        }.bind(this));
+    }
+}

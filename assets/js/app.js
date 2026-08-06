@@ -3,7 +3,7 @@ import { Swiper } from './vendors/swiper/swiper.min.js';
 
 import { HighLightItem, FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
-import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
+import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
 
 import Bitez from './bitez/index.js';
 import FilterManager from './filter/index.js';
@@ -11,16 +11,16 @@ import { DataService } from './services/DataService.js';
 
 import {
     highlightsCardElement,
-    burgerCardElement, sideCardElement, wrapCardElement,
+    burgerCardElement, handmadeChickenCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
     heroSliderListElement, navigationListElement,
     footerNavigationListElement,
     footerContactListElement, footerFollowUsListElement,
     cookieBannerButton,
-    navigationMenuElement,
-    syncActiveClasses
+    navigationMenuElement
 } from './dom/index.js';
 
+// vendor
 let swiper = new Swiper('.hero-slider', {
     spaceBetween: 0,
     // loop: true,
@@ -63,6 +63,16 @@ bitez.renderToUI({
     itemComponentWrapperElement: navigationListElement
 });
 
+let navigationLinkElements = document.querySelectorAll('.navigation__link');
+
+bitez.closeMobileMenu({
+    linkElements: navigationLinkElements,
+    elements: [
+        { element: navigationMenuElement, activeClass: 'navigation-menu--active' },
+        { element: navigationListElement, activeClass: 'navigation__list--active' }
+    ]
+});
+
 bitez.renderToUI({
     items: footerFollowUsItems,
     itemComponentElement: FollowUsItem,
@@ -85,6 +95,12 @@ bitez.renderToUI({
     items: burgerFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.burger-filter-menu')
+});
+
+bitez.renderToUI({
+    items: handmadeChickenFilterMenuItems,
+    itemComponentElement: FilterMenuItem,
+    itemComponentWrapperElement: document.querySelector('.handmade-chicken-filter-menu')
 });
 
 bitez.renderToUI({
@@ -128,6 +144,26 @@ dataService.fetchData('../assets/json/burgers.json')
             itemActiveClassName: 'product-card__item--active',
             filteredItems: document.querySelectorAll('.burger-card .product-card__item'),
             filterMenuItems: document.querySelectorAll('.burger-filter-menu .filter-menu__item')
+        });
+    })
+
+// handmade-chickens
+dataService.fetchData('../assets/json/handmade-chickens.json')
+    .then(({ handmade_chickens }) => {
+
+        bitez.renderProductsToUI({
+            products: handmade_chickens,
+            productType: 'handmade_chickens',
+            productOptionType: 'er',
+            productImageExtension: 'png',
+            productCardElement: handmadeChickenCardElement
+        });
+
+        filterManager.filterMenu({
+            menuActiveClassName: 'filter-menu__item--active',
+            itemActiveClassName: 'product-card__item--active',
+            filteredItems: document.querySelectorAll('.handmade-chicken-card .product-card__item'),
+            filterMenuItems: document.querySelectorAll('.handmade-chicken-filter-menu .filter-menu__item')
         });
     })
 

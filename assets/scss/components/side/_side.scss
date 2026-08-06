@@ -1,13 +1,24 @@
-@use '../../abstracts'as bp;
+@use '../../abstracts' as bp;
 
 .side {
 
+    &-card {
+        .product-card__item {
+            &:first-child {
+                .product-card__left-side {
+                    .product-card__title {
+                        @include bp.mobile {
+                            width: 6.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .product-card__left-side {
         .product-card__title {
-
-            // width: 5em;
-            @include bp.tablet {
-            }
+            @include bp.mobile {}
         }
     }
 

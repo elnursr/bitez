@@ -153,7 +153,7 @@ dataService.fetchData('../assets/json/handmade-chickens.json')
 
         bitez.renderProductsToUI({
             products: handmade_chickens,
-            productType: 'handmade_chickens',
+            productType: 'handmade-chickens',
             productOptionType: 'er',
             productImageExtension: 'png',
             productCardElement: handmadeChickenCardElement
@@ -213,7 +213,6 @@ dataService.fetchData('../assets/json/cool-drinks.json')
         bitez.renderProductsToUI({
             products: cool_drinks,
             productType: 'cool-drinks',
-            // productOptionType: 'bottle',
             productImageExtension: 'png',
             productCardElement: coolDrinkCardElement
         });

@@ -3,7 +3,7 @@
 @use '../breakpoints'as bp;
 
 @mixin section-base() {
-    padding-top: 7.3em;
+    padding-top: 7.7em;
 
     &__heading {
         @extend %heading-text-effect;

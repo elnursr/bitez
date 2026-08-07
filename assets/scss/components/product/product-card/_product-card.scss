@@ -1,7 +1,7 @@
-@use '../../../abstracts'as v;
-@use '../../../abstracts'as bp;
-@use '../../../abstracts/animations'as *;
-@use '../../../abstracts/placeholders'as p;
+@use '../../../abstracts' as v;
+@use '../../../abstracts' as bp;
+@use '../../../abstracts/animations' as *;
+@use '../../../abstracts/placeholders' as p;
 
 .product-card {
     display: flex;
@@ -101,7 +101,7 @@
         text-align: center;
         display: block;
         width: 13em;
-        height: 9em;
+        // height: 9em;
 
 
         img {
@@ -110,23 +110,9 @@
 
         @include bp.mobile {
             width: 10.3em;
-            height: 7.3em;
+            // height: 7.3em;
         }
     }
-
-    // &__certificate {
-    //     position: absolute;
-    //     width: 2.1em;
-    //     height: 2.1em;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     top: .5em;
-
-    //     svg {
-    //         width: 21em;
-    //         height: 21em;
-    //     }
-    // }
 
     &__description {
         width: 51%;

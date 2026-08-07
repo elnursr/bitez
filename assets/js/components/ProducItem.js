@@ -16,9 +16,3 @@ export function ProducItem({ title, ingredients }, productType, categoryName, ex
         `
     )
 }
-
-/*<div class="product-card__certificate">
-    <svg class="product-card__icon" viewBox="0 0 500 500">
-        <use href="assets/media/svg/icons/icons.svg#icon-halal"></use>
-    </svg>
-</div>*/

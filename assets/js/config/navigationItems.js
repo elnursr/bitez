@@ -10,6 +10,11 @@ export default [
         "isActive": false
     },
     {
+        title: 'handmade-chickens',
+        url: '#handmade-chickens',
+        "isActive": false
+    },
+    {
         title: 'wraps',
         url: '#wraps',
         "isActive": false

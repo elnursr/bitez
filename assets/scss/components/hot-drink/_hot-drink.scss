@@ -3,20 +3,19 @@
 .hot-drink-card {
 
     .product-card__right-side {
-        right: -1%;
 
         .product-card__link {
             width: 10.5em;
-            height: 8em;
+            // height: 8em;
 
             @include bp.mobile {
                 width: 9em;
-                height: 6.5em;
+                // height: 6.5em;
             }
 
             @include bp.tablet {
                 width: 9.5em;
-                height: 7em;
+                height: 8em;
             }
         }
     }

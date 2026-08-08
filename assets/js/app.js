@@ -270,3 +270,9 @@ navigationMenuElement.addEventListener('click', function (e) {
     navigationMenuElement.classList.toggle('navigation-menu--active');
     navigationListElement.classList.toggle('navigation__list--active');
 });
+
+document.querySelectorAll('*').forEach(el => {
+    if (el.offsetWidth > document.documentElement.clientWidth) {
+        console.log('Daşan element:', el);
+    }
+});

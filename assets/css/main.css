@@ -498,6 +498,11 @@
 .swiper-button-next, .swiper-button-prev {
   color: #df175f;
 }
+@media (width < 48em) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0;
@@ -1089,7 +1094,6 @@ svg {
   font-size: 1.5em;
   font-weight: 755;
   padding: 0.7em 0;
-  width: 13.9em;
   color: #df175f;
 }
 .product-card__title::after {

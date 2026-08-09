@@ -25,12 +25,12 @@ export default [
         "isActive": false
     },
     {
-        title: 'cool-drinks',
+        title: 'kühle-getränke',
         url: '#cool-drinks',
         "isActive": false
     },
     {
-        title: 'hot-drinks',
+        title: 'heiße-getränke',
         url: '#hot-drinks',
         "isActive": false
     }

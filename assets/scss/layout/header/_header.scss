@@ -30,6 +30,10 @@
         display: flex;
         gap: 1em;
 
+        @include bp.tablet {
+            gap: .3em;
+        }
+
         @include bp.mobile {
             flex-direction: column;
             justify-content: center;
@@ -88,7 +92,7 @@
         }
 
         @include bp.tablet {
-            font-size: .9em;
+            font-size: .71em;
         }
     }
 

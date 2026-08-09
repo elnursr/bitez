@@ -1,14 +1,29 @@
 export default [
     {
-        "title": 'all',
+        "title": 'alle',
         "isActive": true
     },
     {
-        "title": 'coffee',
+        "title": 'kaffee',
         "isActive": false
     },
     {
-        "title": 'tea',
+        "title": 'tee',
         "isActive": false
     }
-]
+];
+
+// export default [
+//     {
+//         "title": 'all',
+//         "isActive": true
+//     },
+//     {
+//         "title": 'coffee',
+//         "isActive": false
+//     },
+//     {
+//         "title": 'tea',
+//         "isActive": false
+//     }
+// ];

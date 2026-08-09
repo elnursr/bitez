@@ -1,6 +1,6 @@
 export default [
     {
-        "title": 'all',
+        "title": 'alle',
         "isActive": true
     },
     {
@@ -18,4 +18,26 @@ export default [
         "title": 'box',
         "isActive": false
     }
-]
+];
+
+// export default [
+//     {
+//         "title": 'all',
+//         "isActive": true
+//     },
+//     {
+//         "title": 'wing',
+//         "isActive": false
+//     },
+//     {
+//         "title": 'tender',
+//         "isActive": false
+//     }, {
+//         "title": 'nugget',
+//         "isActive": false
+//     },
+//     {
+//         "title": 'box',
+//         "isActive": false
+//     }
+// ];

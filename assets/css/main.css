@@ -105,6 +105,11 @@
   display: flex;
   gap: 1em;
 }
+@media (width < 64em) and (width >= 48em) {
+  .navigation__list {
+    gap: 0.3em;
+  }
+}
 @media (width < 48em) {
   .navigation__list {
     -webkit-box-orient: vertical;
@@ -174,7 +179,7 @@
 }
 @media (width < 64em) and (width >= 48em) {
   .navigation__link {
-    font-size: 0.9em;
+    font-size: 0.71em;
   }
 }
 .navigation-menu {
@@ -269,7 +274,7 @@
 }
 @media (width < 64em) and (width >= 48em) {
   .footer__heading {
-    font-size: 1.3em;
+    font-size: 0.9em;
   }
 }
 .footer__wrapper {
@@ -302,6 +307,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (width < 48em) {
+  .footer-brand {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .footer-brand__decription {
   font-style: italic;
@@ -683,7 +695,7 @@ svg {
 }
 @media (width < 48em) {
   .career__heading {
-    font-size: 2.3em;
+    font-size: 1.9em;
   }
 }
 @media (width < 64em) and (width >= 48em) {
@@ -852,7 +864,7 @@ svg {
 }
 @media (width < 48em) {
   .product__heading {
-    font-size: 2.3em;
+    font-size: 1.9em;
   }
 }
 @media (width < 64em) and (width >= 48em) {

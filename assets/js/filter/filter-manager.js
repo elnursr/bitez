@@ -34,7 +34,7 @@ FilterManager.prototype.filterItems = function ({ filteredItems, menuCategory, a
 
         let itemCategory = filteredItems[i].dataset.filterCategory;
 
-        if (menuCategory === 'all' || menuCategory === itemCategory) {
+        if (menuCategory === 'alle' || menuCategory === itemCategory) {
             setTimeout(function () {
                 filteredItems[i].classList.add(activeClass);
             }, 111);

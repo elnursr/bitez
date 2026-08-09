@@ -1,6 +1,6 @@
 export default [
     {
-        "title": 'all',
+        "title": 'alle',
         "isActive": true
     },
     {
@@ -16,7 +16,30 @@ export default [
         "isActive": false
     },
     {
-        "title": 'veggie',
+        "title": 'vegetarisch',
         "isActive": false
     }
-]
+];
+
+// export default [
+//     {
+//         "title": 'all',
+//         "isActive": true
+//     },
+//     {
+//         "title": 'smash',
+//         "isActive": false
+//     },
+//     {
+//         "title": 'chicken',
+//         "isActive": false
+//     },
+//     {
+//         "title": 'toast',
+//         "isActive": false
+//     },
+//     {
+//         "title": 'veggie',
+//         "isActive": false
+//     }
+// ];

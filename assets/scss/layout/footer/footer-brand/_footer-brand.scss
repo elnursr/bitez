@@ -1,10 +1,14 @@
-@use '../../../abstracts'as v;
-@use '../../../abstracts'as bp;
-@use '../../../abstracts/placeholders'as p;
+@use '../../../abstracts' as v;
+@use '../../../abstracts' as bp;
+@use '../../../abstracts/placeholders' as p;
 
 .footer-brand {
     display: flex;
     flex-direction: column;
+
+    @include bp.mobile {
+        align-items: center;
+    }
 
     &__decription {
         font-style: italic;

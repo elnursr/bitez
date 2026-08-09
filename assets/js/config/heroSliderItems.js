@@ -1,18 +1,27 @@
 export default [
     {
-        "productType": 'burger',
-        "productTitle": 'smash'
+        "folderName": "burgers",
+        "categoryName": 'smash',
+        "productTitle": '7th_street'
     },
     {
-        "productType": 'wrap',
-        "productTitle": 'chicken'
+        "folderName": "wraps",
+        "categoryName": 'wrap',
+        "productTitle": 'golden_chicken'
     },
     {
-        "productType": 'burger',
-        "productTitle": 'chicken'
+        "folderName": "burgers",
+        "categoryName": 'chicken',
+        "productTitle": 'golden_slaw'
     },
     {
-        "productType": 'wrap',
-        "productTitle": 'falafel'
+        "folderName": "wraps",
+        "categoryName": 'wrap',
+        "productTitle": 'garlic_chicken'
+    },
+    {
+        "folderName": "burgers",
+        "categoryName": 'toast',
+        "productTitle": 'classic_cheesy'
     }
-]
+];

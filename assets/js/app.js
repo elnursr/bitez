@@ -128,7 +128,7 @@ bitez.renderToUI({
 });
 
 // burgers
-dataService.fetchData('../assets/json/burgers.json')
+dataService.fetchData('../assets/json/de/burgers.json')
     .then(({ burgers }) => {
 
         bitez.renderProductsToUI({
@@ -148,7 +148,7 @@ dataService.fetchData('../assets/json/burgers.json')
     })
 
 // handmade-chickens
-dataService.fetchData('../assets/json/handmade-chickens.json')
+dataService.fetchData('../assets/json/de/handmade-chickens.json')
     .then(({ handmade_chickens }) => {
 
         bitez.renderProductsToUI({
@@ -168,7 +168,7 @@ dataService.fetchData('../assets/json/handmade-chickens.json')
     })
 
 // wraps
-dataService.fetchData('../assets/json/wraps.json')
+dataService.fetchData('../assets/json/de/wraps.json')
     .then(({ wraps }) => {
 
         bitez.renderProductsToUI({
@@ -188,7 +188,7 @@ dataService.fetchData('../assets/json/wraps.json')
     })
 
 // sides
-dataService.fetchData('../assets/json/sides.json')
+dataService.fetchData('../assets/json/de/sides.json')
     .then(({ sides }) => {
 
         bitez.renderProductsToUI({
@@ -208,7 +208,7 @@ dataService.fetchData('../assets/json/sides.json')
     })
 
 // cool-drinks
-dataService.fetchData('../assets/json/cool-drinks.json')
+dataService.fetchData('../assets/json/de/cool-drinks.json')
     .then(({ cool_drinks }) => {
         bitez.renderProductsToUI({
             products: cool_drinks,
@@ -226,7 +226,7 @@ dataService.fetchData('../assets/json/cool-drinks.json')
     })
 
 // hot-drinks
-dataService.fetchData('../assets/json/hot-drinks.json')
+dataService.fetchData('../assets/json/de/hot-drinks.json')
     .then(({ hot_drinks }) => {
         bitez.renderProductsToUI({
             products: hot_drinks,

@@ -1,0 +1,16 @@
+{
+    "faqs": [
+        {
+            "title": "is your flesh halal?",
+            "description": "Yes, our meat is halal! It is important to us to offer as many people as possible the opportunity to enjoy our food. That is why we offer only halal meat, as well as halal bacon!"
+        },
+        {
+            "title": "can you order from you?",
+            "description": "Yeah, yeah! B!tez delivers exclusively through Ubereats. Just download the Ubereats app and enjoy our creations wherever you are or order for pickup!"
+        },
+        {
+            "title": "how can you pay?",
+            "description": "For shorter waiting times and a smooth process you can only pay by card."
+        }
+    ]
+}

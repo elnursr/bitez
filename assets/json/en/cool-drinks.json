@@ -1,0 +1,195 @@
+{
+    "cool_drinks": [
+        {
+            "category_name": "coca_cola",
+            "items": [
+                {
+                    "title": "coca_cola",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "coca_cola_zero",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "coca_cola_light",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "fanta",
+            "items": [
+                {
+                    "title": "fanta_orange",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "mezzo",
+            "items": [
+                {
+                    "title": "mezzo_mix",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "lemon_lime",
+            "items": [
+                {
+                    "title": "sprite",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "water",
+            "items": [
+                {
+                    "title": "vio_still",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.7,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "vio_mineral",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.7,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "vio_schorle",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.3,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "capri_sun",
+            "items": [
+                {
+                    "title": "capri_sun_orange",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 1.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "limonade",
+            "items": [
+                {
+                    "title": "blueberry",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "peach",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "lemon",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.9,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        }
+    ]
+}

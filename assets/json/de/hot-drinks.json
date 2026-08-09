@@ -1,0 +1,104 @@
+{
+    "hot_drinks": [
+        {
+            "category_name": "kaffee",
+            "items": [
+                {
+                    "title": "kaffee",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.2,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 2.7,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "cappuccino",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 3.3,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "latte_macchiato",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.2,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 3.7,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                },
+                {
+                    "title": "espresso",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 3.2,
+                            "isExtra": false
+                        },
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 2.5,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        },
+        {
+            "category_name": "tee",
+            "items": [
+                {
+                    "title": "tee",
+                    "options": [
+                        {
+                            "label": "single",
+                            "size": "m",
+                            "price": 2.8,
+                            "isExtra": false
+                        },
+                        {
+                            "size": "xl",
+                            "label": "double",
+                            "price": 2.7,
+                            "isExtra": true
+                        }
+                    ],
+                    "ingredients": ""
+                }
+            ]
+        }
+    ]
+}

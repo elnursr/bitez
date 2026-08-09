@@ -49,7 +49,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "5 wings, Fries, Lemon, Sauce"
+                    "ingredients": "5 wings, Fries, Limo, Sauce"
                 }
             ]
         },
@@ -102,7 +102,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "5 tender, Fries, Lemon, Sauce"
+                    "ingredients": "5 tender, Fries, Limo, Sauce"
                 }
             ]
         },
@@ -142,7 +142,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Tender, Brioche toast, Fries, Coleslaw salad, Gherkin, B!tez sauce, Drink"
+                    "ingredients": "Tender, Brioche toast, Fries, Coleslaw salad, Gürkchen, Große, B!tez sauce, Getränk"
                 },
                 {
                     "title": "b!tez_garlic_parmesan",
@@ -154,7 +154,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Tender garlic, Brioche toast, Fries, Coleslaw salad, Gherkin, B!tez sauce, Drink"
+                    "ingredients": "Tender garlic, Brioche toast, Fries, Coleslaw salad, Gürkchen, Große, B!tez sauce, Getränk"
                 }
             ]
         }

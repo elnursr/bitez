@@ -1373,7 +1373,7 @@ svg {
 
 .cool-drink-card [data-filter-category=fanta] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=mezzo] .product-card__right-side .product-card__link,
-.cool-drink-card [data-filter-category=water] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=wasser] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=coca_cola] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=capri_sun] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=lemon_lime] .product-card__right-side .product-card__link {
@@ -1383,7 +1383,7 @@ svg {
 @media (width < 48em) {
   .cool-drink-card [data-filter-category=fanta] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=mezzo] .product-card__right-side .product-card__link,
-.cool-drink-card [data-filter-category=water] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=wasser] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=coca_cola] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=capri_sun] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=lemon_lime] .product-card__right-side .product-card__link {
@@ -1394,7 +1394,7 @@ svg {
 @media (width < 64em) and (width >= 48em) {
   .cool-drink-card [data-filter-category=fanta] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=mezzo] .product-card__right-side .product-card__link,
-.cool-drink-card [data-filter-category=water] .product-card__right-side .product-card__link,
+.cool-drink-card [data-filter-category=wasser] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=coca_cola] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=capri_sun] .product-card__right-side .product-card__link,
 .cool-drink-card [data-filter-category=lemon_lime] .product-card__right-side .product-card__link {
@@ -1404,7 +1404,7 @@ svg {
 }
 .cool-drink-card [data-filter-category=fanta]:hover .product-card__link img,
 .cool-drink-card [data-filter-category=mezzo]:hover .product-card__link img,
-.cool-drink-card [data-filter-category=water]:hover .product-card__link img,
+.cool-drink-card [data-filter-category=wasser]:hover .product-card__link img,
 .cool-drink-card [data-filter-category=coca_cola]:hover .product-card__link img,
 .cool-drink-card [data-filter-category=lemon_lime]:hover .product-card__link img {
   -webkit-animation: wooble 1.5s;
@@ -1545,7 +1545,7 @@ svg {
 }
 
 .handmade-chicken-card .product-card__right-side .product-card__link {
-  width: 15em;
+  width: 14em;
 }
 @media (width < 48em) {
   .handmade-chicken-card .product-card__right-side .product-card__link {

@@ -93,7 +93,7 @@
             ]
         },
         {
-            "category_name": "water",
+            "category_name": "wasser",
             "items": [
                 {
                     "title": "vio_still",
@@ -154,7 +154,7 @@
             "category_name": "limonade",
             "items": [
                 {
-                    "title": "blueberry",
+                    "title": "blaubeere",
                     "options": [
                         {
                             "label": "single",
@@ -166,7 +166,7 @@
                     "ingredients": ""
                 },
                 {
-                    "title": "peach",
+                    "title": "pfirsich",
                     "options": [
                         {
                             "label": "single",
@@ -178,7 +178,7 @@
                     "ingredients": ""
                 },
                 {
-                    "title": "lemon",
+                    "title": "zitrone",
                     "options": [
                         {
                             "label": "single",

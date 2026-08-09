@@ -51,28 +51,28 @@
             "category_name": "loaded_fries",
             "items": [
                 {
-                    "title": "hot_chicken",
-                    "options": [
-                        {
-                            "label": "double",
-                            "size": "xl",
-                            "price": 6.8,
-                            "isExtra": false
-                        }
-                    ],
-                    "ingredients": "Fries, Tender(finely chopped), Jalapeños, B!tez sauce"
-                },
-                {
                     "title": "garlic_parmesan",
                     "options": [
                         {
                             "label": "double",
                             "size": "xl",
-                            "price": 6.8,
+                            "price": 6.3,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Jalapeños, Chili cheese sauce"
+                    "ingredients": "Fries, Parmesan, Spring onions, Garlic sauce"
+                },
+                {
+                    "title": "hot_chicken",
+                    "options": [
+                        {
+                            "label": "double",
+                            "size": "xl",
+                            "price": 6.5,
+                            "isExtra": false
+                        }
+                    ],
+                    "ingredients": "Fries, Tender(finely chopped), Jalapeños, B!tez sauce"
                 },
                 {
                     "title": "chili_cheese",
@@ -80,7 +80,7 @@
                         {
                             "label": "double",
                             "size": "xl",
-                            "price": 6.8,
+                            "price": 5.9,
                             "isExtra": false
                         }
                     ],

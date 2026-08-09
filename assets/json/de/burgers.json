@@ -19,7 +19,7 @@
                             "isExtra": true
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Diced onion, Little gherkin, Ketchup & Mustard"
+                    "ingredients": "Smashed beef patty, American cheese, Zwiebelwürfel, Gürkchen, Ketchup & Senf"
                 },
                 {
                     "title": "7th_street_burger",
@@ -37,7 +37,7 @@
                             "isExtra": true
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Diced onion(seared), Little gherkin, B!tez sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Zwiebelwürfel(angebraten), Gürkchen, B!tez sauce"
                 },
                 {
                     "title": "chili_cheeseburger",
@@ -55,7 +55,7 @@
                             "isExtra": true
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Jalapeños, Diced onion, Little gherkin, Chili cheese sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Jalapeños, Zwiebelwürfel, Gürkchen, Spicy sauce"
                 },
                 {
                     "title": "b!tez_special",
@@ -73,7 +73,7 @@
                             "isExtra": true
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, B!tez sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Eisbergsalat, Zwiebelwürfel, Gürkchen, B!tez sauce"
                 },
                 {
                     "title": "b!tez_deluxe",
@@ -91,7 +91,7 @@
                             "isExtra": true
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Tomato, Mayo"
+                    "ingredients": "Smashed beef patty, American cheese, Eisbergsalat, Zwiebelwürfel, Gürkchen, Tomate, Mayo"
                 }
             ]
         },
@@ -108,7 +108,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Mayo"
+                    "ingredients": "Crispy chicken patty, Eisbergsalat, Mayo"
                 },
                 {
                     "title": "hot_sweet_chicken",
@@ -120,7 +120,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Sweet chili sauce"
+                    "ingredients": "Crispy chicken patty, Eisbergsalat, Sweet chili sauce"
                 },
                 {
                     "title": "supreme_chicken",
@@ -132,7 +132,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy chicken patty, American cheese, Iceberg lettuce, Tomato, Mayo"
+                    "ingredients": "Crispy chicken patty, American cheese, Eisbergsalat, Tomate, Mayo"
                 },
                 {
                     "title": "golden_slaw_chicken",
@@ -144,7 +144,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Coleslaw, Little gherkin, Red onions, Joppie sauce"
+                    "ingredients": "Crispy chicken patty, Eisbergsalat, Coleslaw, Gürkchen, Rote zwiebeln, Joppie sauce"
                 },
                 {
                     "title": "nuggest",
@@ -156,7 +156,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy nuggets, Iceberg, Mayo, Iceberg lettuce, Sweet & Sour sauce"
+                    "ingredients": "Crispy nuggets, Eisberg, Mayo, Eisbergsalat, Süss & Sauer sauce"
                 }
             ]
         },
@@ -173,7 +173,7 @@
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Veggie patty, Iceberg lettuce, Tomatoes, Red onions, Cucumbers, B!tez sauce, Falafel wrap"
+                    "ingredients": "Veggie patty, Eisbergsalat, Tomaten, Rote zwiebeln, Gürkchen, B!tez sauce"
                 }
             ]
         },
@@ -186,11 +186,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 7.5,
+                            "price": 8.2,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, B!tez sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Eisbergsalat, Zwiebelwürfel, Gürkchen, B!tez sauce"
                 },
                 {
                     "title": "chili_cheesy",
@@ -198,11 +198,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 7.9,
+                            "price": 8.7,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Smashed beef patty, American cheese, Iceberg lettuce, Diced onion, Little gherkin, Jalapeños, Chili cheese sauce"
+                    "ingredients": "Smashed beef patty, American cheese, Eisbergsalat, Zwiebelwürfel, Gürkchen, Jalapeños, Spicy sauce"
                 },
                 {
                     "title": "chicken_spicy",
@@ -210,11 +210,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 7.5,
+                            "price": 8.2,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy chicken patty, Iceberg lettuce, Coleslaw, Jalapeños, Spicy sauce"
+                    "ingredients": "Crispy chicken patty, Eisbergsalat, Coleslaw, Jalapeños, Spicy sauce"
                 },
                 {
                     "title": "chicken_parmesan",
@@ -222,11 +222,11 @@
                         {
                             "label": "single",
                             "size": "m",
-                            "price": 7.9,
+                            "price": 8.7,
                             "isExtra": false
                         }
                     ],
-                    "ingredients": "Crispy chicken sauce, Parmesan cheese, Iceberg lettuce, Garlic sauce"
+                    "ingredients": "Crispy chicken sauce, Parmesan cheese, Eisbergsalat, Garlic sauce"
                 }
             ]
         }

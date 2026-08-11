@@ -1,16 +1,19 @@
-// vendor
+// vendors
 import { Swiper } from './vendors/swiper/swiper.min.js';
 
+// components
 import { HighLightItem, FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
+// configs
 import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
 
 import Bitez from './bitez/index.js';
 import FilterManager from './filter/index.js';
 import { DataService } from './services/DataService.js';
 
+// dom
 import {
-    highlightsCardElement,
+    highlightCardElement,
     burgerCardElement, handmadeChickenCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
     heroSliderListElement, navigationListElement,
@@ -20,10 +23,10 @@ import {
     navigationMenuElement
 } from './dom/index.js';
 
-// vendor
-let swiper = new Swiper('.hero-slider', {
+
+const swiper = new Swiper('.hero-slider', {
     spaceBetween: 0,
-    // loop: true,
+    loop: true,
     centeredSlides: true,
     autoplay: {
         delay: 4777,
@@ -48,15 +51,17 @@ const filterManager = new FilterManager();
 bitez.renderToUI({
     items: highLightItems,
     itemComponentElement: HighLightItem,
-    itemComponentWrapperElement: highlightsCardElement
+    itemComponentWrapperElement: highlightCardElement
 });
 
+// hero
 bitez.renderToUI({
     items: heroSliderItems,
     itemComponentElement: HeroSliderItem,
     itemComponentWrapperElement: heroSliderListElement
 });
 
+// navigation
 bitez.renderToUI({
     items: navigationItems,
     itemComponentElement: NavigationItem,
@@ -73,54 +78,63 @@ bitez.closeMobileMenu({
     ]
 });
 
-bitez.renderToUI({
-    items: footerFollowUsItems,
-    itemComponentElement: FollowUsItem,
-    itemComponentWrapperElement: footerFollowUsListElement
-});
-
+// footer contact
 bitez.renderToUI({
     items: footerContactItems,
     itemComponentElement: FooterContactItem,
     itemComponentWrapperElement: footerContactListElement
 });
 
+// footer navigation
 bitez.renderToUI({
     items: footerNavigationItems,
     itemComponentElement: FooterNavigationItem,
     itemComponentWrapperElement: footerNavigationListElement
 });
 
+// footer follow us
+bitez.renderToUI({
+    items: footerFollowUsItems,
+    itemComponentElement: FollowUsItem,
+    itemComponentWrapperElement: footerFollowUsListElement
+});
+
+// burger filter menu
 bitez.renderToUI({
     items: burgerFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.burger-filter-menu')
 });
 
+// handmade filter menu
 bitez.renderToUI({
     items: handmadeChickenFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.handmade-chicken-filter-menu')
 });
 
+// side filter menu
 bitez.renderToUI({
     items: sidesFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.side-filter-menu')
 });
 
+// wrap filter menu
 bitez.renderToUI({
     items: wrapsFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.wrap-filter-menu')
 });
 
+// cool-drink filter menu
 bitez.renderToUI({
     items: coolDrinkFilterMenuItems,
     itemComponentElement: FilterMenuItem,
     itemComponentWrapperElement: document.querySelector('.cool-drink-filter-menu')
 });
 
+// hot-drink filter menu
 bitez.renderToUI({
     items: hotDrinkFilterMenuItems,
     itemComponentElement: FilterMenuItem,

@@ -515,6 +515,12 @@
     display: none;
   }
 }
+@media (width < 64em) and (width >= 48em) {
+  .swiper-button-next, .swiper-button-prev {
+    width: 1.1em;
+    height: 1.5em;
+  }
+}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0;
@@ -560,7 +566,7 @@
 @media (width < 64em) and (width >= 48em) {
   .hero-slider__item {
     gap: 0;
-    height: 23em;
+    height: 19em;
   }
 }
 @media (width < 48em) {
@@ -641,7 +647,7 @@
 }
 @media (width < 48em) {
   .side .product-card__right-side .product-card__link {
-    width: 12em;
+    width: 10.5em;
   }
 }
 @media (width < 64em) and (width >= 48em) {
@@ -846,6 +852,11 @@ svg {
   z-index: -1;
   background-size: cover;
   background-position: center;
+}
+@media (width < 48em) {
+  .burger .product-card__item .product-card__right-side .product-card__link {
+    width: 10.9em;
+  }
 }
 @media (width < 64em) and (width >= 48em) {
   .burger .product-card__item .product-card__right-side .product-card__link {
@@ -1132,11 +1143,6 @@ svg {
   display: block;
   width: 13em;
 }
-@media (width < 48em) {
-  .product-card__link {
-    width: 10.3em;
-  }
-}
 .product-card__description {
   width: 51%;
   font-size: 0.8em;
@@ -1276,7 +1282,7 @@ svg {
 }
 @media (width < 48em) {
   .hot-drink-card .product-card__right-side .product-card__link {
-    width: 9em;
+    width: 7.9em;
   }
 }
 @media (width < 64em) and (width >= 48em) {
@@ -1286,10 +1292,10 @@ svg {
   }
 }
 
-.highlights {
+.highlight {
   padding-top: 7em;
 }
-.highlights__card {
+.highlight__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1299,18 +1305,18 @@ svg {
   gap: 0.5em;
 }
 @media (width < 48em) {
-  .highlights__card {
+  .highlight__card {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 @media (width < 64em) and (width >= 48em) {
-  .highlights__card {
+  .highlight__card {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-.highlights__item {
+.highlight__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1318,16 +1324,16 @@ svg {
   background-color: #fbebcd;
 }
 @media (width < 48em) {
-  .highlights__item {
+  .highlight__item {
     width: 100%;
   }
 }
 @media (width < 64em) and (width >= 48em) {
-  .highlights__item {
+  .highlight__item {
     width: 45%;
   }
 }
-.highlights__icon {
+.highlight__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,31 +1349,51 @@ svg {
   background-color: #df175f;
 }
 @media (width < 48em) {
-  .highlights__icon {
+  .highlight__icon {
     padding: 0 0.7em;
     font-size: 2.1em;
   }
 }
-.highlights__content {
+@media (width < 64em) and (width >= 48em) {
+  .highlight__icon {
+    font-size: 1.7em;
+  }
+}
+.highlight__content {
   text-align: center;
   padding: 1.5em;
 }
 @media (width < 48em) {
-  .highlights__content {
+  .highlight__content {
     padding: 0.9em;
   }
 }
-.highlights__title {
+@media (width < 64em) and (width >= 48em) {
+  .highlight__content {
+    padding: 0.7em 0.1em;
+  }
+}
+.highlight__title {
   text-transform: capitalize;
 }
 @media (width < 48em) {
-  .highlights__title {
+  .highlight__title {
     font-size: 1em;
   }
 }
+@media (width < 64em) and (width >= 48em) {
+  .highlight__title {
+    font-size: 1.1em;
+  }
+}
 @media (width < 48em) {
-  .highlights__text {
+  .highlight__text {
     font-size: 0.7em;
+  }
+}
+@media (width < 64em) and (width >= 48em) {
+  .highlight__text {
+    font-size: 0.8em;
   }
 }
 

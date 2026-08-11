@@ -15,6 +15,11 @@
         @include bp.mobile {
             display: none;
         }
+
+        @include bp.tablet {
+            width: 1.1em;
+            height: 1.5em;
+        }
     }
 
     &-horizontal>.swiper-pagination-bullets,

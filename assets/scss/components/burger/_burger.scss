@@ -1,5 +1,5 @@
-@use '../../abstracts/breakpoints'as bp;
-@use '../../abstracts/placeholders'as p;
+@use '../../abstracts/breakpoints' as bp;
+@use '../../abstracts/placeholders' as p;
 
 .burger {
 
@@ -35,6 +35,10 @@
                     // background-image: url('../media/svg/noise_brg.svg');
                     background-size: cover;
                     background-position: center;
+                }
+
+                @include bp.mobile {
+                    width: 10.9em;
                 }
 
                 @include bp.tablet {

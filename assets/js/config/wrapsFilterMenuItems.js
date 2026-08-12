@@ -1,6 +1,6 @@
 export default [
     {
-        "title": 'all',
+        "title": 'alle',
         "isActive": true
     },
     {
@@ -11,4 +11,4 @@ export default [
         "title": 'falafel',
         "isActive": false
     }
-]
+];

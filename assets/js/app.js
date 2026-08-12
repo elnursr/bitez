@@ -48,17 +48,18 @@ const dataService = new DataService();
 
 const filterManager = new FilterManager();
 
-bitez.renderToUI({
-    items: highLightItems,
-    itemComponentElement: HighLightItem,
-    itemComponentWrapperElement: highlightCardElement
-});
-
 // hero
 bitez.renderToUI({
     items: heroSliderItems,
     itemComponentElement: HeroSliderItem,
     itemComponentWrapperElement: heroSliderListElement
+});
+
+// highlight
+bitez.renderToUI({
+    items: highLightItems,
+    itemComponentElement: HighLightItem,
+    itemComponentWrapperElement: highlightCardElement
 });
 
 // navigation
@@ -283,10 +284,4 @@ navigationMenuElement.addEventListener('click', function (e) {
     e.preventDefault();
     navigationMenuElement.classList.toggle('navigation-menu--active');
     navigationListElement.classList.toggle('navigation__list--active');
-});
-
-document.querySelectorAll('*').forEach(el => {
-    if (el.offsetWidth > document.documentElement.clientWidth) {
-        console.log('Daşan element:', el);
-    }
 });

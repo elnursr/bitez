@@ -2,7 +2,7 @@ export function FooterContactItem({ label, icon, url, value }) {
     return (
         `
             <li class="footer-contact__item">
-                <a href="${url}" class="footer-contact__link">
+                <a href="${url}" class="footer-contact__link" target="_blank">
                     <svg class="footer-contact__icon">
                         <use href="assets/media/svg/icons/icons.svg#icon-${icon}"></use>
                     </svg>

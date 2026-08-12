@@ -5,12 +5,12 @@ export default [
         "icon": 'halal',
         "view_box": '0 0 27 27'
     },
-    {
-        "title": 'schnell & heiß lieferung',
-        "text": 'Verrohrung heiß burgers geliefert richtig zu dein tür',
-        "icon": 'delivery',
-        "view_box": '0 0 24 24'
-    },
+    // {
+    //     "title": 'schnell & heiß lieferung',
+    //     "text": 'Verrohrung heiß burgers geliefert richtig zu dein tür',
+    //     "icon": 'delivery',
+    //     "view_box": '0 0 24 24'
+    // },
     {
         "title": 'schnell abholung',
         "text": 'Schnappen dein mahlzeit mit zero warten zeit',

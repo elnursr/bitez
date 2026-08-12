@@ -2,7 +2,7 @@ export default [
     {
         "label": "land",
         "icon": "location",
-        "url": "",
+        "url": "https://maps.app.goo.gl/H2eVRAPcJK2zrAHD7",
         "value": "Germany (DE), Köhln"
     },
     {

@@ -28,13 +28,13 @@ export default [
         icon: 'fries',
         viewBox: '0 0 24 24',
         url: '#sides'
-    },
-    {
-        title: 'Lieferung',
-        icon: 'delivery',
-        viewBox: '0 0 24 24',
-        url: '#'
     }
+    // {
+    //     title: 'Lieferung',
+    //     icon: 'delivery',
+    //     viewBox: '0 0 24 24',
+    //     url: '#'
+    // }
 ];
 
 // export default [

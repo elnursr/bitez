@@ -161,10 +161,10 @@
             ]
         },
         {
-            "category_name": "vegetarisch",
+            "category_name": "veggie",
             "items": [
                 {
-                    "title": "vegetarisch",
+                    "title": "veggie",
                     "options": [
                         {
                             "label": "single",

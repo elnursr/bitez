@@ -16,7 +16,7 @@ export default [
         "isActive": false
     },
     {
-        "title": 'vegetarisch',
+        "title": 'veggie',
         "isActive": false
     }
 ];

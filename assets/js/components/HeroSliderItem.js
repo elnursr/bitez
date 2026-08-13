@@ -9,7 +9,7 @@ export function HeroSliderItem({ categoryName, productTitle, folderName }) {
                     <h4 class="hero-slider__label">100% beef. frisch. halal. handgefertigt</h4>
                 </div>
                 <div class="hero-slider__image">
-                    <img src="assets/media/png/hero/${folderName}/${categoryName}/${productTitle}.png" alt="${productTitle}">
+                    <img src="assets/media/webp/hero/${folderName}/${categoryName}/${productTitle}.webp" alt="${productTitle}">
                 </div>
             </li>
         `

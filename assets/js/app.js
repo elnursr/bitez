@@ -23,6 +23,11 @@ import {
     navigationMenuElement
 } from './dom/index.js';
 
+const bitez = new Bitez();
+
+const dataService = new DataService();
+
+const filterManager = new FilterManager();
 
 const swiper = new Swiper('.hero-slider', {
     spaceBetween: 0,
@@ -41,12 +46,6 @@ const swiper = new Swiper('.hero-slider', {
         nextEl: '.swiper-button-next',
     },
 });
-
-const bitez = new Bitez();
-
-const dataService = new DataService();
-
-const filterManager = new FilterManager();
 
 // hero
 bitez.renderToUI({
@@ -150,7 +149,7 @@ dataService.fetchData('../assets/json/de/burgers.json')
             products: burgers,
             productType: 'burgers',
             productOptionType: 'patty',
-            productImageExtension: 'png',
+            productImageExtension: 'webp',
             productCardElement: burgerCardElement
         });
 
@@ -170,7 +169,7 @@ dataService.fetchData('../assets/json/de/handmade-chickens.json')
             products: handmade_chickens,
             productType: 'handmade-chickens',
             productOptionType: 'er',
-            productImageExtension: 'png',
+            productImageExtension: 'webp',
             productCardElement: handmadeChickenCardElement
         });
 
@@ -190,7 +189,7 @@ dataService.fetchData('../assets/json/de/wraps.json')
             products: wraps,
             productType: 'wraps',
             productOptionType: 'portion',
-            productImageExtension: 'png',
+            productImageExtension: 'webp',
             productCardElement: wrapCardElement
         });
 
@@ -210,7 +209,7 @@ dataService.fetchData('../assets/json/de/sides.json')
             products: sides,
             productType: 'sides',
             productOptionType: 'portion',
-            productImageExtension: 'png',
+            productImageExtension: 'webp',
             productCardElement: sideCardElement
         });
 
@@ -228,7 +227,7 @@ dataService.fetchData('../assets/json/de/cool-drinks.json')
         bitez.renderProductsToUI({
             products: cool_drinks,
             productType: 'cool-drinks',
-            productImageExtension: 'png',
+            productImageExtension: 'webp',
             productCardElement: coolDrinkCardElement
         });
 
@@ -247,7 +246,7 @@ dataService.fetchData('../assets/json/de/hot-drinks.json')
             products: hot_drinks,
             productType: 'hot-drinks',
             productOptionType: 'shot',
-            productImageExtension: 'png',
+            productImageExtension: 'webp',
             productCardElement: hotDrinkCardElement
         });
 

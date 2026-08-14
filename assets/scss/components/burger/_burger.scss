@@ -30,11 +30,11 @@
                     @extend %before-after;
                     top: -13%;
                     width: 100%;
-                    height: 77%;
+                    height: 100%;
                     z-index: -1;
-                    // background-image: url('../media/svg/noise_brg.svg');
+                    background-image: url('../media/svg/half_circle_brush.svg');
                     background-size: cover;
-                    background-position: center;
+                    // background-position: center;
                 }
 
                 @include bp.mobile {

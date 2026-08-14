@@ -8,7 +8,7 @@ export function ProducItem({ title, ingredients }, productType, categoryName, ex
                     <ul class="product-options ${productType}-option"></ul>
                 </div>
                 <div class="product-card__right-side">
-                    <a href="" class="product-card__link">
+                    <a class="product-card__link">
                         <img src="assets/media/${extensionType}/${productType}/${categoryName}/${title}.${extensionType}" alt="${title}">
                     </a>
                 </div>

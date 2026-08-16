@@ -1,7 +1,7 @@
 {
     "handmade_chickens": [
         {
-            "category_name": "wing",
+            "category_name": "wings",
             "items": [
                 {
                     "title": "classic",
@@ -107,7 +107,7 @@
             ]
         },
         {
-            "category_name": "nugget",
+            "category_name": "nuggets",
             "items": [
                 {
                     "title": "nuggets",

@@ -3,13 +3,13 @@ export default [
         "label": "land",
         "icon": "location",
         "url": "https://maps.app.goo.gl/H2eVRAPcJK2zrAHD7",
-        "value": "Germany (DE), Köhln"
+        "value": "DE, Oststraße 2A"
     },
     {
         "label": "mobil",
         "icon": "mobile",
-        "url": "tel:+4915158598777",
-        "value": "(+49)-1515-8598777"
+        "url": "tel:+49xxxxxxxxxxx",
+        "value": "(+49)-xxxx-xxxxxxx"
     },
     {
         "label": "e-mail",
@@ -24,7 +24,7 @@ export default [
 //         "label": "country",
 //         "icon": "location",
 //         "url": "",
-//         "value": "Germany (DE), Köhln"
+//         "value": "Deutschland, Oststraße 2A"
 //     },
 //     {
 //         "label": "mobile",

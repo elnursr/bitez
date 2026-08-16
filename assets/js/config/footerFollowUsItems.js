@@ -1,18 +1,18 @@
 export default [
     {
         "icon": "instagram",
-        "url": "https://www.instagram.com/bitez.de?igsh=ZnR4ZXd2ZTkwbDht&utm_source=qr"
+        "url": "https://www.instagram.com/bitez.de"
     },
     {
         "icon": "whatsapp",
-        "url": "https://whatsapp.com"
+        "url": "https://wa.me/49xxxxxxxxxx"
     },
     {
         "icon": "facebook",
-        "url": "https://www.facebook.com/share/1E6KDjWYkN/?mibextid=wwXIfr"
+        "url": "https://www.facebook.com/people/Bitez/61580772181285/"
     },
     {
         "icon": "tik-tok",
-        "url": "https://www.tiktok.com/@bitez.de?_r=1&_t=ZG-981oJ2ZQhhg"
+        "url": "https://www.tiktok.com/@bitez.de"
     }
 ];

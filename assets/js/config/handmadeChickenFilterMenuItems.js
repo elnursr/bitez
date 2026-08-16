@@ -4,14 +4,14 @@ export default [
         "isActive": true
     },
     {
-        "title": 'wing',
+        "title": 'wings',
         "isActive": false
     },
     {
         "title": 'tender',
         "isActive": false
     }, {
-        "title": 'nugget',
+        "title": 'nuggets',
         "isActive": false
     },
     {

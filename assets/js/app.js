@@ -2,7 +2,7 @@
 import { Swiper } from './vendors/swiper/swiper.min.js';
 
 // components
-import { HighLightItem, FaqItem, HeroSliderItem, CareerItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
+import { HighLightItem, HeroSliderItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
 
 // configs
 import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
@@ -13,6 +13,7 @@ import { DataService } from './services/DataService.js';
 
 // dom
 import {
+    loadScreenElement,
     highlightCardElement,
     burgerCardElement, handmadeChickenCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
@@ -45,6 +46,13 @@ const swiper = new Swiper('.hero-slider', {
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next',
     },
+});
+
+// load screen
+bitez.disableLoadScreen({
+    loadTime: 1777,
+    element: loadScreenElement,
+    className: 'load-screen--deactive',
 });
 
 // hero
@@ -145,7 +153,7 @@ bitez.renderToUI({
 dataService.fetchData('../assets/json/de/burgers.json')
     .then(({ burgers }) => {
 
-        bitez.renderProductsToUI({
+        bitez.renderDataToUI({
             products: burgers,
             productType: 'burgers',
             productOptionType: 'patty',
@@ -165,7 +173,7 @@ dataService.fetchData('../assets/json/de/burgers.json')
 dataService.fetchData('../assets/json/de/handmade-chickens.json')
     .then(({ handmade_chickens }) => {
 
-        bitez.renderProductsToUI({
+        bitez.renderDataToUI({
             products: handmade_chickens,
             productType: 'handmade-chickens',
             productOptionType: 'er',
@@ -185,7 +193,7 @@ dataService.fetchData('../assets/json/de/handmade-chickens.json')
 dataService.fetchData('../assets/json/de/wraps.json')
     .then(({ wraps }) => {
 
-        bitez.renderProductsToUI({
+        bitez.renderDataToUI({
             products: wraps,
             productType: 'wraps',
             productOptionType: 'portion',
@@ -205,7 +213,7 @@ dataService.fetchData('../assets/json/de/wraps.json')
 dataService.fetchData('../assets/json/de/sides.json')
     .then(({ sides }) => {
 
-        bitez.renderProductsToUI({
+        bitez.renderDataToUI({
             products: sides,
             productType: 'sides',
             productOptionType: 'portion',
@@ -224,7 +232,7 @@ dataService.fetchData('../assets/json/de/sides.json')
 // cool-drinks
 dataService.fetchData('../assets/json/de/cool-drinks.json')
     .then(({ cool_drinks }) => {
-        bitez.renderProductsToUI({
+        bitez.renderDataToUI({
             products: cool_drinks,
             productType: 'cool-drinks',
             productImageExtension: 'webp',
@@ -242,7 +250,7 @@ dataService.fetchData('../assets/json/de/cool-drinks.json')
 // hot-drinks
 dataService.fetchData('../assets/json/de/hot-drinks.json')
     .then(({ hot_drinks }) => {
-        bitez.renderProductsToUI({
+        bitez.renderDataToUI({
             products: hot_drinks,
             productType: 'hot-drinks',
             productOptionType: 'shot',

@@ -1,4 +1,5 @@
-export const highlightCardElement = document.querySelector('.highlight__card'),
+export const loadScreenElement = document.querySelector('.load-screen'),
+    highlightCardElement = document.querySelector('.highlight__card'),
     burgerCardElement = document.querySelector('.burger-card'),
     handmadeChickenCardElement = document.querySelector('.handmade-chicken-card'),
     sideCardElement = document.querySelector('.side-card'),

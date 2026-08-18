@@ -1,16 +1,14 @@
-import { removeActiveClasses } from '../dom/index.js';
-
 import { ProducItem } from '../components/ProducItem.js';
 import { ProductOption } from '../components/ProductOption.js';
 
 export default function Bitez() {
 }
 
-Bitez.prototype.getProductsFromAPI = function (products) {
+Bitez.prototype.getData = function (data) {
     const productItems = [];
     const productOptions = []
-    for (let i = 0; i < products.length; i++) {
-        let { items, category_name } = products[i];
+    for (let i = 0; i < data.length; i++) {
+        let { items, category_name } = data[i];
         for (let j = 0; j < items.length; j++) {
             productItems.push({
                 items: items[j],
@@ -23,11 +21,11 @@ Bitez.prototype.getProductsFromAPI = function (products) {
     return { productItems, productOptions };
 }
 
-Bitez.prototype.renderProductsToUI = function ({ products, productCardElement, productType, productImageExtension, productOptionType }) {
+Bitez.prototype.renderDataToUI = function ({ products, productCardElement, productType, productImageExtension, productOptionType }) {
 
     let htmlContent = '';
 
-    const { productItems, productOptions } = this.getProductsFromAPI(products);
+    const { productItems, productOptions } = this.getData(products);
 
     for (let i = 0; i < productItems.length; i++) {
         let { items, category_name } = productItems[i];
@@ -91,4 +89,10 @@ Bitez.prototype.closeMobileMenu = function ({ linkElements, elements }) {
             this.removeActiveClass(elements);
         }.bind(this));
     }
+}
+
+Bitez.prototype.disableLoadScreen = function ({ element, className, loadTime }) {
+    setTimeout(function () {
+        element.classList.add(className);
+    }, loadTime);
 }

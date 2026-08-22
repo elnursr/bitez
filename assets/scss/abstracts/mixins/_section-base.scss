@@ -1,6 +1,6 @@
-@use '../variables'as v;
-@use '../placeholders'as p;
-@use '../breakpoints'as bp;
+@use '../variables' as v;
+@use '../placeholders' as p;
+@use '../breakpoints' as bp;
 
 @mixin section-base() {
     padding-top: 7.7em;
@@ -12,6 +12,7 @@
         letter-spacing: .1em;
 
         @include bp.mobile {
+            letter-spacing: normal;
             font-size: 1.9em;
         }
 

@@ -1,6 +1,7 @@
 import highLightItems from './highLightItems.js';
 import heroSliderItems from './heroSliderItems.js';
 import navigationItems from './navigationItems.js';
+import footerLegalItem from './footerLegalItem.js';
 import footerContactItems from './footerContactItems.js';
 import footerFollowUsItems from './footerFollowUsItems.js';
 import sidesFilterMenuItems from './sidesFilterMenuItems.js';
@@ -15,6 +16,7 @@ export {
     highLightItems,
     heroSliderItems,
     navigationItems,
+    footerLegalItem,
     footerContactItems,
     footerFollowUsItems,
     sidesFilterMenuItems,

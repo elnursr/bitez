@@ -41,7 +41,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding: 3em 0;
+        padding: 3em 0 1.5em;
 
         @include bp.mobile {
             flex-direction: column;

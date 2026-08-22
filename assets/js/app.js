@@ -50,7 +50,7 @@ const swiper = new Swiper('.hero-slider', {
 
 // load screen
 bitez.disableLoadScreen({
-    loadTime: 1777,
+    loadTime: 1993,
     element: loadScreenElement,
     className: 'load-screen--deactive',
 });

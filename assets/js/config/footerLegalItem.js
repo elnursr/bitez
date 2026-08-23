@@ -1,10 +1,10 @@
 export default [
     {
         title: 'impressum',
-        url: ''
+        url: 'legal-notice.html'
     },
     {
         title: 'datenschutz',
-        url: ''
+        url: 'privacy-policy.html'
     }
 ];

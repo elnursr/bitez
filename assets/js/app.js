@@ -2,10 +2,10 @@
 import { Swiper } from './vendors/swiper/swiper.min.js';
 
 // components
-import { HighLightItem, HeroSliderItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem } from './components/index.js';
+import { HighLightItem, HeroSliderItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem, FooterLegalItem } from './components/index.js';
 
 // configs
-import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
+import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, footerLegalItem, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
 
 import Bitez from './bitez/index.js';
 import FilterManager from './filter/index.js';
@@ -18,7 +18,7 @@ import {
     burgerCardElement, handmadeChickenCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
     heroSliderListElement, navigationListElement,
-    footerNavigationListElement,
+    footerNavigationListElement, footerLegalListElement,
     footerContactListElement, footerFollowUsListElement,
     cookieBannerButton,
     navigationMenuElement
@@ -105,6 +105,13 @@ bitez.renderToUI({
     items: footerFollowUsItems,
     itemComponentElement: FollowUsItem,
     itemComponentWrapperElement: footerFollowUsListElement
+});
+
+// footer legal
+bitez.renderToUI({
+    items: footerLegalItem,
+    itemComponentElement: FooterLegalItem,
+    itemComponentWrapperElement: footerLegalListElement
 });
 
 // burger filter menu

@@ -2,10 +2,10 @@
 import { Swiper } from './vendors/swiper/swiper.min.js';
 
 // components
-import { HighLightItem, HeroSliderItem, FollowUsItem, FilterMenuItem, NavigationItem, FooterContactItem, FooterNavigationItem, FooterLegalItem } from './components/index.js';
+import { HighLightItem, HeroSliderItem, FilterMenuItem, } from './components/index.js';
 
 // configs
-import { highLightItems, navigationItems, heroSliderItems, footerContactItems, footerFollowUsItems, footerLegalItem, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, footerNavigationItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
+import { highLightItems, heroSliderItems, sidesFilterMenuItems, wrapsFilterMenuItems, burgerFilterMenuItems, handmadeChickenFilterMenuItems, hotDrinkFilterMenuItems, coolDrinkFilterMenuItems } from './config/index.js';
 
 import Bitez from './bitez/index.js';
 import FilterManager from './filter/index.js';
@@ -17,11 +17,7 @@ import {
     highlightCardElement,
     burgerCardElement, handmadeChickenCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
-    heroSliderListElement, navigationListElement,
-    footerNavigationListElement, footerLegalListElement,
-    footerContactListElement, footerFollowUsListElement,
-    cookieBannerButton,
-    navigationMenuElement
+    heroSliderListElement, cookieBannerButton
 } from './dom/index.js';
 
 const bitez = new Bitez();
@@ -67,51 +63,6 @@ bitez.renderToUI({
     items: highLightItems,
     itemComponentElement: HighLightItem,
     itemComponentWrapperElement: highlightCardElement
-});
-
-// navigation
-bitez.renderToUI({
-    items: navigationItems,
-    itemComponentElement: NavigationItem,
-    itemComponentWrapperElement: navigationListElement
-});
-
-let navigationLinkElements = document.querySelectorAll('.navigation__link');
-
-bitez.closeMobileMenu({
-    linkElements: navigationLinkElements,
-    elements: [
-        { element: navigationMenuElement, activeClass: 'navigation-menu--active' },
-        { element: navigationListElement, activeClass: 'navigation__list--active' }
-    ]
-});
-
-// footer contact
-bitez.renderToUI({
-    items: footerContactItems,
-    itemComponentElement: FooterContactItem,
-    itemComponentWrapperElement: footerContactListElement
-});
-
-// footer navigation
-bitez.renderToUI({
-    items: footerNavigationItems,
-    itemComponentElement: FooterNavigationItem,
-    itemComponentWrapperElement: footerNavigationListElement
-});
-
-// footer follow us
-bitez.renderToUI({
-    items: footerFollowUsItems,
-    itemComponentElement: FollowUsItem,
-    itemComponentWrapperElement: footerFollowUsListElement
-});
-
-// footer legal
-bitez.renderToUI({
-    items: footerLegalItem,
-    itemComponentElement: FooterLegalItem,
-    itemComponentWrapperElement: footerLegalListElement
 });
 
 // burger filter menu
@@ -293,9 +244,3 @@ let isUnderstood = localStorage.getItem('isUnderstood');
 if (Boolean(isUnderstood)) {
     document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
 }
-
-navigationMenuElement.addEventListener('click', function (e) {
-    e.preventDefault();
-    navigationMenuElement.classList.toggle('navigation-menu--active');
-    navigationListElement.classList.toggle('navigation__list--active');
-});

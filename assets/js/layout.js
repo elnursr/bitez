@@ -18,8 +18,10 @@ import {
 
 // dom
 import {
+    loadScreenElement,
     navigationMenuElement,
     navigationListElement,
+    footerLegalYearElement,
     footerNavigationListElement, footerLegalListElement,
     footerContactListElement, footerFollowUsListElement,
 } from './dom/index.js';
@@ -27,6 +29,13 @@ import {
 import Bitez from './bitez/index.js';
 
 const bitez = new Bitez();
+
+// load screen
+bitez.disableLoadScreen({
+    loadTime: 1993,
+    element: loadScreenElement,
+    className: 'load-screen--deactive',
+});
 
 // navigation
 bitez.renderToUI({
@@ -78,3 +87,5 @@ navigationMenuElement.addEventListener('click', function (e) {
     navigationMenuElement.classList.toggle('navigation-menu--active');
     navigationListElement.classList.toggle('navigation__list--active');
 });
+
+footerLegalYearElement.innerHTML = `${new Date().getFullYear()}`;

@@ -10,7 +10,7 @@ export function FooterLegalItem({ url, title }) {
     return (
         `
             <li class="footer-legal__item">
-                <a href="${url}" class="footer-legal__link" target="_blank">${title}</a>
+                <a href="${url}" class="footer-legal__link">${title}</a>
             </li>
         `
     )

@@ -1,0 +1,31 @@
+@use '../../abstracts' as bp;
+
+.legal-notice {
+    padding-top: 7.7em;
+
+    &__heading {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__description {
+        padding-top: 1em 0;
+    }
+
+    ul {
+        li {
+            padding: .5em 0;
+
+            h2,
+            p {
+                @include bp.mobile {
+                    text-align: center;
+                }
+            }
+
+            h2 {
+                text-transform: capitalize;
+            }
+        }
+    }
+}

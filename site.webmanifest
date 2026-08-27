@@ -5,22 +5,22 @@
         {
             "sizes": "16x16",
             "type": "image/png",
-            "src": "https://www.bitez-food.de/assets/media/png/logo/bitez_16_x_16.png"
+            "src": "https://bitez-food.de/assets/media/png/logo/bitez_16_x_16.png"
         },
         {
             "sizes": "32x32",
             "type": "image/png",
-            "src": "https://www.bitez-food.de/assets/media/png/logo/bitez_32_x_32.png"
+            "src": "https://bitez-food.de/assets/media/png/logo/bitez_32_x_32.png"
         },
         {
             "sizes": "48x48",
             "type": "image/png",
-            "src": "https://www.bitez-food.de/assets/media/png/logo/bitez_48_x_48.png"
+            "src": "https://bitez-food.de/assets/media/png/logo/bitez_48_x_48.png"
         },
         {
             "sizes": "192x192",
             "type": "image/png",
-            "src": "https://www.bitez-food.de/assets/media/png/logo/bitez_192_x_192.png"
+            "src": "https://bitez-food.de/assets/media/png/logo/bitez_192_x_192.png"
         }
     ],
     "display": "standalone",

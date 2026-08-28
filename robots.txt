@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bitez-food.de/sitemap.xml

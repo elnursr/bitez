@@ -1,0 +1,47 @@
+@use '../../abstracts' as v;
+@use '../../abstracts/breakpoints' as bp;
+
+.policy {
+    padding-top: 7.7em;
+
+    &__heading {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1em 0;
+        font-size: 2.1em;
+    }
+
+    &__subheading {
+        text-transform: capitalize;
+        font-size: 1.5em;
+
+        @include bp.mobile {
+            text-align: center;
+            padding: 1em 0;
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: v.$color-secondary;
+    }
+
+    &-list {
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 0 .3em;
+            padding: .7em 0;
+
+            @include bp.mobile {
+                // justify-content: center;
+            }
+        }
+
+        &__term {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+}

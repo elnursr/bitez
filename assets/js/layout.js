@@ -18,6 +18,9 @@ import {
 
 // dom
 import {
+    // helpers
+    removeActiveClasses,
+    // elements
     loadScreenElement,
     navigationMenuElement,
     navigationListElement,
@@ -54,6 +57,18 @@ bitez.closeMobileMenu({
     ]
 });
 
+// navigation link
+bitez.setActiveElement({
+    elements: navigationLinkElements,
+    activeClass: 'navigation__link--active',
+    removeClasses: function () {
+        removeActiveClasses({
+            elements: navigationLinkElements,
+            activeClass: 'navigation__link--active'
+        });
+    }
+});
+
 // footer contact
 bitez.renderToUI({
     items: footerContactItems,
@@ -82,10 +97,11 @@ bitez.renderToUI({
     itemComponentWrapperElement: footerLegalListElement
 });
 
+// footer copyright year
+bitez.getYear(footerLegalYearElement);
+
 navigationMenuElement.addEventListener('click', function (e) {
     e.preventDefault();
     navigationMenuElement.classList.toggle('navigation-menu--active');
     navigationListElement.classList.toggle('navigation__list--active');
 });
-
-footerLegalYearElement.innerHTML = `${new Date().getFullYear()}`;

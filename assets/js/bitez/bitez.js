@@ -76,6 +76,15 @@ Bitez.prototype.renderToUI = function ({ items, itemComponentWrapperElement, ite
     itemComponentWrapperElement.innerHTML = renderedContent;
 }
 
+Bitez.prototype.setActiveElement = function ({ elements, activeClass, removeClasses }) {
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', function () {
+            removeClasses();
+            elements[i].classList.add(activeClass);
+        });
+    }
+}
+
 Bitez.prototype.removeActiveClass = function (elements) {
     for (let i = 0; i < elements.length; i++) {
         let { element, activeClass } = elements[i];
@@ -95,4 +104,8 @@ Bitez.prototype.disableLoadScreen = function ({ element, className, loadTime }) 
     setTimeout(function () {
         element.classList.add(className);
     }, loadTime);
+}
+
+Bitez.prototype.getYear = function (element) {
+    element.innerHTML = `${new Date().getFullYear()}`;
 }

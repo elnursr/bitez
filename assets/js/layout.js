@@ -32,7 +32,7 @@ const bitez = new Bitez();
 
 // load screen
 bitez.disableLoadScreen({
-    loadTime: 1993,
+    loadTime: 1999,
     element: loadScreenElement,
     className: 'load-screen--deactive',
 });

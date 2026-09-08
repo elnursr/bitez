@@ -4,7 +4,7 @@
             "category_name": "fries",
             "items": [
                 {
-                    "title": "currywurst_with_chips",
+                    "title": "currywurst_mit_pommes",
                     "options": [
                         {
                             "label": "single",
@@ -28,7 +28,7 @@
                     "ingredients": ""
                 },
                 {
-                    "title": "plain_chips",
+                    "title": "normale_pommes",
                     "options": [
                         {
                             "label": "single",

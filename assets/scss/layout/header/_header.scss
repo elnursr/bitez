@@ -84,7 +84,9 @@
             transform: scale(1.177);
             border-radius: v.$border-radius-base;
             transition: .3s cubic-bezier(0.17, 0.89, 0.32, 1.28);
-            background-color: rgba(v.$color-secondary, .95);
+            background-size: cover;
+            background-position: center;
+            background-image: url('../../media/svg/nav_link_line.svg');
         }
 
         &::after {
@@ -97,7 +99,7 @@
         &--active {
             position: relative;
             padding: .3em;
-            color: v.$color-white;
+            color: v.$text-secondary;
 
             &::before {
                 opacity: 1;
@@ -109,13 +111,9 @@
             text-transform: uppercase;
             font-size: 1.6em;
             letter-spacing: .1em;
+            color: v.$text-secondary;
             font-family: v.$font-family-secondary;
             text-shadow: 7px 0 1px v.$color-black;
-            color: v.$text-secondary;
-
-            background-size: cover;
-            background-position: center;
-            background-image: url('../../media/svg/line.svg');
         }
 
         @include bp.tablet {

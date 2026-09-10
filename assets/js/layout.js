@@ -1,3 +1,6 @@
+// services
+import { Audio } from './services/AudioService.js';
+
 // components
 import {
     FollowUsItem,
@@ -33,6 +36,10 @@ import Bitez from './bitez/index.js';
 
 const bitez = new Bitez();
 
+const audio = new Audio({
+    element: document.querySelector('.audio-service__announcer')
+});
+
 // load screen
 bitez.disableLoadScreen({
     loadTime: 1999,
@@ -61,6 +68,11 @@ bitez.closeMobileMenu({
 bitez.setActiveElement({
     elements: navigationLinkElements,
     activeClass: 'navigation__link--active',
+    audio: function () {
+        audio.announce({
+            path: 'assets/media/wav/bite.wav'
+        });
+    },
     removeClasses: function () {
         removeActiveClasses({
             elements: navigationLinkElements,

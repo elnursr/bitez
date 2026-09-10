@@ -14,7 +14,8 @@
     height: 100%;
     transition: top .3s;
     backdrop-filter: blur(12px);
-    background-image: linear-gradient(to bottom, rgba(v.$color-primary, .95), rgba(v.$color-secondary, .95));
+    background-color: v.$color-primary;
+    // background-image: linear-gradient(to bottom, rgba(v.$color-primary, .95), rgba(v.$color-secondary, .95));
 
     &--deactive {
         top: 100%;

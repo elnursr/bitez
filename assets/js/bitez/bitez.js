@@ -76,9 +76,10 @@ Bitez.prototype.renderToUI = function ({ items, itemComponentWrapperElement, ite
     itemComponentWrapperElement.innerHTML = renderedContent;
 }
 
-Bitez.prototype.setActiveElement = function ({ elements, activeClass, removeClasses }) {
+Bitez.prototype.setActiveElement = function ({ elements, activeClass, removeClasses, audio }) {
     for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener('click', function () {
+            audio();
             removeClasses();
             elements[i].classList.add(activeClass);
         });

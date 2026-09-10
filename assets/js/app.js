@@ -13,7 +13,6 @@ import { DataService } from './services/DataService.js';
 
 // dom
 import {
-    loadScreenElement,
     highlightCardElement,
     burgerCardElement, handmadeChickenCardElement, sideCardElement, wrapCardElement,
     coolDrinkCardElement, hotDrinkCardElement,
@@ -234,6 +233,7 @@ cookieBannerButton.addEventListener('click', function (e) {
 });
 
 let isUnderstood = localStorage.getItem('isUnderstood');
+
 if (Boolean(isUnderstood)) {
     document.querySelector('.cookie-banner').classList.add('cookie-banner--deactive');
 }

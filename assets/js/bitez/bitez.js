@@ -93,6 +93,20 @@ Bitez.prototype.removeActiveClass = function (elements) {
     }
 }
 
+Bitez.prototype.syncNavigationWithHash = function ({ elements, activeClass, removeClasses }) {
+    window.addEventListener('DOMContentLoaded', function () {
+        const url = window.location.hash;
+        for (let i = 0; i < elements.length; i++) {
+            const href = elements[i].getAttribute('href');
+            if (url === href) {
+                removeClasses();
+                elements[i].classList.add(activeClass);
+                break;
+            }
+        }
+    });
+}
+
 Bitez.prototype.closeMobileMenu = function ({ linkElements, elements }) {
     for (let i = 0; i < linkElements.length; i++) {
         linkElements[i].addEventListener('click', function () {

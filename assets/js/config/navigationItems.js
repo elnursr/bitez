@@ -1,7 +1,7 @@
 export default [
     {
         title: 'home',
-        url: '#',
+        url: '#heroes',
         "isActive": true
     },
     {

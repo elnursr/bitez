@@ -54,7 +54,7 @@ bitez.renderToUI({
     itemComponentWrapperElement: navigationListElement
 });
 
-let navigationLinkElements = document.querySelectorAll('.navigation__link');
+const navigationLinkElements = document.querySelectorAll('.navigation__link');
 
 bitez.closeMobileMenu({
     linkElements: navigationLinkElements,
@@ -73,6 +73,17 @@ bitez.setActiveElement({
             path: 'assets/media/wav/bite.wav'
         });
     },
+    removeClasses: function () {
+        removeActiveClasses({
+            elements: navigationLinkElements,
+            activeClass: 'navigation__link--active'
+        });
+    }
+});
+// sync navigation link
+bitez.syncNavigationWithHash({
+    elements: navigationLinkElements,
+    activeClass: 'navigation__link--active',
     removeClasses: function () {
         removeActiveClasses({
             elements: navigationLinkElements,

@@ -1,0 +1,32 @@
+@use '../../abstracts' as v;
+
+.breadcrumb {
+    display: flex;
+    gap: .3em;
+    padding: 1em 0;
+    border-bottom: .1em solid v.$color-secondary;
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        text-transform: capitalize;
+        text-decoration: underline;
+        display: flex;
+        align-items: end;
+        font-size: 1.3em;
+        font-weight: 601;
+        transition: color .3s, padding-left .3s;
+        color: v.$color-black;
+
+        &:hover {
+            color: v.$color-secondary;
+        }
+    }
+
+    &__icon {
+        font-size: .9em;
+    }
+}

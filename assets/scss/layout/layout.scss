@@ -6,6 +6,8 @@
 @use 'container';
 @use 'load-screen';
 @use '../components/policy';
+@use '../components/breadcrumb';
+
 
 body {
     position: relative;

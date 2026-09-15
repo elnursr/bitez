@@ -6,6 +6,7 @@
 
     &__article {
 
+        // privacy-policy.html styles
         &>p,
         ul li>p {
             padding: .5em 0;
@@ -17,12 +18,6 @@
         text-align: center;
         padding: 1em 0;
         font-size: 2.3em;
-        // // text-transform: uppercase;
-        // -webkit-transform: rotate(-1deg);
-        // transform: rotate(-1deg);
-        // font-family: "agrandir_narrow_black";
-        // text-shadow: 7px 0 1px black;
-        // color: white;
     }
 
     &__subheading {
@@ -47,15 +42,17 @@
             display: flex;
             gap: 0 .3em;
             padding: .7em 0;
-
-            @include bp.mobile {
-                // justify-content: center;
-            }
         }
 
         &__term {
             font-weight: bold;
             text-transform: capitalize;
+        }
+    }
+
+    .fan-page__link {
+        @include bp.mobile {
+            font-size: .7em;
         }
     }
 }

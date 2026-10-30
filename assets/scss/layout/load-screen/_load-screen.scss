@@ -15,7 +15,7 @@
     transition: top .3s;
     backdrop-filter: blur(12px);
     background-color: v.$color-primary;
-    // background-image: linear-gradient(to bottom, rgba(v.$color-primary, .95), rgba(v.$color-secondary, .95));
+    // background-image: radial-gradient(circle at 49% 25%, v.$color-primary 45%, v.$color-secondary 85%);
 
     &--deactive {
         top: 100%;

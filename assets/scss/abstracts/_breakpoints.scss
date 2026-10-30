@@ -8,7 +8,7 @@ $breakpoint-desktop:64em;
 }
 
 @mixin tablet {
-    @media (width < $breakpoint-desktop) and (width >= $breakpoint-tablet) {
+    @media ($breakpoint-tablet <= width < $breakpoint-desktop) {
         @content;
     }
 }

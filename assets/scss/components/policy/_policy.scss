@@ -1,5 +1,5 @@
+@use '../../utilities' as u;
 @use '../../abstracts' as v;
-@use '../../abstracts/breakpoints' as bp;
 
 .policy {
     padding-top: 7.7em;
@@ -25,7 +25,8 @@
         font-size: 1.9em;
         padding: .5em 0;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             text-align: center;
             padding: 1em 0;
         }
@@ -51,7 +52,9 @@
     }
 
     .fan-page__link {
-        @include bp.mobile {
+
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             font-size: .7em;
         }
     }

@@ -1,0 +1,7 @@
+@use 'sass:map';
+
+@mixin breakpoint-between($from, $from-size, $to, $to-size) {
+    @media(map-get($from, $from-size) <=width < map-get($to, $to-size)) {
+        @content;
+    }
+}

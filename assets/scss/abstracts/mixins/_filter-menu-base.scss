@@ -1,13 +1,14 @@
-@use '../variables'as v;
-@use '../placeholders'as p;
-@use '../breakpoints'as bp;
+@use '../variables' as v;
+@use '../placeholders' as p;
+@use '../../utilities' as u;
 
-@mixin filter-menu {
-    @extend %flex-center;
+@mixin filter-menu-base {
     gap: .5em;
     margin: 1em 0;
+    @extend %flex-center;
 
-    @include bp.mobile {
+    // mobile s, m, l
+    @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
         flex-wrap: wrap;
     }
 
@@ -24,11 +25,13 @@
             background-color: v.$color-secondary;
         }
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             text-align: center;
         }
 
-        @include bp.tablet {
+        // tablet s, m
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             padding: .3em .7em;
         }
     }
@@ -38,11 +41,13 @@
         text-align: center;
         font-size: 1.3em;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             font-size: .9em;
         }
 
-        @include bp.tablet {
+        // tablet s, m
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             font-size: .87em;
         }
     }

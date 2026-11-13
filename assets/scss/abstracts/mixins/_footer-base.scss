@@ -1,4 +1,4 @@
-@use '../variables'as v;
+@use '../variables' as v;
 
 @mixin footer-base($flexDirection: row, $mainX: flex-start, $crossX: flex-start, $iconColor) {
     &__list {

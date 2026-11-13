@@ -1,7 +1,8 @@
 @use '../../abstracts' as v;
-@use '../../abstracts' as bp;
+@use '../../utilities' as u;
 
 .swiper {
+
     &-pagination-bullet {
         width: .9em;
         height: .9em;
@@ -12,11 +13,13 @@
     &-button-prev {
         color: v.$color-secondary;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             display: none;
         }
 
-        @include bp.tablet {
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             width: 1.1em;
             height: 1.5em;
         }

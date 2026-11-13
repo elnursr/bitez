@@ -1,9 +1,11 @@
-@use '../../abstracts/breakpoints' as bp;
+@use '../../utilities' as u;
+@use '../../abstracts' as v;
 @use '../../abstracts/placeholders' as p;
 
 .burger {
 
-    @include bp.tablet {
+    // tablet s, m
+    @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
         padding-top: 1em !important;
     }
 
@@ -19,7 +21,8 @@
 
         .product-card__right-side {
 
-            @include bp.tablet {
+            // tablet s, m
+            @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
                 right: -3%;
             }
 
@@ -37,16 +40,17 @@
                     // background-position: center;
                 }
 
-                @include bp.mobile {
+                // mobile s, m, l
+                @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
                     width: 10.9em;
                 }
 
-                @include bp.tablet {
+                // tablet s, m
+                @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
                     width: 13em;
                     height: 8em;
                 }
             }
-
         }
     }
 }

@@ -1,27 +1,51 @@
 // color
 $color-black: rgb(0, 0, 0);
-$color-border:rgba($color-black, .1);
+$color-border: rgba($color-black, .1);
 $color-white: rgb(255, 255, 255);
-$color-primary:rgb(253, 201, 15);
-$color-secondary:rgb(223, 23, 95);
+$color-primary: rgb(253, 201, 15);
+$color-secondary: rgb(223, 23, 95);
 
 // background color
-$bg-primary:rgb(251, 235, 205);
+$bg-primary: rgb(251, 235, 205);
 
 // border radius
-$border-radius-base:.3rem;
+$border-radius-base: .3rem;
 
 // font size
-$font-size-footer-link:1rem;
+$font-size-footer-link: 1rem;
 
 // text color
-$text-primary:$color-black;
-$text-secondary:$color-white;
+$text-primary: $color-black;
+$text-secondary: $color-white;
 
 // selection
 $color-selection: $color-white;
 $bg-color-selection: $color-black;
 
 // font family
-$font-family-primary:'agrandir_narrow';
-$font-family-secondary:'agrandir_narrow_black';
+$font-family-primary: 'agrandir_narrow';
+$font-family-secondary: 'agrandir_narrow_black';
+
+// breakpoints
+
+// 320px, 375px, 425px
+$mobile: (
+    's':20em,
+    'm':23.4375em,
+    'l':26.5625em,
+);
+
+// 768px, 992px
+$tablet: (
+    'm':48em,
+    'l':62em //l or landscape
+);
+
+// 1024px, 1280px, 1366px, 1440px, 1536px
+$laptop-desktop: (
+    's':64em,
+    'm':80em,
+    'l':85.375em,
+    'xl':90em,
+    'xxl':96em
+);

@@ -1,8 +1,8 @@
-@use '../../abstracts'as v;
-@use '../../abstracts'as mx;
+@use '../../abstracts' as v;
 
 .filter-menu {
-    @include mx.filter-menu;
+
+    @include v.filter-menu-base;
 
     &__item {
         &--active {
@@ -11,5 +11,4 @@
             }
         }
     }
-
 }

@@ -1,15 +1,17 @@
-@use '../../abstracts'as v;
-@use '../../abstracts'as bp;
-@use '../../abstracts/placeholders'as p;
+@use '../../utilities' as u;
+@use '../../abstracts' as v;
+@use '../../abstracts/placeholders' as p;
 
 .hero-slider {
     padding-top: 7em;
 
-    @include bp.mobile {
+    // mobile s, m, l
+    @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
         padding-top: 5.7em;
     }
 
-    @include bp.tablet {
+    // tablet 
+    @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
         padding-top: 5.9em;
     }
 
@@ -21,20 +23,29 @@
         gap: 0 7em;
         height: 25em;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             flex-direction: column-reverse;
             gap: 3em;
             height: 27em;
         }
 
-        @include bp.tablet {
-            gap: 0;
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
+            gap: 0 1em;
             height: 19em;
+        }
+
+        // laptop s, m, l
+        @include u.breakpoint-between(v.$laptop-desktop, 's', v.$laptop-desktop, 'xl') {
+            gap: 0 3em;
         }
     }
 
     &__content {
-        @include bp.mobile {
+
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             text-align: center;
         }
     }
@@ -45,13 +56,20 @@
         @extend %heading-text-effect;
         font-size: 6.1em;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             flex-direction: column-reverse;
             font-size: 2.3em;
         }
 
-        @include bp.tablet {
-            font-size: 3.1em;
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
+            font-size: 2.9em;
+        }
+
+        // laptop s, m, l
+        @include u.breakpoint-between(v.$laptop-desktop, 's', v.$laptop-desktop, 'xl') {
+            font-size: 3.3em;
         }
     }
 
@@ -102,14 +120,22 @@
             @extend %img;
         }
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             width: initial;
             height: 13.1em;
         }
 
-        @include bp.tablet {
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             width: initial;
-            height: 10.5em;
+            height: 11.5em;
+        }
+
+        // laptop s, m, l
+        @include u.breakpoint-between(v.$laptop-desktop, 's', v.$laptop-desktop, 'xl') {
+             width: initial;
+            height: 15.7em;
         }
     }
 }

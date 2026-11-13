@@ -1,5 +1,6 @@
-@use '../../abstracts'as bp;
-@use '../../abstracts/animations'as *;
+@use '../../utilities' as u;
+@use '../../abstracts' as v;
+@use '../../abstracts/animations' as *;
 
 .cool-drink-card {
 
@@ -14,12 +15,14 @@
                 width: 8em;
                 height: 10.7em;
 
-                @include bp.mobile {
+                // mobile s, m, l
+                @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
                     width: 7em;
                     height: 8.9em;
                 }
 
-                @include bp.tablet {
+                // tablet s, m
+                @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
                     width: 7em;
                     height: 9.7em;
                 }
@@ -49,7 +52,8 @@
                 width: 15em;
                 height: 9em;
 
-                @include bp.mobile {
+                // mobile s, m, l
+                @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
                     width: 12em;
                     height: 7em;
                 }
@@ -60,7 +64,9 @@
     [data-filter-category="capri_sun"] {
         .product-card__right-side {
             .product-card__link {
-                @include bp.tablet {
+
+                // tablet s, m
+                @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
                     width: 7em;
                     height: 7em;
                 }

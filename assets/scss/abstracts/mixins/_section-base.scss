@@ -1,6 +1,6 @@
 @use '../variables' as v;
 @use '../placeholders' as p;
-@use '../breakpoints' as bp;
+@use '../../utilities' as u;
 
 @mixin section-base() {
     padding-top: 7.7em;
@@ -11,12 +11,14 @@
         font-size: 4.1em;
         letter-spacing: .1em;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             letter-spacing: normal;
             font-size: 1.9em;
         }
 
-        @include bp.tablet {
+        // tablet s, m
+        @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
             font-size: 2.7em;
         }
     }

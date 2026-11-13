@@ -1,5 +1,5 @@
+@use '../../utilities' as u;
 @use '../../abstracts' as v;
-@use '../../abstracts' as bp;
 @use '../../abstracts/placeholders' as *;
 
 .navigation {
@@ -17,11 +17,13 @@
         align-items: center;
         justify-content: space-between;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             height: 5.7em;
         }
 
-        @include bp.tablet {
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             height: 5.9em;
         }
     }
@@ -30,11 +32,8 @@
         display: flex;
         gap: 1em;
 
-        @include bp.tablet {
-            gap: .3em;
-        }
-
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -58,8 +57,10 @@
             }
         }
 
-        @include bp.tablet {
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             align-items: center;
+            gap: .3em;
         }
     }
 
@@ -107,24 +108,40 @@
             }
         }
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             text-transform: uppercase;
-            font-size: 1.6em;
             letter-spacing: .1em;
             color: v.$text-secondary;
             font-family: v.$font-family-secondary;
             text-shadow: 7px 0 1px v.$color-black;
         }
 
-        @include bp.tablet {
+        // mobile s
+        @include u.breakpoint-between(v.$mobile, 's', v.$mobile, 'm') {
+            font-size: 1.4em;
+        }
+
+        // mobile m, l
+        @include u.breakpoint-between(v.$mobile, 'm', v.$tablet, 'm') {
+            font-size: 1.6em;
+        }
+
+        // tablet 
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             font-size: .71em;
+        }
+
+        // laptop s, m, l
+        @include u.breakpoint-between(v.$laptop-desktop, 's', v.$laptop-desktop, 'xl') {
+            font-size: .9em;
         }
     }
 
     &-menu {
-        position: relative;
         cursor: pointer;
         user-select: none;
+        position: relative;
         z-index: 7;
         display: none;
         flex-direction: column;
@@ -155,11 +172,13 @@
             }
         }
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             display: flex;
         }
 
-        @include bp.tablet {
+        // tablet
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             display: none;
         }
     }

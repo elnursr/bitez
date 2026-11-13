@@ -1,4 +1,5 @@
-@use '../../abstracts' as bp;
+@use '../../utilities' as u;
+@use '../../abstracts' as v;
 
 .handmade-chicken {
     &-card {
@@ -7,7 +8,8 @@
             .product-card__link {
                 width: 14em;
 
-                @include bp.mobile {
+                // mobile s, m, l
+                @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
                     width: 12em;
                 }
             }

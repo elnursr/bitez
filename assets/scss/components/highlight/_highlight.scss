@@ -1,20 +1,22 @@
+@use '../../utilities' as u;
 @use '../../abstracts' as v;
-@use '../../abstracts' as mx;
-@use '../../abstracts/breakpoints' as bp;
+@use '../../abstracts/mixins' as mx;
 
 .highlight {
     padding-top: 7em;
+
+    // tablet m, l laptop s
+    @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 'm') {
+        padding: 0;
+    }
 
     &__card {
         display: flex;
         justify-content: center;
         gap: .5em;
 
-        @include bp.mobile {
-            flex-wrap: wrap;
-        }
-
-        @include bp.tablet {
+        // mobile s, m, l, tablet m, l laptop s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$laptop-desktop, 'xl') {
             flex-wrap: wrap;
         }
     }
@@ -24,11 +26,13 @@
         margin: 0 .9em;
         background-color: v.$bg-primary;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             width: 100%;
         }
 
-        @include bp.tablet {
+        // tablet m, l laptop s
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 'm') {
             width: 45%;
         }
     }
@@ -42,12 +46,14 @@
         color: v.$color-white;
         background-color: v.$color-secondary;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             padding: 0 .7em;
             font-size: 2.1em;
         }
 
-        @include bp.tablet {
+        // tablet m, l laptop s
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 'm') {
             font-size: 1.7em;
         }
     }
@@ -56,33 +62,40 @@
         text-align: center;
         padding: 1.5em;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             padding: .9em;
         }
 
-        @include bp.tablet {
-            padding: .7em .1em;
+        // tablet m, l laptop s
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 'm') {
+            padding: .7em .3em;
         }
     }
 
     &__title {
         text-transform: capitalize;
 
-        @include bp.mobile {
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             font-size: 1em;
         }
 
-        @include bp.tablet {
+        // tablet m, l laptop s
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 'm') {
             font-size: 1.1em;
         }
     }
 
     &__text {
-        @include bp.mobile {
+
+        // mobile s, m, l
+        @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
             font-size: .7em;
         }
 
-        @include bp.tablet {
+        // tablet m, l laptop s
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 'm') {
             font-size: .8em;
         }
     }

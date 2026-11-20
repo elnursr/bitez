@@ -3,7 +3,7 @@
 @use '../../utilities' as u;
 
 @mixin section-base() {
-    padding-top: 9.8em;
+    padding-top: 9.7em;
 
     &__heading {
         @extend %heading-text-effect;

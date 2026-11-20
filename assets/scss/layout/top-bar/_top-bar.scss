@@ -1,11 +1,6 @@
 @use '../../abstracts' as v;
 
 .top-bar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 12;
     padding: .1em;
     background-color: v.$bg-primary;
 

@@ -3,7 +3,7 @@
 @use '../../utilities' as u;
 
 @mixin section-base() {
-    padding-top: 9.7em;
+    padding-top: 9.8em;
 
     &__heading {
         @extend %heading-text-effect;
@@ -18,7 +18,7 @@
         }
 
         // tablet s, m
-        @include u.breakpoint-between(v.$tablet, 's', v.$laptop-desktop, 's') {
+        @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
             font-size: 2.7em;
         }
     }

@@ -7,12 +7,12 @@
 
     // mobile s, m, l
     @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {
-        padding-top: 5.7em;
+        padding-top: 9.25em;
     }
 
     // tablet 
     @include u.breakpoint-between(v.$tablet, 'm', v.$laptop-desktop, 's') {
-        padding-top: 5.9em;
+        padding-top: 7.1em;
     }
 
     &__item {
@@ -134,7 +134,7 @@
 
         // laptop s, m, l
         @include u.breakpoint-between(v.$laptop-desktop, 's', v.$laptop-desktop, 'xl') {
-             width: initial;
+            width: initial;
             height: 15.7em;
         }
     }

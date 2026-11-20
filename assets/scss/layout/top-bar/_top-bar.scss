@@ -1,4 +1,5 @@
 @use '../../abstracts' as v;
+@use '../../abstracts/animations';
 
 .top-bar {
     padding: .1em;
@@ -16,6 +17,7 @@
     &__icon,
     &__title {
         color: v.$color-secondary;
+        animation: flash 1.5s infinite;
     }
 
     &__title {

@@ -3,7 +3,7 @@
 @use '../../abstracts/placeholders' as p;
 
 .hero-slider {
-    padding-top: 7em;
+    padding-top: 9.5em;
 
     // mobile s, m, l
     @include u.breakpoint-between(v.$mobile, 's', v.$tablet, 'm') {

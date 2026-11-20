@@ -1,0 +1,31 @@
+@use '../../abstracts' as v;
+
+.top-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+    padding: .1em;
+    background-color: v.$bg-primary;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 .5em;
+        text-decoration: underline;
+        text-decoration-color: v.$color-secondary;
+    }
+
+    &__icon,
+    &__title {
+        color: v.$color-secondary;
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1em;
+    }
+}

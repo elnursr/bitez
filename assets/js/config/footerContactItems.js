@@ -8,8 +8,8 @@ export default [
     {
         "label": "mobil",
         "icon": "mobile",
-        "url": "tel:+49 1515 8598777",
-        "value": "(+49)-1515-8598777"
+        "url": "tel:+49 2251 7775485",
+        "value": "(+49)-2251-7775485"
     },
     {
         "label": "e-mail",
